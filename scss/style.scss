@@ -1,4 +1,5 @@
 @import "framework.scss";
+@import "loader.scss";
 
 
 /* general-styles */
@@ -7,6 +8,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #000;
     -webkit-font-smoothing: antialiased;
+    position: relative;
   }
   
   body p {
@@ -81,4 +83,556 @@ body {
     padding: 30px 0px;
   }
   
+  html, body{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    height: 100vh;
+  }
+
+  .wrapper{
+    padding: 1em; 
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-right: auto;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  // li a{
+  //   margin-right: 2em;
+  // }
+
+  h1{
+    font-size: 3em;
+    margin-top: 1.5em;
+  }
+  .cta{
+    display: block;
+    padding: 2em 2em 2em 0;
+    font-size: 1.4em;
+  }
+
+  // img{
+  //   width: 100%;
+  //   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  // }
+  ul.transition {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+  ul.transition li{
+    transform: scaleY(0);
+    background: #fff;
+    width: 20%;
+  }
+  .box{
+    background: #000;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+
+  @media (min-width: 650px) {
+    main{
+      display: flex;
+      margin-top: 3em;
+      position: relative;
+      z-index: 3;
+    }
+    .wrapper{
+      // max-width: 950px;
+      margin: 0 auto;
+    }
+    .left{
+      padding-right: 2em;
+    }
+    // img{
+    //   width: 400px;
+    // }
+    .cta{
+      padding: 1em;
+      background: #fff;
+      position: absolute;
+      z-index: 21!important;
+      width: 80%;
+      animation-fill-mode: initial;
+    }
+  }
+
+
+
+
+
+  // new
+
+  .loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #4bedc2;
+    width: 0;
+    height: 100%;
+  }
+  .load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+
+  .left-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    ul{
+      // position: absolute;
+      left: 0;
+      padding-top: 86px;
+      height: 97%;
+      display: flex;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      justify-content: space-between;
+      li{
+        // transform: rotate(-90deg);
+        display: flex;
+        a{
+          transform: rotate(180deg);
+          &.active{
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+
+
+  .home-section{
+    .carousel{
+      padding-bottom: 30px;
+    }
+    .carousel-indicators li{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      margin: 0 10px;
+    }
+  }
+  .common-height{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .about-nav{
+    margin-top: -10vh;
+    .card-wrapper{
+      border: 1px solid #acacac;
+      align-items: center;
+      display: flex;
+      min-height: 300px;
+    }
+    .nav-wizard {
+      flex-direction: column;
+      li{
+        display: flex;
+        
+        a{
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex-direction: row-reverse;
+          &.active{
+            color: blue;
+            .nav-arrow{
+              height: 2px;
+              width: 20px;
+              background: blue;
+              display: flex;
+              margin-right: 10px;
+            }
+          }
+        }
+        .nav-arrow{
+          display: none;
+        }
+      }
+    }
+    .progress{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: #acacac;
+      div{
+        color: #007bff;
+      }
+    }
+  }
+
+
+  .pt-middle{
+    margin-top: 25vh;
+  }
+  .fade.in {
+    opacity: 1;
+}
+
+.accordion .card-header:after {
+  font-family: 'FontAwesome';  
+  content: "\f068";
+  float: right; 
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067"; 
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.copy-id .copy-span {
+  visibility: hidden;
+  // transition: 0s 1s;
+  color: #fff;
+  text-decoration: none;
+
+}
+.pl-10{
+  padding-left: 10px;
+
+}
+.list-menu{
+  overflow-y: scroll;
+  height: 70vh;
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  padding: 30px;
+  // margin-bottom: 30px;
+  /* width */
+    &::-webkit-scrollbar {
+      width: 3px;
+      border-radius: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: blue;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  ul{
+    flex-direction: column;
+    overflow-y: scroll;
+
+    li{
+      padding: 10px 0;
+    }
+  }
+}
+.menu-items{
+  overflow-y: scroll;
+  height: 70vh;
+  &::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: blue;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  p{
+    margin-bottom: 100px;
+  }
+}
+
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+}
+}
+
+label{
+  width: 100%;
+}
+input, textarea{
+  width: 100%;
+}
+.modal{
+  // position: relative;
+  // height: 90vh;
+  overflow-y: scroll;
+  .inner-modal{
+    .row{
+      height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }
+  }
+}
+
+
+// custom select option
+.custom-select {
+  position: relative;
+  padding: 0;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.order-modal{
   
+  .modal-dialog{
+    margin: 0 0 0 auto;
+    .row{
+      height: 77vh;
+    }
+  }
+}
+
+
+// cursor
+body{
+  cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='000000' r='4'/%3E%3C/svg%3E") 3 3, auto;
+}
+// .stroke-only {
+//   fill: none;
+//   stroke: blue;
+//   stroke-width: 4;
+//   stroke-linecap: round;
+//   stroke-linejoin: round;
+//   transition: 600ms transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
+// }
+// .transform-center-center {
+//   transform-origin: center center;
+// }
+// a.link:hover .stroke-only {
+//   stroke: #b55400;
+// }
+// a.link:hover .move-up {
+//   transform: translateY(-16px);
+// }
+// .btn:hover .move-up {
+//   transform: translateY(-16px);
+// }
+// a.link:hover .move-right {
+//   transform: translateX(10px);
+// }
+// a.link:hover .move-down {
+//   transform: translateY(16px);
+// }
+// a.link:hover .move-left {
+//   transform: translateX(-10px);
+// }
+// a.link:hover .move-up-little {
+//   transform: translateY(-4px);
+// }
+// a.link:hover .move-up-medium {
+//   transform: translateY(-6px);
+// }
+// .svg-search {
+//   transform-origin: 26px 26px;
+// }
+// a.link:hover .turn-90 {
+//   transform: rotate(90deg);
+// }
+// a.link:hover .turn-15 {
+//   transform: rotate(15deg);
+// }
+.cursor {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--width);
+  height: var(--height);
+  transform: translate(calc(var(--x) - var(--width) / 2), calc(var(--y) - var(--height) / 2));
+  /* transition-duration: 125ms;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition-property: width, height, transform; */
+  transition: 150ms width cubic-bezier(0.39, 0.575, 0.565, 1),
+              150ms height cubic-bezier(0.39, 0.575, 0.565, 1),
+              150ms transform cubic-bezier(0.39, 0.575, 0.565, 1);
+  z-index: 1;
+  pointer-events: none;
+  will-change: transform;
+}
+@media (pointer: fine) {
+  .cursor {
+    display: block;
+  }
+}
+.cursor::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--radius);
+  border: 2px solid #b55400;
+  opacity: var(--scale);
+  -webkit-transform: scale(var(--scale));
+          transform: scale(var(--scale));
+  transition: 300ms opacity cubic-bezier(0.39, 0.575, 0.565, 1),
+              300ms transform cubic-bezier(0.39, 0.575, 0.565, 1),
+              150ms border-radius cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.mystyle{
+  &::after{
+    border: 2px solid blue;
+  }
+}
+// html:not(html:hover) .cursor::after {
+//   opacity: 0;
+//   transform: scale(0);
+// }
