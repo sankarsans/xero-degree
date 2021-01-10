@@ -1,225 +1,292 @@
-// document.writeln("<script type='text/javascript' src='js/vendor.js'></script>");
 
+$(window).load(function() {
+  $("#loader").delay(1000).fadeOut("slow");
+})
+      
 
+$(document).ready(function(){
+    $('.next').click(function () {
 
-// // When the DOM is ready
-// $(function() {
-
-
-
-
-
-//     // ****************** animation project section ******************//
-// var controller = new ScrollMagic.Controller();
-
-// var tl = new TimelineMax();
-// tl.from("#banner h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn});
-// // tl.from(".header-section .navbar-right .nav1", 0.2,{y:-30, opacity:0, ease: Sine.easeIn});
-// // tl.from(".header-section .navbar-right .nav2", 0.2,{y:-30, opacity:0, ease: Sine.easeIn});
-// // tl.from(".header-section .navbar-right .nav3", 0.2,{y:-30, opacity:0, ease: Sine.easeIn});
-// // tl.from(".header-section .navbar-right .nav4", 0.2,{y:-30, opacity:0, ease: Sine.easeIn});
-// // tl.from(".header-section .navbar-right .nav5", 0.2,{y:-30, opacity:0, ease: Sine.easeIn});
-// // tl.from("#banner h1", 0.5 ,{y:30, opacity:0, ease: Sine.easeIn});
-// // tl.from("#banner p", 0.3,{y:30, opacity:0, ease: Sine.easeIn});
-// // tl.from("#banner a", 0.3,{x:-100, opacity:0});
-
-// var scene = new ScrollMagic.Scene({
-//     triggerElement:"#banner",
-// })
-
-// // .setPin("#project")
-// .setTween(tl)
-// .addTo(controller);
-
-
+        var nextId = $(this).parents('.tab-pane').next().attr("id");
+        $('[href=#' + nextId + ']').tab('show');
+        return false;
+  
+      })
+  
+      $('.back').click(function () {
+  
+        var prevId = $(this).parents('.tab-pane').prev().attr("id");
+        $('[href=#' + prevId + ']').tab('show');
+        return false;
+  
+      })
+  
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  
+        //update progress
+        var step = $(e.target).data('step');
+        var percent = (parseInt(step) / 4) * 100;
+  
+        $('.progress-bar').css({
+          width: percent + '%'
+        });
+        $('.progress-bar').text("Step " + step + " of 5");
+  
+        //e.relatedTarget // previous tab
+  
+      })
+  
+      $('.first').click(function () {
+  
+        $('#myWizard a:first').tab('show')
+  
+      })
     
-// // // ****************** animation project section ******************//
-// var controller = new ScrollMagic.Controller();
+      (function () {
+        var $,
+          __indexOf = [].indexOf || function (item) {
+            for (var i = 0, l = this.length; i < l; i++) {
+              if (i in this && this[i] === item) return i;
+            }
+            return -1;
+          };
+  
+        $ = jQuery;
+  
+        $.fn.validateCreditCard = function (callback, options) {
+          var bind, card, card_type, card_types, get_card_type, is_valid_length, is_valid_luhn, normalize, validate,
+            validate_number, _i, _len, _ref;
+          card_types = [{
+            name: 'amex',
+            pattern: /^3[47]/,
+            valid_length: [15]
+          }, {
+            name: 'diners_club_carte_blanche',
+            pattern: /^30[0-5]/,
+            valid_length: [14]
+          }, {
+            name: 'diners_club_international',
+            pattern: /^36/,
+            valid_length: [14]
+          }, {
+            name: 'jcb',
+            pattern: /^35(2[89]|[3-8][0-9])/,
+            valid_length: [16]
+          }, {
+            name: 'laser',
+            pattern: /^(6304|670[69]|6771)/,
+            valid_length: [16, 17, 18, 19]
+          }, {
+            name: 'visa_electron',
+            pattern: /^(4026|417500|4508|4844|491(3|7))/,
+            valid_length: [16]
+          }, {
+            name: 'visa',
+            pattern: /^4/,
+            valid_length: [16]
+          }, {
+            name: 'mastercard',
+            pattern: /^5[1-5]/,
+            valid_length: [16]
+          }, {
+            name: 'maestro',
+            pattern: /^(5018|5020|5038|6304|6759|676[1-3])/,
+            valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
+          }, {
+            name: 'discover',
+            pattern: /^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)/,
+            valid_length: [16]
+          }];
+          bind = false;
+          if (callback) {
+            if (typeof callback === 'object') {
+              options = callback;
+              bind = false;
+              callback = null;
+            } else if (typeof callback === 'function') {
+              bind = true;
+            }
+          }
+          if (options == null) {
+            options = {};
+          }
+          if (options.accept == null) {
+            options.accept = (function () {
+              var _i, _len, _results;
+              _results = [];
+              for (_i = 0, _len = card_types.length; _i < _len; _i++) {
+                card = card_types[_i];
+                _results.push(card.name);
+              }
+              return _results;
+            })();
+          }
+          _ref = options.accept;
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            card_type = _ref[_i];
+            if (__indexOf.call((function () {
+                var _j, _len1, _results;
+                _results = [];
+                for (_j = 0, _len1 = card_types.length; _j < _len1; _j++) {
+                  card = card_types[_j];
+                  _results.push(card.name);
+                }
+                return _results;
+              })(), card_type) < 0) {
+              throw "Credit card type '" + card_type + "' is not supported";
+            }
+          }
+          get_card_type = function (number) {
+            var _j, _len1, _ref1;
+            _ref1 = (function () {
+              var _k, _len1, _ref1, _results;
+              _results = [];
+              for (_k = 0, _len1 = card_types.length; _k < _len1; _k++) {
+                card = card_types[_k];
+                if (_ref1 = card.name, __indexOf.call(options.accept, _ref1) >= 0) {
+                  _results.push(card);
+                }
+              }
+              return _results;
+            })();
+            for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+              card_type = _ref1[_j];
+              if (number.match(card_type.pattern)) {
+                return card_type;
+              }
+            }
+            return null;
+          };
+          is_valid_luhn = function (number) {
+            var digit, n, sum, _j, _len1, _ref1;
+            sum = 0;
+            _ref1 = number.split('').reverse();
+            for (n = _j = 0, _len1 = _ref1.length; _j < _len1; n = ++_j) {
+              digit = _ref1[n];
+              digit = +digit;
+              if (n % 2) {
+                digit *= 2;
+                if (digit < 10) {
+                  sum += digit;
+                } else {
+                  sum += digit - 9;
+                }
+              } else {
+                sum += digit;
+              }
+            }
+            return sum % 10 === 0;
+          };
+          is_valid_length = function (number, card_type) {
+            var _ref1;
+            return _ref1 = number.length, __indexOf.call(card_type.valid_length, _ref1) >= 0;
+          };
+          validate_number = (function (_this) {
+            return function (number) {
+              var length_valid, luhn_valid;
+              card_type = get_card_type(number);
+              luhn_valid = false;
+              length_valid = false;
+              if (card_type != null) {
+                luhn_valid = is_valid_luhn(number);
+                length_valid = is_valid_length(number, card_type);
+              }
+              return {
+                card_type: card_type,
+                valid: luhn_valid && length_valid,
+                luhn_valid: luhn_valid,
+                length_valid: length_valid
+              };
+            };
+          })(this);
+          validate = (function (_this) {
+            return function () {
+              var number;
+              number = normalize($(_this).val());
+              return validate_number(number);
+            };
+          })(this);
+          normalize = function (number) {
+            return number.replace(/[ -]/g, '');
+          };
+          if (!bind) {
+            return validate();
+          }
+          this.on('input.jccv', (function (_this) {
+            return function () {
+              $(_this).off('keyup.jccv');
+              return callback.call(_this, validate());
+            };
+          })(this));
+          this.on('keyup.jccv', (function (_this) {
+            return function () {
+              return callback.call(_this, validate());
+            };
+          })(this));
+          callback.call(this, validate());
+          return this;
+        };
+  
+      }).call(this);
+})
 
-// var tl0 = new TimelineMax();
-// tl0.from("#whowe h2", 0.8,{x:-100, opacity:0, ease: Sine.easeIn});
-// // tl0.from("#whowe .box-sec", 0.5,{x:+100, opacity:0, ease: Sine.easeIn},"-=0.8");
-// // tl0.from("#whowe .line-img", 0.5,{y:50, opacity:0});
-// // tl0.from("#whowe h2", 0.3,{y:50, opacity:0});
-// // tl0.from("#whowe .one-p", 0.3,{y:50, opacity:0});
-// // tl0.from("#whowe .two-p", 0.3,{y:50, opacity:0});
-// // tl0.from("#whowe a", 0.3,{y:50, opacity:0});
-// // tl0.from("#whowe .bg-text", 0.8,{y:300, opacity:0});
-
-// var scene = new ScrollMagic.Scene({
-//     triggerElement:"#whowe",
-// })
-
-// // .setPin("#project")
-// .setTween(tl0)
-// .addTo(controller);
 
 
-
-    
-// // // ****************** animation project section ******************//
-// // var controller = new ScrollMagic.Controller();
-
-// // var tl1 = new TimelineMax();
-// // // tl1.from("#whatwe ", 1.0,{ x:-1000, ease: Sine.easeOut});
-// // tl1.from("#whatwe img", 0.8,{y:50, opacity:0,  ease: Sine.easeOut});
-// // tl1.from("#whatwe h2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl1.from("#whatwe .description", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // // tl1.from("#whatwe h2", 0.8,{y:50, opacity:0});y:-40,autoAlpha:0,ease:Power2.easeIn},.15
-// // tl1.from("#whatwe .we-box1", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box2", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box3", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box4", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box5", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box6", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box7", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box8", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe .we-box9", 0.2,{y:-40,autoAlpha:0,ease:Power2.easeIn});
-// // tl1.from("#whatwe a", 0.3,{x:-100, opacity:0});
-// // tl1.from("#whatwe .bg-text", 0.8,{y:300, opacity:0});
-
-// // var scene = new ScrollMagic.Scene({
-// //     triggerElement:"#whatwe",
-// // })
-
-// // // .setPin("#project")
-// // .setTween(tl1)
-// // .addTo(controller);
-
-
-
-
-
-    
-// // // ****************** animation project section ******************//
-// // var controller = new ScrollMagic.Controller();
-
-// // var tl2 = new TimelineMax();
-// // // tl1.from("#whatwe h2", 0.8,{y:50, opacity:0});
-// // tl2.from("#mission .mission-box-one img", 0.5,{x:+50, opacity:0,  ease: Sine.easeOut});
-// // tl2.from("#mission .bgimg1", 0.3,{x:-50, opacity:0,  ease: Sine.easeOut},"-=0.8");
-// // tl2.from("#mission .mission-box-one h2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl2.from("#mission .mission-box-one p", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl2.from("#mission .bg-text1", 0.8,{y:300, opacity:0});
-// // tl2.from("#mission .mission-box-two img", 0.5,{x:-50, opacity:0,  ease: Sine.easeOut});
-// // tl2.from("#mission .bgimg2", 0.3,{x:+50, opacity:0,  ease: Sine.easeOut},"-=0.8");
-// // tl2.from("#mission .mission-box-two h2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl2.from("#mission .mission-box-two p", 0.3,{y:10, opacity:0, ease: Sine.easeIn});;
-// // tl2.from("#mission .bg-text2", 0.8,{y:300, opacity:0});
-
-// // var scene = new ScrollMagic.Scene({
-// //     triggerElement:"#mission",
-// // })
-
-// // // .setPin("#project")
-// // .setTween(tl2)
-// // .addTo(controller);
-
-
-
-
-// // // ****************** animation project section ******************//
-// // var controller = new ScrollMagic.Controller();
-
-// // var tl3 = new TimelineMax();
-// // // tl3.from("#works ", 1.0,{ x:-1000, ease: Sine.easeOut});
-// // tl3.from("#works img", 0.8,{y:50, opacity:0,  ease: Sine.easeOut});
-// // tl3.from("#works h2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works p", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .work-box1", 0.3,{x:-50, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .work-box2", 0.3,{x:-50, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .work-box3", 0.3,{x:-50, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .work-box4", 0.3,{x:-50, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .circle1", 0.3,{x:-50, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .circle2", 0.3,{y:+50, opacity:0, ease: Sine.easeIn});
-// // tl3.from("#works .circle1, #works .circle2", 4,{rotation:"360", duration:500, ease:Linear.easeNone, repeat:-1});
-// // // tl3.from("#works .circle2", 4,{rotation:"360", duration:500, ease:Linear.easeNone, repeat:-1});
-
-// // var scene = new ScrollMagic.Scene({
-// //     triggerElement:"#works",
-// // })
-
-// // // .setPin("#project")
-// // .setTween(tl3)
-// // .addTo(controller);
-
-
-
-
-// // // ****************** animation project section ******************//
-// // var controller = new ScrollMagic.Controller();
-
-// // var tl4 = new TimelineMax();
-// // // tl1.from("#whatwe h2", 0.8,{y:50, opacity:0});
-// // tl4.from("#choose img", 0.5,{y:50, opacity:0,  ease: Sine.easeOut});
-// // tl4.from("#choose h2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl4.from("#choose p", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl4.from("#choose .choose-box1", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl4.from("#choose .choose-box2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl4.from("#choose .choose-box3", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl4.from("#choose .bg-text", 0.8,{y:300, opacity:0});
-
-// // var scene = new ScrollMagic.Scene({
-// //     triggerElement:"#choose",
-// // })
-
-// // // .setPin("#project")
-// // .setTween(tl4)
-// // .addTo(controller);
-
-
-
-
-// // // ****************** animation project section ******************//
-// // var controller = new ScrollMagic.Controller();
-
-// // var tl5 = new TimelineMax();
-
-// // tl5.from("#contact .address", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from("#contact p", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from("#contact .map", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from("#contact .reach-us li", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from("#contact .follow", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from("#contact .social li", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from("#contact .footer-bg", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl5.from(".copyright", 0.3,{x:-10, opacity:0, ease: Sine.easeIn});
-// // // tl4.from("#choose .choose-box2", 0.8,{y:10, opacity:0, ease: Sine.easeIn});
-// // // tl4.from("#choose .choose-box3", 0.8,{y:10, opacity:0, ease: Sine.easeIn});
-
-// // var scene = new ScrollMagic.Scene({
-// //     triggerElement:"#contact",
-// //     triggerHook: 5,
-// // })
-
-// // // .setPin("#project")
-// // .setTween(tl5)
-// // .addTo(controller);
-
-
-
-// // // ****************** animation project section ******************//
-// // var controller = new ScrollMagic.Controller();
-
-// // var tl6 = new TimelineMax();
-
-// // tl6.from("#choose1 .svg-line", 0.5,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 h2", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 span", 0.3,{y:10, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 .about-banner", 0.3,{y:50, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 .description1-first", 0.5,{y:50, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 .description1-second", 0.5,{y:50, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 .description1-third", 0.5,{y:50, opacity:0, ease: Sine.easeIn});
-// // tl6.from("#choose1 .bg-text", 0.8,{y:300, opacity:0});
-// // // tl4.from("#choose .choose-box3", 0.8,{y:10, opacity:0, ease: Sine.easeIn});
-
-// // var scene = new ScrollMagic.Scene({
-// //     triggerElement:"#choose1",
-// // })
-
-// // // .setPin("#project")
-// // .setTween(tl6)
-// // .addTo(controller);
-
-
-
-// });
+$(window).load(function(){
+    const updateProperties = (elem, state) => {
+        elem.style.setProperty('--x', `${state.x}px`)
+        elem.style.setProperty('--y', `${state.y}px`)
+        elem.style.setProperty('--width', `${state.width}px`)
+        elem.style.setProperty('--height', `${state.height}px`)
+        elem.style.setProperty('--radius', state.radius)
+        elem.style.setProperty('--scale', state.scale)
+      }
+     
+      document.querySelectorAll('.cursor').forEach(cursor => {
+        let onElement
+  
+        const createState = e => {
+          const defaultState = {
+            x: e.clientX,
+            y: e.clientY,
+            width: 40,
+            height: 40,
+            radius: '50%'
+          }
+  
+          const computedState = {}
+          const hoverBtn = document.querySelector(".cursor");
+          hoverBtn.classList.remove("mystyle");
+          if (onElement != null) {
+            const { top, left, width, height } = onElement.getBoundingClientRect()
+            const radius = window.getComputedStyle(onElement).borderTopLeftRadius
+            const hoverBtn = document.querySelector(".cursor");
+            hoverBtn.classList.add("mystyle");
+            // hoverBtn.style.display = 'none'
+            // alert("button")
+            // computedState.style.display="none"
+            // computedState.x = left + width / 2
+            // computedState.y = top + height / 2
+            computedState.width = 80
+            computedState.height = 80
+            // computedState.add
+            // computedState.radius = radius
+          }
+          
+          return {
+            ...defaultState,
+            ...computedState
+          }
+        }
+  
+        document.addEventListener('mousemove', e => {
+          const state = createState(e)
+          updateProperties(cursor, state)
+        })
+  
+        document.querySelectorAll('a, button').forEach(elem => {
+          elem.addEventListener('mouseenter', () => (onElement = elem))
+          elem.addEventListener('mouseleave', () => (onElement = undefined))
+        })
+      })
+})

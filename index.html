@@ -28,72 +28,26 @@
     
     <link rel="stylesheet" href="css/style.css" >
 </head>
-<body data-barba="wrapper" id="main">
+<body>
 
-  <!-- <div class="loader" id="overlayer">
-    <h1>Cooking in progress..</h1>
-    <div id="cooking">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div id="area">
-        <div id="sides">
-          <div id="pan"></div>
-          <div id="handle"></div>
-        </div>
-        <div id="pancake">
-          <div id="pastry"></div>
-        </div>
-      </div>
-    </div>
+
+
+  <div class="loader" id="loader">
+   
+    <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+      <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
   </div>
 
-
-  <div class="load-container">
-    <div class="loading-screen"></div>
-  </div>
-
-
-  <ul class="transition">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-
-  <div class="wrapper" >
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="services.html">services</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <main id="viewport">
   
 
-
-  <main data-barba="container" data-barba-namespace="home">
-    <div class="left">
-      <h1>home page</h1>
-      <a href="services.html" class="cta">Services</a>
-    </div>
-    <img src="images/team.jpg" alt="">
-    <div class="box">
-      hello
-    </div>
-    <h3>animation heading</h3>
-  </main> -->
-
   <div class="cursor"></div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -106,10 +60,9 @@
             Location
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Bangalore</a>
+            <a class="dropdown-item" href="#">Chennai</a>
+           
           </div>
         </li>
         <li class="nav-item">
@@ -133,29 +86,60 @@
       <li><a href="">Locations</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a onclick="openNav()">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
     </ul>
   </nav>
 
   <section class="common-height home-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-12">
+        <div class="col-md-12 col-sm-12 col-12">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
+            
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <h1>Potato make French fries 
+                      Chips & Vodka</h1>
+                    <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order today from our wide range of comfort food options!</p>
+                    <a href="order.html" class="btn btn-primary">Know More</a>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="Second slide">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <h1>Potato make French fries 
+                      Chips & Vodka</h1>
+                    <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order today from our wide range of comfort food options!</p>
+                    <a href="order.html" class="btn btn-primary">Know More</a>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="Third slide">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <h1>Potato make French fries 
+                      Chips & Vodka</h1>
+                    <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order today from our wide range of comfort food options!</p>
+                    <a href="order.html" class="btn btn-primary">Know More</a>
+                  </div>
+                </div>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -168,55 +152,57 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-12">
-          <h1>Potato make French fries chips & vodka</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem, optio enim porro similique minus excepturi</p>
-          <a href="order.html" class="btn btn-primary">Know More</a>
-        </div>
+       
       </div>
     </div>
   </section>
 
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
-    <a href="about.html">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="contact-us.html">Contact</a>
-    <div>
-      <p><a id="myInput" href="mailto:hello@gmail.com">gmail</a>
-        <a class="copy-id" onclick="copyToClipboard('#myInput')" ><b>Copy</b><br>
-          <span class="copy-span">Copied to clipboard</span></a>
-        </p> 
+    <div class="inner-content">
+      <h2>Converse chunk
+        Taylor sneaker</h2>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
+    
+      <div class="sidenav-inner">
+        <h3>12% Off</h3>
+        <p>Display this offer to the staff and 
+          show them the code.</p>
+        <p>Your Coupon code</p>
+        <p><strong id="myInput">SUMMER30</strong></p>
+          <a class="copy-id" onclick="copyToClipboard('#myInput')" ><b>Copy Code</b><br>
+            <span class="copy-span">Copied to clipboard</span></a>
+          </p> 
+      </div>
     </div>
   </div>
 
+
+
+</main>
+
     <script src="js/vendor.js"></script>
-    <!-- <script src="js/component.js"></script>s -->
+    <script src="js/animation.js"></script>
+    <script src="js/component.js"></script>
     <!-- <script src="js/app.js"></script> -->
     <!-- unpkg -->
-    <!-- <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script> -->
+    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script>
     
     <!-- <script src="js/app.js"></script> -->
-    <!-- <script>
-    $(window).load(function() {
-      $(".loader").delay(1000).fadeOut("slow");
-      $("#overlayer").delay(1000).fadeOut("slow");
-    })
-    </script> -->
+
+  
 
     <script>
       function openNav() {
         // alert("open")
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("mySidenav").style.cssText = "width: 360px; transition: 0.5s";
+        document.getElementById("viewport").style.cssText = "margin-left :360px;transition: 0.5s";
       }
 
       /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
       function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("mySidenav").style.cssText = "width:0 ; transition: 0.5s";
+        document.getElementById("viewport").style.cssText = "margin-left :0px;transition: 0.5s";
         document.querySelector(".copy-span").style.visibility = "hidden";
       }
     </script>
@@ -236,62 +222,7 @@
     </script>
     
     <script>
-      const updateProperties = (elem, state) => {
-      elem.style.setProperty('--x', `${state.x}px`)
-      elem.style.setProperty('--y', `${state.y}px`)
-      elem.style.setProperty('--width', `${state.width}px`)
-      elem.style.setProperty('--height', `${state.height}px`)
-      elem.style.setProperty('--radius', state.radius)
-      elem.style.setProperty('--scale', state.scale)
-    }
-   
-    document.querySelectorAll('.cursor').forEach(cursor => {
-      let onElement
-
-      const createState = e => {
-        const defaultState = {
-          x: e.clientX,
-          y: e.clientY,
-          width: 40,
-          height: 40,
-          radius: '50%'
-        }
-
-        const computedState = {}
-        const hoverBtn = document.querySelector(".cursor");
-        hoverBtn.classList.remove("mystyle");
-        if (onElement != null) {
-          const { top, left, width, height } = onElement.getBoundingClientRect()
-          const radius = window.getComputedStyle(onElement).borderTopLeftRadius
-          const hoverBtn = document.querySelector(".cursor");
-          hoverBtn.classList.add("mystyle");
-          // hoverBtn.style.display = 'none'
-          // alert("button")
-          // computedState.style.display="none"
-          // computedState.x = left + width / 2
-          // computedState.y = top + height / 2
-          computedState.width = 80
-          computedState.height = 80
-          // computedState.add
-          // computedState.radius = radius
-        }
-        
-        return {
-          ...defaultState,
-          ...computedState
-        }
-      }
-
-      document.addEventListener('mousemove', e => {
-        const state = createState(e)
-        updateProperties(cursor, state)
-      })
-
-      document.querySelectorAll('a, button').forEach(elem => {
-        elem.addEventListener('mouseenter', () => (onElement = elem))
-        elem.addEventListener('mouseleave', () => (onElement = undefined))
-      })
-    })
+    
 
     </script>
 </body>
