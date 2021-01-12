@@ -33,19 +33,29 @@
 <body data-barba="wrapper">
 
 
+  <div class="cursor"></div>
+
   <div class="loader" id="loader">
-    
+
     <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
-      <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
-      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
-      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
-      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+      </path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" stroke="var(--secondary)"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
   </div>
 
   <main id="viewport">
-    <div class="cursor"></div>
+
     <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -56,20 +66,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Location
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown">
+              <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle"
+                href="#">
+                <span id="selected">Bangalore</span><img src="images/down-arrow.svg" class="dropdown-arrow"></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Chennai</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Delhi</a></li>
+              </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
+         
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <ul class="pt-3">
@@ -81,159 +90,184 @@
       </div>
     </nav>
 
+    <div class="social-icon">
+      <ul>
+        <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
+        <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
+      </ul>
+    </div>
+
     <nav class="left-nav">
       <ul>
-        <li><a href="">Careers</a></li>
-        <li><a  class="active" href="franchise.html">Franchise</a></li>
+        <li><a href="menu.html">Careers</a></li>
+        <li><a class="active" href="franchise.html">Franchise</a></li>
         <li><a href="">Locations</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li><a onclick="openNav()">Menu</a></li>
         <li><a href="index.html">Home</a></li>
       </ul>
     </nav>
 
     <section class="common-height home-section about-nav" id="franchise">
       <div class="container-fluid">
-          <div id="myWizard" class="w-100 p-4 d-flex">
-            <div class="progress">
-              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
-                aria-valuemax="4" style="width: 25%;">
-                <!-- Step 1 of 4 -->
-              </div>
-            </div>
-            <div class="navbar">
-              <div class="navbar-inner">
-                <ul class="nav nav-pills nav-wizard">
-                  <li class="active">
-                    <a class="active" href="#step1" data-toggle="tab" data-step="1">Details
-                      <span class="nav-arrow"></span>
-                    </a>
-                  </li>
-                  <li class="disabled">
-                    <div class="nav-wedge"></div>
-                    <a class="" href="#step2" data-toggle="tab" data-step="2">Shipping
-                      <span class="nav-arrow"></span>
-                    </a>
-                  </li>
-                  <li class="disabled">
-                    <div class="nav-wedge"></div>
-                    <a class="" href="#step3" data-toggle="tab" data-step="3">Payment
-                      <span class="nav-arrow"></span>
-                    </a>
-                  </li>
-                  <li class="disabled">
-                    <div class="nav-wedge"></div>
-                    <a class="" href="#step4" data-toggle="tab" data-step="4">Review
-                      <span class="nav-arrow"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="tab-content w-100 franchise-section">
-              <div class="tab-pane fade in active" id="step1">
-                <div class="row">
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <img class="img-fluid" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <h1>Potato make French fries chips & vodka</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem, optio enim porro similique minus excepturi</p>
-                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Apply for franchising</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="step2">
-                <div class="row">
-                    <div class="col-md-5">
-                      <h3>Potato make French fries chips & vodka</h3>
-                    </div>
-                    <div class="col-md-7">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem, optio enim porro similique minus excepturi</p>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 col-sm-4 col-12">
-                      <img src="images/new.png" alt="" class="img-fluid" />
-                      <h3>text</h3>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-12">
-                      <img src="images/new.png" alt="" class="img-fluid" />
-                      <h3>text</h3>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-12">
-                      <img src="images/new.png" alt="" class="img-fluid" />
-                      <h3>text</h3>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-12">
-                      <img src="images/new.png" alt="" class="img-fluid" />
-                      <h3>text</h3>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-12">
-                      <img src="images/new.png" alt="" class="img-fluid" />
-                      <h3>text</h3>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-12">
-                      <img src="images/new.png" alt="" class="img-fluid" />
-                      <h3>text</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane fade" id="step3">
-                  <div class="row">
-                      <div class="col-md-6 col-sm-6 col-12">
-                          <img class="img-fluid"
-                              src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg"
-                              alt="First slide">
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-12">
-                          <h1>Potato make French fries chips & vodka</h1>
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem
-                              aperiam minus. Rem, optio enim porro similique minus excepturi</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="tab-pane fade" id="step4">
-                  <div class="row align-items-center">
-                      <div class="col-md-6">
-                          <p>still questions</p>
-                          <h2>otato make French fries chips</h2>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="container">
-                              <div id="accordion" class="accordion">
-                                  <div class="card mb-0">
-                                      <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                                          <a class="card-title"> Item 1 </a>
-                                      </div>
-                                      <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
-                                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                      </div>
-                                      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                          <a class="card-title"> Item 2 </a>
-                                      </div>
-                                      <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
-                                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                      </div>
-                                      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                          <a class="card-title"> Item 3 </a>
-                                      </div>
-                                      <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS. </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
+        <div id="myWizard" class="w-100 p-4 d-flex">
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+              aria-valuemax="4" style="width: 25%;">
+              <!-- Step 1 of 4 -->
             </div>
           </div>
-          <div id="push"></div>
+          <div class="navbar">
+            <div class="navbar-inner">
+              <ul class="nav nav-pills nav-wizard">
+                <li class="active">
+                  <a class="active" href="#step1" data-toggle="tab" data-step="1">Details
+                    <span class="nav-arrow"></span>
+                  </a>
+                </li>
+                <li class="disabled">
+                  <div class="nav-wedge"></div>
+                  <a class="" href="#step2" data-toggle="tab" data-step="2">Shipping
+                    <span class="nav-arrow"></span>
+                  </a>
+                </li>
+                <li class="disabled">
+                  <div class="nav-wedge"></div>
+                  <a class="" href="#step3" data-toggle="tab" data-step="3">Payment
+                    <span class="nav-arrow"></span>
+                  </a>
+                </li>
+                <li class="disabled">
+                  <div class="nav-wedge"></div>
+                  <a class="" href="#step4" data-toggle="tab" data-step="4">Review
+                    <span class="nav-arrow"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content w-100 franchise-section">
+            <div class="tab-pane fade in active" id="step1">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-12">
+                  <img class="img-fluid" src="images/food.jpeg" alt="First slide">
+                </div>
+                <div class="col-md-6 col-sm-6 col-12">
+                  <h1>Potato make French fries chips & vodka</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                    minus. Rem, optio enim porro similique minus excepturi</p>
+                  <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Apply for franchising</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="step2">
+              <div class="row">
+                <div class="col-md-5">
+                  <h3>Potato make French fries chips & vodka</h3>
+                </div>
+                <div class="col-md-7">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                    minus. Rem, optio enim porro similique minus excepturi</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-12">
+                  <img src="images/new.png" alt="" class="img-fluid" />
+                  <h3>text</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12">
+                  <img src="images/new.png" alt="" class="img-fluid" />
+                  <h3>text</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12">
+                  <img src="images/new.png" alt="" class="img-fluid" />
+                  <h3>text</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12">
+                  <img src="images/new.png" alt="" class="img-fluid" />
+                  <h3>text</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12">
+                  <img src="images/new.png" alt="" class="img-fluid" />
+                  <h3>text</h3>
+                </div>
+                <div class="col-md-4 col-sm-4 col-12">
+                  <img src="images/new.png" alt="" class="img-fluid" />
+                  <h3>text</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="step3">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-12">
+                  <img class="img-fluid" src="images/food.jpeg" alt="First slide">
+                </div>
+                <div class="col-md-6 col-sm-6 col-12">
+                  <h1>Potato make French fries chips & vodka</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem
+                    aperiam minus. Rem, optio enim porro similique minus excepturi</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="step4">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <p>still questions</p>
+                  <h2>otato make French fries chips</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="container">
+                    <div id="accordion" class="accordion">
+                      <div class="card mb-0">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                          <a class="card-title"> Item 1 </a>
+                        </div>
+                        <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS. </p>
+                        </div>
+                        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapseTwo">
+                          <a class="card-title"> Item 2 </a>
+                        </div>
+                        <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS. </p>
+                        </div>
+                        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapseThree">
+                          <a class="card-title"> Item 3 </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                            bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore
+                            sustainable VHS. </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="push"></div>
       </div>
     </section>
 
@@ -241,7 +275,7 @@
     <div class="modal" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
-      
+
           <!-- Modal body -->
           <div class="modal-body">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -338,137 +372,49 @@
                     </div>
                   </div>
                 </div>
-              <div class="col-md-12 text-right">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <div class="col-md-12 text-right">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
               </div>
-              </div>
-            </form> 
+            </form>
 
           </div>
-          
+
         </div>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <div class="inner-content">
+        <h2>Converse chunk
+          Taylor sneaker</h2>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+        <div class="bottom-content">
+          <div class="sidenav-inner">
+            <h3>12% Off</h3>
+            <p>Display this offer to the staff and
+              show them the code.</p>
+            <p>Your Coupon code</p>
+            <p><strong id="myInput">SUMMER30</strong></p>
+            <a class="copy-id" onclick="copyToClipboard('#myInput')"><b>Copy Code</b><br>
+              <span class="copy-span">Copied to clipboard</span></a>
+            </p>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
   </main>
 
-   <script src="js/vendor.js"></script>
-    <script src="js/component.js"></script>
-    <!-- <script src="js/app.js"></script> -->
-    <!-- unpkg -->
-    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script>
-    
-    <script src="js/app.js"></script>
-    <script src="js/animation.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/component.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
 
-
-<script>
-  const updateProperties = (elem, state) => {
-  elem.style.setProperty('--x', `${state.x}px`)
-  elem.style.setProperty('--y', `${state.y}px`)
-  elem.style.setProperty('--width', `${state.width}px`)
-  elem.style.setProperty('--height', `${state.height}px`)
-  elem.style.setProperty('--radius', state.radius)
-  elem.style.setProperty('--scale', state.scale)
-}
-
-document.querySelectorAll('.cursor').forEach(cursor => {
-  let onElement
-
-  const createState = e => {
-    const defaultState = {
-      x: e.clientX,
-      y: e.clientY,
-      width: 40,
-      height: 40,
-      radius: '50%'
-    }
-
-    const computedState = {}
-    const hoverBtn = document.querySelector(".cursor");
-    hoverBtn.classList.remove("mystyle");
-    if (onElement != null) {
-      const { top, left, width, height } = onElement.getBoundingClientRect()
-      const radius = window.getComputedStyle(onElement).borderTopLeftRadius
-      const hoverBtn = document.querySelector(".cursor");
-      hoverBtn.classList.add("mystyle");
-      // hoverBtn.style.display = 'none'
-      // alert("button")
-      // computedState.style.display="none"
-      // computedState.x = left + width / 2
-      // computedState.y = top + height / 2
-      computedState.width = 80
-      computedState.height = 80
-      // computedState.add
-      // computedState.radius = radius
-    }
-    
-    return {
-      ...defaultState,
-      ...computedState
-    }
-  }
-
-  document.addEventListener('mousemove', e => {
-    const state = createState(e)
-    updateProperties(cursor, state)
-  })
-
-  document.querySelectorAll('a, button').forEach(elem => {
-    elem.addEventListener('mouseenter', () => (onElement = elem))
-    elem.addEventListener('mouseleave', () => (onElement = undefined))
-  })
-})
-
-</script>
-
-  <script>
-    $(function() {
-    // your code
-
-    $('.next').click(function () {
-
-      var nextId = $(this).parents('.tab-pane').next().attr("id");
-      $('[href=#' + nextId + ']').tab('show');
-      return false;
-
-    })
-
-    $('.back').click(function () {
-
-      var prevId = $(this).parents('.tab-pane').prev().attr("id");
-      $('[href=#' + prevId + ']').tab('show');
-      return false;
-
-    })
-
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
-      //update progress
-      var step = $(e.target).data('step');
-      var percent = (parseInt(step) / 4) * 100;
-
-      $('.progress-bar').css({
-        width: percent + '%'
-      });
-      $('.progress-bar').text("Step " + step + " of 5");
-
-      //e.relatedTarget // previous tab
-
-    })
-
-    $('.first').click(function () {
-
-      $('#myWizard a:first').tab('show')
-
-    })
-
-  })  
-  </script>
-
-  
   <script>
     var x, i, j, l, ll, selElmnt, a, b, c;
     /* Look for any elements with the class "custom-select": */

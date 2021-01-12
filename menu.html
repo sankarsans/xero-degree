@@ -30,114 +30,72 @@
 </head>
 <body data-barba="wrapper">
 
-  <!-- <div class="loader" id="overlayer">
-    <h1>Cooking in progress..</h1>
-    <div id="cooking">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div id="area">
-        <div id="sides">
-          <div id="pan"></div>
-          <div id="handle"></div>
-        </div>
-        <div id="pancake">
-          <div id="pastry"></div>
-        </div>
+    <div class="loader" id="loader">
+   
+        <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+          <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+          <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+          <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+          <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
       </div>
-    </div>
-  </div>
-
-
-  <div class="load-container">
-    <div class="loading-screen"></div>
-  </div>
-
-
-  <ul class="transition">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-
-  <div class="wrapper" >
-    <header>
-      <nav>
+    
+      <main id="viewport">
+      
+    
+      <div class="cursor"></div>
+      <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Location
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Bangalore</a>
+                <a class="dropdown-item" href="#">Chennai</a>
+               
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+           <ul class="pt-3">
+            <li><a href="">Offers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="">Follow Us</a></li>
+           </ul>
+          </form>
+        </div>
+      </nav>
+    
+      <div class="social-icon">
         <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="services.html">services</a></li>
+          <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
+          <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
+        </ul>
+      </div>
+    
+      <nav class="left-nav">
+        <ul>
+          <li><a href="menu.html">Careers</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="">Locations</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a onclick="openNav()">Menu</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
         </ul>
       </nav>
-    </header>
-  </div>
-  
 
-
-  <main data-barba="container" data-barba-namespace="home">
-    <div class="left">
-      <h1>home page</h1>
-      <a href="services.html" class="cta">Services</a>
-    </div>
-    <img src="images/team.jpg" alt="">
-    <div class="box">
-      hello
-    </div>
-    <h3>animation heading</h3>
-  </main> -->
-
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Location
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-       <ul class="pt-3">
-        <li><a href="">Offers</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="">Follow Us</a></li>
-       </ul>
-      </form>
-    </div>
-  </nav>
-
-  <nav class="left-nav">
-    <ul>
-      <li><a href="">Careers</a></li>
-      <li><a href="franchise.html">Franchise</a></li>
-      <li><a href="">Locations</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
-
-  <section class="common-height home-section">
+  <section class="common-height home-section menu-page">
     <div class="container-fluid">
       <div class="row ml-5">
         <div class="col-md-3 col-sm-3 col-12">
@@ -146,98 +104,98 @@
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3 active">Fries in JAR</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Special Pizza</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Pizza in a jar</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Burger</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Sliders</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Baked penne/spaghetti</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Penne/spaghetti</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Nachos</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Sandwiches</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Name</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Name</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Name</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Name</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Name</p>
                     </a>
                 </li>
                 <li>
                     <a href="" class="d-flex align-items-center">
                         <img src="images/linkedin.svg" alt="" class="img-fluid" />
-                        <p class="mb-0 pl-2">Name</p>
+                        <p class="mb-0 pl-3">Name</p>
                     </a>
                 </li>
               </ul>
             </div>
         </div>
         <div class="col-md-9 col-sm-9 col-12">
-            <h2>Fries in jar</h2>
+            <h2>Fries in JAR</h2>
             <div class="row w-100 pt-5 menu-items">
                 <div class="col-md-2">
                     <div class="text-center">
@@ -332,20 +290,36 @@
     </div>
   </section>
 
-    <script src="js/vendor.js"></script>
-    <!-- <script src="js/component.js"></script>s -->
-    <!-- <script src="js/app.js"></script> -->
-    <!-- unpkg -->
-    <!-- <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script> -->
+  <div id="mySidenav" class="sidenav">
+    <div class="inner-content">
+      <h2>Converse chunk
+        Taylor sneaker</h2>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
     
-    <!-- <script src="js/app.js"></script> -->
-    <!-- <script>
-    $(window).load(function() {
-      $(".loader").delay(1000).fadeOut("slow");
-      $("#overlayer").delay(1000).fadeOut("slow");
-    })
-    </script> -->
+      <div class="bottom-content">
+        <div class="sidenav-inner">
+          <h3>12% Off</h3>
+          <p>Display this offer to the staff and 
+            show them the code.</p>
+          <p>Your Coupon code</p>
+          <p><strong id="myInput">SUMMER30</strong></p>
+            <a class="copy-id" onclick="copyToClipboard('#myInput')" ><b>Copy Code</b><br>
+              <span class="copy-span">Copied to clipboard</span></a>
+            </p> 
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/component.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <!-- unpkg -->
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script>
 
 </body>
 </html>

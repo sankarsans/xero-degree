@@ -1,229 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="robots" content="INDEX,FOLLOW" />
-    <link rel="canonical" href=""/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <link rel="canonical" href="" />
 
-    <meta name="author" content="" />
-    <meta name="keywords" content="">
+  <meta name="author" content="" />
+  <meta name="keywords" content="">
 
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content=" "/>
-    <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content=" " />
+  <meta property="og:description" content="" />
 
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content=""/>
-    <meta property="og:image" content="/images/thumnail.jpg" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:image" content="/images/thumnail.jpg" />
 
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:image" content="/images/thumnail.jpg" />
-    <meta name="twitter:creator" content="" />
-    
-    <link rel="stylesheet" href="css/style.css" >
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:image" content="/images/thumnail.jpg" />
+  <meta name="twitter:creator" content="" />
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-
+  <div class="cursor"></div>
 
   <div class="loader" id="loader">
-   
+
     <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
-      <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
-      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
-      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
-      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+      </path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" stroke="var(--secondary)"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
   </div>
 
   <main id="viewport">
-  
 
-  <div class="cursor"></div>
-  <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Location
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Bangalore</a>
-            <a class="dropdown-item" href="#">Chennai</a>
-           
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-       <ul class="pt-3">
-        <li><a href="">Offers</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="">Follow Us</a></li>
-       </ul>
-      </form>
-    </div>
-  </nav>
+    <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <nav class="left-nav">
-    <ul>
-      <li><a href="menu.html">Careers</a></li>
-      <li><a href="franchise.html">Franchise</a></li>
-      <li><a href="">Locations</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a onclick="openNav()">Menu</a></li>
-      <li><a class="active" href="index.html">Home</a></li>
-    </ul>
-  </nav>
-
-  <section class="common-height home-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <h1>Potato make French fries 
-                      Chips & Vodka</h1>
-                    <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order today from our wide range of comfort food options!</p>
-                    <a href="order.html" class="btn btn-primary">Know More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <h1>Potato make French fries 
-                      Chips & Vodka</h1>
-                    <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order today from our wide range of comfort food options!</p>
-                    <a href="order.html" class="btn btn-primary">Know More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-12">
-                    <h1>Potato make French fries 
-                      Chips & Vodka</h1>
-                    <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order today from our wide range of comfort food options!</p>
-                    <a href="order.html" class="btn btn-primary">Know More</a>
-                  </div>
-                </div>
-              </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+              <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle"
+                href="#">
+                <span id="selected">Bangalore</span><img src="images/down-arrow.svg" class="dropdown-arrow"></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Chennai</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Delhi</a></li>
+              </ul>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-       
+          </li>
+         
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="pt-3">
+            <li><a href="">Offers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="">Follow Us</a></li>
+          </ul>
+        </form>
       </div>
+    </nav>
+
+    <div class="social-icon">
+      <ul>
+        <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
+        <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
+      </ul>
     </div>
-  </section>
+
+    <nav class="left-nav">
+      <ul>
+        <li><a href="menu.html">Careers</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="">Locations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a onclick="openNav()">Menu</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+      </ul>
+    </nav>
+
+    <section class="common-height home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12">
+            <div id="carouselExampleIndicators" class="carousel slide homeSlider" data-ride="carousel" data-interval="7000">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12">
+                      <img class="d-block" src="images/food.jpeg" alt="First slide">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12">
+                      <h1>Potato make French fries
+                        Chips & Vodka</h1>
+                      <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order
+                        today from our wide range of comfort food options!</p>
+                      <a href="order.html" class="btn btn-primary">Know More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12">
+                      <img class="d-block" src="images/food.jpeg" alt="First slide">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12">
+                      <h1>Potato make French fries
+                        Chips & Vodka</h1>
+                      <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order
+                        today from our wide range of comfort food options!</p>
+                      <a href="order.html" class="btn btn-primary">Know More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-12">
+                      <img class="d-block" src="images/food.jpeg" alt="First slide">
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-12">
+                      <h1>Potato make French fries
+                        Chips & Vodka</h1>
+                      <p>Xero Degrees believes in two things: hygienic safety standards and lots of good Cheese! Order
+                        today from our wide range of comfort food options!</p>
+                      <a href="order.html" class="btn btn-primary">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <div id="mySidenav" class="sidenav">
     <div class="inner-content">
       <h2>Converse chunk
         Taylor sneaker</h2>
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
-    
-      <div class="sidenav-inner">
-        <h3>12% Off</h3>
-        <p>Display this offer to the staff and 
-          show them the code.</p>
-        <p>Your Coupon code</p>
-        <p><strong id="myInput">SUMMER30</strong></p>
-          <a class="copy-id" onclick="copyToClipboard('#myInput')" ><b>Copy Code</b><br>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+      <div class="bottom-content">
+        <div class="sidenav-inner">
+          <h3>12% Off</h3>
+          <p>Display this offer to the staff and
+            show them the code.</p>
+          <p>Your Coupon code</p>
+          <p><strong id="myInput">SUMMER30</strong></p>
+          <a class="copy-id" onclick="copyToClipboard('#myInput')"><b>Copy Code</b><br>
             <span class="copy-span">Copied to clipboard</span></a>
-          </p> 
+          </p>
+        </div>
       </div>
+
+
     </div>
   </div>
 
 
+  <script src="js/vendor.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/component.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
-</main>
 
-    <script src="js/vendor.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/component.js"></script>
-    <!-- <script src="js/app.js"></script> -->
-    <!-- unpkg -->
-    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script>
-    
-    <!-- <script src="js/app.js"></script> -->
-
-  
-
-    <script>
-      function openNav() {
-        // alert("open")
-        document.getElementById("mySidenav").style.cssText = "width: 360px; transition: 0.5s";
-        document.getElementById("viewport").style.cssText = "margin-left :360px;transition: 0.5s";
-      }
-
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      function closeNav() {
-        document.getElementById("mySidenav").style.cssText = "width:0 ; transition: 0.5s";
-        document.getElementById("viewport").style.cssText = "margin-left :0px;transition: 0.5s";
-        document.querySelector(".copy-span").style.visibility = "hidden";
-      }
-    </script>
-
-    <script>
-      function copyToClipboard(element) {
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
-        // alert("copied");
-        var displayElement = document.querySelector(".copy-span");
-        displayElement.style.visibility = "visible";
-      }
-
-    </script>
-    
-    <script>
-    
-
-    </script>
 </body>
+
 </html>
+
+
+

@@ -32,68 +32,84 @@
 
 <body>
 
+  <div class="cursor"></div>
 
   <div class="loader" id="loader">
-   
+
     <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
-      <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
-      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
-      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
-      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+      </path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" stroke="var(--secondary)"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
   </div>
 
   <main id="viewport">
-  
 
-  <div class="cursor"></div>
 
-  <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Location
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Bangalore</a>
-            <a class="dropdown-item" href="#">Chennai</a>
-           
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
+    <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Location
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Bangalore</a>
+              <a class="dropdown-item" href="#">Chennai</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <ul class="pt-3">
+            <li><a href="">Offers</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="">Follow Us</a></li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+
+    <div class="social-icon">
+      <ul>
+        <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
+        <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-       <ul class="pt-3">
-        <li><a href="">Offers</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="">Follow Us</a></li>
-       </ul>
-      </form>
     </div>
-  </nav>
 
-  <nav class="left-nav">
-    <ul>
-      <li><a href="menu.html">Careers</a></li>
-      <li><a href="franchise.html">Franchise</a></li>
-      <li><a href="">Locations</a></li>
-      <li><a  class="active" href="about.html">About Us</a></li>
-      <li><a onclick="openNav()">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
+    <nav class="left-nav">
+      <ul>
+        <li><a href="menu.html">Careers</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="">Locations</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
+        <li><a onclick="openNav()">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
 
-  <section class="common-height home-section about-nav">
-    <div class="container-fluid">
+    <section class="common-height home-section about-nav">
+      <div class="container-fluid">
         <div id="myWizard" class="w-100 p-4 d-flex">
           <div class="progress">
             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
@@ -134,13 +150,16 @@
             <div class="tab-pane fade in active whowe-section" id="step1">
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-12">
-                  <img class="img-fluid" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
+                  <img class="img-fluid"
+                    src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg"
+                    alt="First slide">
                 </div>
                 <div class="col-md-6 col-sm-6 col-12">
                   <h3>Who we are and Why xero degree</h3>
                   <h1 class="mt-0">A date that marks
                     our history</h1>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem, optio enim porro similique minus excepturi</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                    minus. Rem, optio enim porro similique minus excepturi</p>
                   <div class="d-flex justify-content-between flex-lg-row flex-md-row w-75 about-details text-center">
                     <div>
                       <p class="mb-0">Since</p>
@@ -162,14 +181,17 @@
             <div class="tab-pane fade whowe-section" id="step2">
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-12">
-                  <img class="img-fluid" src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="First slide">
+                  <img class="img-fluid"
+                    src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg"
+                    alt="First slide">
                 </div>
                 <div class="col-md-6 col-sm-6 col-12">
                   <h3>WHAT WE’RE ABOUT</h3>
                   <h1 class="mt-0">Our journey
                     towards good.</h1>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem, optio enim porro similique minus excepturi</p>
-                 
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                    minus. Rem, optio enim porro similique minus excepturi</p>
+
                 </div>
               </div>
             </div>
@@ -189,9 +211,10 @@
                 <div class="col-md-6 col-sm-6 col-12">
                   <div>
                     <h3>Our work deos make sense
-                      only if it is a faithful witness 
+                      only if it is a faithful witness
                       of his time.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur modi in repudiandae ducimus</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur modi in
+                      repudiandae ducimus</p>
                     <img src="images/new.png" alt="" class="img-fluid" />
                   </div>
                 </div>
@@ -204,7 +227,8 @@
                   <div class="pt-middle card-wrapper">
                     <h5>01</h5>
                     <h3>SUMMER30</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
                       dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
                   </div>
                 </div>
@@ -212,7 +236,8 @@
                   <div class="card-wrapper">
                     <h5>02</h5>
                     <h3>SUMMER30</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
                       dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
                   </div>
                 </div>
@@ -220,7 +245,8 @@
                   <div class="pt-middle card-wrapper">
                     <h5>03</h5>
                     <h3>SUMMER30</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
                       dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
                   </div>
                 </div>
@@ -228,7 +254,8 @@
                   <div class="card-wrapper">
                     <h5>04</h5>
                     <h3>SUMMER30</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the
                       dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
                   </div>
                 </div>
@@ -238,39 +265,32 @@
           </div>
         </div>
         <div id="push"></div>
+      </div>
+    </section>
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
+      <a href="about.html">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="contact-us.html">Contact</a>
+      <div>
+        <p><a id="myInput" href="mailto:hello@gmail.com">gmail</a>
+          <a class="copy-id" onclick="copyToClipboard('#myInput')"><b>Copy</b><br>
+            <span class="copy-span">Copied to clipboard</span></a>
+        </p>
+      </div>
     </div>
-  </section>
+
+</main>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/component.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="js/animation.js"></script>
 
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
-    <a href="about.html">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="contact-us.html">Contact</a>
-    <div>
-      <p><a id="myInput" href="mailto:hello@gmail.com">gmail</a>
-        <a class="copy-id" onclick="copyToClipboard('#myInput')" ><b>Copy</b><br>
-          <span class="copy-span">Copied to clipboard</span></a>
-        </p> 
-    </div>
-  </div>
-
-
-  <script src="js/vendor.js"></script>
-   
-  <script src="js/component.js"></script>
-  <!-- <script src="js/app.js"></script> -->
-  <!-- unpkg -->
-  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script>
-  
-  <!-- <script src="js/app.js"></script> -->
-  <script src="js/animation.js"></script>
-
-  <script>
-   
-  </script>
 </body>
 
 </html>

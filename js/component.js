@@ -290,3 +290,35 @@ $(window).load(function(){
         })
       })
 })
+
+
+function openNav() {
+  // alert("open")
+  document.getElementById("mySidenav").style.cssText = "width: 360px; transition: 0.5s";
+  document.getElementById("viewport").style.cssText = "transform :translateX(360px);transition: 0.5s";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.cssText = "width:0 ; transition: 0.5s";
+  document.getElementById("viewport").style.cssText = "transform :translateX(0px);transition: 0.5s";
+  document.querySelector(".copy-span").style.visibility = "hidden";
+}
+
+
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // alert("copied");
+  var displayElement = document.querySelector(".copy-span");
+  displayElement.style.visibility = "visible";
+}
+
+
+$('.dropdown-menu a').click(function(){
+  $('#selected').text($(this).text());
+});
