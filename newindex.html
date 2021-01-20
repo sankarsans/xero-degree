@@ -152,13 +152,13 @@ html {
 
         <!-- left nav content -->
         <nav class="left-nav">
-            <ul>
+            <ul class="anchor-nav">
                 <li><a href="menu.html">Careers</a></li>
-                <li><a href="franchise.html">Franchise</a></li>
+                <li><a href="#section03" id="anchor2">Franchise</a></li>
                 <li><a href="">Locations</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="#section02" id="anchor1">About Us</a></li>
                 <li><a onclick="openNav()">Menu</a></li>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="index.html#section01" id="intro-anchor">Home</a></li>
             </ul>
         </nav>
     </div>
@@ -186,7 +186,10 @@ html {
                                             <div class="carousel-item active">
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-6 col-12">
+                                                      <div class="image-wrapper">
                                                         <img class="d-block" src="images/food.jpeg" alt="First slide">
+                                                        <div class="cover"></div>
+                                                      </div>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h1>Potato make French fries
@@ -201,7 +204,10 @@ html {
                                             <div class="carousel-item">
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-6 col-12">
+                                                      <div class="image-wrapper">
                                                         <img class="d-block" src="images/food.jpeg" alt="First slide">
+                                                        <div class="cover"></div>
+                                                      </div>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h1>Potato make French fries
@@ -216,7 +222,10 @@ html {
                                             <div class="carousel-item">
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-6 col-12">
+                                                      <div class="image-wrapper">
                                                         <img class="d-block" src="images/food.jpeg" alt="First slide">
+                                                        <div class="cover"></div>
+                                                      </div>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h1>Potato make French fries
@@ -430,25 +439,25 @@ html {
                               <div class="navbar-inner">
                                 <ul class="nav nav-pills nav-wizard">
                                   <li class="active">
-                                    <a class="active" href="#step1" data-toggle="tab" data-step="1">Details
+                                    <a class="active" href="#step5" data-toggle="tab" data-step="1">Details
                                       <span class="nav-arrow"></span>
                                     </a>
                                   </li>
                                   <li class="disabled">
                                     <div class="nav-wedge"></div>
-                                    <a class="" href="#step2" data-toggle="tab" data-step="2">Shipping
+                                    <a class="" href="#step6" data-toggle="tab" data-step="2">Shipping
                                       <span class="nav-arrow"></span>
                                     </a>
                                   </li>
                                   <li class="disabled">
                                     <div class="nav-wedge"></div>
-                                    <a class="" href="#step3" data-toggle="tab" data-step="3">Payment
+                                    <a class="" href="#step7" data-toggle="tab" data-step="3">Payment
                                       <span class="nav-arrow"></span>
                                     </a>
                                   </li>
                                   <li class="disabled">
                                     <div class="nav-wedge"></div>
-                                    <a class="" href="#step4" data-toggle="tab" data-step="4">Review
+                                    <a class="" href="#step8" data-toggle="tab" data-step="4">Review
                                       <span class="nav-arrow"></span>
                                     </a>
                                   </li>
@@ -456,10 +465,13 @@ html {
                               </div>
                             </div>
                             <div class="tab-content w-100 franchise-section">
-                              <div class="tab-pane fade in active" id="step1">
+                              <div class="tab-pane fade in active" id="step5">
                                 <div class="row">
                                   <div class="col-md-6 col-sm-6 col-12">
-                                    <img class="img-fluid" src="images/food.jpeg" alt="First slide">
+                                    <div class="image-wrapper">
+                                      <img class="img-fluid" src="images/food.jpeg" alt="First slide">
+                                      <div class="cover"></div>
+                                      </div>
                                   </div>
                                   <div class="col-md-6 col-sm-6 col-12">
                                     <h1>Potato make French fries chips & vodka</h1>
@@ -470,7 +482,7 @@ html {
                                 </div>
                               </div>
                   
-                              <div class="tab-pane fade" id="step2">
+                              <div class="tab-pane fade" id="step6">
                                 <div class="row">
                                   <div class="col-md-5">
                                     <h3>Potato make French fries chips & vodka</h3>
@@ -508,7 +520,7 @@ html {
                                 </div>
                               </div>
                   
-                              <div class="tab-pane fade" id="step3">
+                              <div class="tab-pane fade" id="step7">
                                 <div class="row">
                                   <div class="col-md-6 col-sm-6 col-12">
                                     <img class="img-fluid" src="images/food.jpeg" alt="First slide">
@@ -521,7 +533,7 @@ html {
                                 </div>
                               </div>
                   
-                              <div class="tab-pane fade" id="step4">
+                              <div class="tab-pane fade" id="step8">
                                 <div class="row align-items-center">
                                   <div class="col-md-6">
                                     <p>still questions</p>
@@ -584,7 +596,171 @@ html {
             <section class="section" id="section04">
                 <!-- contact us page content -->
                 <main id="viewport">
-
+                  <section class="common-height home-section about-nav" id="franchise">
+                      <div class="container-fluid">
+                        <div id="myWizard" class="w-100 p-4 d-flex">
+                          <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                              aria-valuemax="4" style="width: 25%;">
+                              <!-- Step 1 of 4 -->
+                            </div>
+                          </div>
+                          <div class="navbar">
+                            <div class="navbar-inner">
+                              <ul class="nav nav-pills nav-wizard">
+                                <li class="active">
+                                  <a class="active" href="#step5" data-toggle="tab" data-step="1">Details
+                                    <span class="nav-arrow"></span>
+                                  </a>
+                                </li>
+                                <li class="disabled">
+                                  <div class="nav-wedge"></div>
+                                  <a class="" href="#step6" data-toggle="tab" data-step="2">Shipping
+                                    <span class="nav-arrow"></span>
+                                  </a>
+                                </li>
+                                <li class="disabled">
+                                  <div class="nav-wedge"></div>
+                                  <a class="" href="#step7" data-toggle="tab" data-step="3">Payment
+                                    <span class="nav-arrow"></span>
+                                  </a>
+                                </li>
+                                <li class="disabled">
+                                  <div class="nav-wedge"></div>
+                                  <a class="" href="#step8" data-toggle="tab" data-step="4">Review
+                                    <span class="nav-arrow"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-content w-100 franchise-section">
+                            <div class="tab-pane fade in active" id="step5">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <div class="image-wrapper">
+                                    <img class="img-fluid" src="images/food.jpeg" alt="First slide">
+                                    <div class="cover"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <h1>Potato make French fries chips & vodka</h1>
+                                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                                    minus. Rem, optio enim porro similique minus excepturi</p>
+                                  <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Apply for franchising</a>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="tab-pane fade" id="step6">
+                              <div class="row">
+                                <div class="col-md-5">
+                                  <h3>Potato make French fries chips & vodka</h3>
+                                </div>
+                                <div class="col-md-7">
+                                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                                    minus. Rem, optio enim porro similique minus excepturi</p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4 col-sm-4 col-12">
+                                  <img src="images/new.png" alt="" class="img-fluid" />
+                                  <h3>text</h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                  <img src="images/new.png" alt="" class="img-fluid" />
+                                  <h3>text</h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                  <img src="images/new.png" alt="" class="img-fluid" />
+                                  <h3>text</h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                  <img src="images/new.png" alt="" class="img-fluid" />
+                                  <h3>text</h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                  <img src="images/new.png" alt="" class="img-fluid" />
+                                  <h3>text</h3>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                  <img src="images/new.png" alt="" class="img-fluid" />
+                                  <h3>text</h3>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="tab-pane fade" id="step7">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <img class="img-fluid" src="images/food.jpeg" alt="First slide">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <h1>Potato make French fries chips & vodka</h1>
+                                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem
+                                    aperiam minus. Rem, optio enim porro similique minus excepturi</p>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="tab-pane fade" id="step8">
+                              <div class="row align-items-center">
+                                <div class="col-md-6">
+                                  <p>still questions</p>
+                                  <h2>otato make French fries chips</h2>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="container">
+                                    <div id="accordion" class="accordion">
+                                      <div class="card mb-0">
+                                        <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                          <a class="card-title"> Item 1 </a>
+                                        </div>
+                                        <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                            probably haven't heard of them accusamus labore sustainable VHS. </p>
+                                        </div>
+                                        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                                          href="#collapseTwo">
+                                          <a class="card-title"> Item 2 </a>
+                                        </div>
+                                        <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                                          <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                            probably haven't heard of them accusamus labore sustainable VHS. </p>
+                                        </div>
+                                        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                                          href="#collapseThree">
+                                          <a class="card-title"> Item 3 </a>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                          <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                            bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore
+                                            sustainable VHS. </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                
+                          </div>
+                        </div>
+                        <div id="push"></div>
+                      </div>
+                  </section>
                 </main>
             </section>
             <section class="section" id="section05">
@@ -664,13 +840,124 @@ html {
                 .setPin("#js-wrapper")
                 .setTween(horizontalSlide)
                 .addTo(controller);
-
-
-
         });
     </script>
 
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/plugins/ScrollToPlugin.min.js"></script>
+  <script>
+
+   // Init controller
+var controller = new ScrollMagic.Controller({
+  globalSceneOptions: {
+    duration: $('.wrapper section').height(),
+    triggerHook: .025,
+    reverse: true
+  },
+  vertical: false
+});
+
+
+/*
+object to hold href values of links inside our nav with
+the class '.anchor-nav'
+
+scene_object = {
+  '[scene-name]' : {
+    '[target-scene-id]' : '[anchor-href-value]'
+  }
+}
+*/
+var scenes = {
+  'intro': {
+    'intro': 'intro-anchor'
+  },
+  'scene2': {
+    'section-1': 'anchor1'
+  },
+  'scene3': {
+    'section-2': 'anchor2'
+  }
+  // 'scene4': {
+  //   'section-3': 'anchor3'
+  // }
+}
+
+for(var key in scenes) {
+  // skip loop if the property is from prototype
+  if (!scenes.hasOwnProperty(key)) continue;
+
+  var obj = scenes[key];
+
+  for (var prop in obj) {
+    // skip loop if the property is from prototype
+    if(!obj.hasOwnProperty(prop)) continue;
+
+    new ScrollMagic.Scene({ triggerElement: '#' + prop })
+        .setClassToggle('#' + obj[prop], 'active')
+        .addTo(controller);
+  }
+}
+
+
+// Change behaviour of controller
+// to animate scroll instead of jump
+controller.scrollTo(function(target) {
+
+  TweenMax.to(window, 0.5, {
+    scrollTo : {
+      x : target,
+      autoKill : true // Allow scroll position to change outside itself
+    },
+    ease : Cubic.easeInOut
+  });
+
+});
+
+
+//  Bind scroll to anchor links using Vanilla JavaScript
+var anchor_nav = document.querySelectorAll('.anchor-nav li a');
+
+for (var i in anchor_nav) {
+  anchor_nav[i].onclick = function(e) {
+    // showComment();
+    alert("hello");
+    // debugger
+    var target = e.target,
+        id     = target.getAttribute('href');
+
+    if(id !== null && id.length > 0) {
+      e.preventDefault();
+      controller.scrollTo(id);
+
+      if(window.history && window.history.pushState) {
+        history.pushState("", document.title, id);
+      }
+    }
+  };
+}
+
+// $('.anchor-nav li a').addEventListener('click', function(e) {
+//   alert("hello");
+//   debugger
+//   var target = e.target,
+//       id     = target.getAttribute('href');
+
+//   if(id !== null && id.length > 0) {
+//     e.preventDefault();
+//     controller.scrollTo(id);
+
+//     if(window.history && window.history.pushState) {
+//       history.pushState("", document.title, id);
+//     }
+//   }
+// });
+
+  
+    </script>
+
+
 <script>
+  
 
 // window.onload = function(){
 //    setTimeout(loadAfterTime, 5000)
