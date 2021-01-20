@@ -10299,7 +10299,6 @@ body {
   background-color: #fff;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 .loader {
@@ -10511,10 +10510,6 @@ img {
   -ms-box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 /*padding*/
 .no-padding {
   padding: 0;
@@ -10536,10 +10531,6 @@ html, body {
 
 body {
   height: 100vh;
-}
-
-.wrapper {
-  padding: 1em;
 }
 
 ul {
@@ -10599,6 +10590,7 @@ ul.transition li {
     flex-direction: column;
     position: relative;
     z-index: 3;
+    min-height: 100vh;
   }
 
   .wrapper {
@@ -10686,7 +10678,7 @@ ul.transition li {
 .common-height {
   display: flex;
   align-items: center;
-  height: 88vh;
+  height: 100vh;
   background-image: linear-gradient(207deg, #fef6f1 82%, #ffffff 15%);
 }
 
@@ -11225,7 +11217,7 @@ body {
 .cursor {
   display: none;
   position: fixed;
-  z-index: 9;
+  z-index: 10;
   top: 0;
   left: 0;
   width: var(--width);
@@ -11309,6 +11301,95 @@ body {
   border: none;
   background-color: #f95858;
   margin-top: 20px;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000;
+}
+
+.section {
+  height: 100%;
+  width: calc( 100% / 5 );
+  float: left;
+  position: relative;
+}
+
+.section:nth-child(2) {
+  background: #22A7F0;
+}
+
+.section:nth-child(3) {
+  background: #F9690E;
+}
+
+.section:nth-child(4) {
+  background: #9B59B6;
+}
+
+.section:nth-child(5) {
+  background: #03C9A9;
+}
+
+.sections {
+  width: 500%;
+  height: 100%;
+}
+
+.section__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+}
+
+.fixed-content .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.fixed-content .social-icon {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+}
+.fixed-content .left-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 8;
+  background: #fef6f0;
+  padding-right: 10px;
+}
+
+.image-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 40px;
+}
+.image-wrapper img {
+  position: absolute;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
