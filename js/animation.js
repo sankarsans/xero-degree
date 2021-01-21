@@ -172,7 +172,7 @@ $(function() {
     tl3.from(".homeSlider a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     // tl3.from(".homeSlider img" ,1, {x:-600});
 
-    tl3.from(cov, 1, { delay:3, scaleX: 0, transformOrigin: "left" });
+    tl3.from(cov, 1, { delay:1.5, scaleX: 0, transformOrigin: "left" });
     tl3.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
     tl3.from(img, 1, { opacity: 0 }, "reveal");
 
