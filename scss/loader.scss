@@ -12,6 +12,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 99;
+  position: relative;
+  background: #fff;
 }
 
 svg.tea {
