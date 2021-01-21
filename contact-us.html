@@ -30,141 +30,112 @@
 </head>
 <body data-barba="wrapper">
 
-  <!-- <div class="loader" id="overlayer">
-    <h1>Cooking in progress..</h1>
-    <div id="cooking">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div id="area">
-        <div id="sides">
-          <div id="pan"></div>
-          <div id="handle"></div>
-        </div>
-        <div id="pancake">
-          <div id="pastry"></div>
-        </div>
+  <div class="cursor"></div>
+
+  <div class="loader" id="loader">
+
+    <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="var(--secondary)" stroke-width="2"></path>
+      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+      </path>
+      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" stroke="var(--secondary)"></path>
+      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
+
+  <main id="viewport">
+
+
+    <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <div class="dropdown">
+                      <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                          class="dropdown-toggle" href="#">
+                          <span id="selected">Bangalore</span><img src="images/down-arrow.svg"
+                              class="dropdown-arrow"></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Bangalore</a></li>
+                          <li><a href="#">Chennai</a></li>
+                          <li><a href="#">Mumbai</a></li>
+                          <li><a href="#">Delhi</a></li>
+                      </ul>
+                  </div>
+              </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <ul class="pt-3">
+                  <li><a href="">Offers</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="">Follow Us</a></li>
+              </ul>
+          </form>
       </div>
-    </div>
-  </div>
+  </nav>
 
-
-  <div class="load-container">
-    <div class="loading-screen"></div>
-  </div>
-
-
-  <ul class="transition">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-
-  <div class="wrapper" >
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="services.html">services</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  
-
-
-  <main data-barba="container" data-barba-namespace="home">
-    <div class="left">
-      <h1>home page</h1>
-      <a href="services.html" class="cta">Services</a>
-    </div>
-    <img src="images/team.jpg" alt="">
-    <div class="box">
-      hello
-    </div>
-    <h3>animation heading</h3>
-  </main> -->
-
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Location
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
+    <div class="social-icon">
+      <ul>
+        <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
+        <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-       <ul class="pt-3">
-        <li><a href="">Offers</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="">Follow Us</a></li>
-       </ul>
-      </form>
     </div>
-  </nav>
 
-  <nav class="left-nav">
-    <ul>
-      <li><a href="">Careers</a></li>
-      <li><a href="franchise.html">Franchise</a></li>
-      <li><a href="">Locations</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
+    <nav class="left-nav">
+      <ul>
+        <li><a href="menu.html">Careers</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="">Locations</a></li>
+        <li><a class="active" href="about.html">About Us</a></li>
+        <li><a onclick="openNav()">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
 
-  <section class="common-height home-section">
+  <section class="common-height home-section contact-page">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-12">
-            <h2>contact information</h2>
-            <h4>Feel free to drop</p>
+        <div class="col-md-5 col-sm-5 col-12">
+            <h2 class="pt-5 mt-4">Contact Information</h2>
+            <h4>Feel free to drop us a line below!</h4>
             <div class="d-flex align-items-start">
                 <img src="images/linkedin.svg" alt="" class="img-responsive" />
                 <p class="pl-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus</p>
             </div>
             <div class="d-flex align-items-start">
                 <img src="images/linkedin.svg" alt="" class="img-responsive" />
-                <p class="pl-3">Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                <p class="pl-3"><a href="mailto:Xerodegreefood@gmail.com">Xerodegreefood@gmail.com</a></p>
             </div>
             <div class="d-flex align-items-start">
                 <img src="images/linkedin.svg" alt="" class="img-responsive" />
-                <p class="pl-3">Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                <p class="pl-3"><a href="tel:91 9902442155">+91 9902442155</a></p>
             </div>
-            <div class="d-flex align-items-start">
+            <!-- <div class="d-flex align-items-start">
                 <ul>
                     <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
                     <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
                     <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
-        <div class="col-md-6 col-sm-6 col-12">
-            <h2>Send a message</h2>
+        <div class="col-md-7 col-sm-7 col-12">
+          <div class="contactwrapper">
+            <h2 class="pb-4">Send Us a Message</h2>
             <form action="">
                 <div class="form-group">
                     <label for="">Name</label>
@@ -187,90 +158,101 @@
                 </div>
                 <div class="form-group">
                     <label for="">Message</label>
-                    <textarea name="" id="" placeholder="Message"></textarea>
+                    <textarea name="" id="" placeholder="Type  a message here…"></textarea>
                 </div>
                 <button type="button" class="btn btn-primary">Submit</>
             </form>
-            
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-    <script src="js/vendor.js"></script>
-    <!-- <script src="js/component.js"></script>s -->
-    <!-- <script src="js/app.js"></script> -->
-    <!-- unpkg -->
-    <!-- <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" ></script> -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
+    <a href="about.html">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="contact-us.html">Contact</a>
+    <div>
+      <p><a id="myInput" href="mailto:hello@gmail.com">gmail</a>
+        <a class="copy-id" onclick="copyToClipboard('#myInput')"><b>Copy</b><br>
+          <span class="copy-span">Copied to clipboard</span></a>
+      </p>
+    </div>
+  </div>
+
+</main>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/component.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="js/animation.js"></script>
+
+  <script>
+
     
-    <!-- <script src="js/app.js"></script> -->
-    <!-- <script>
-    $(window).load(function() {
-      $(".loader").delay(1000).fadeOut("slow");
-      $("#overlayer").delay(1000).fadeOut("slow");
-    })
-    </script> -->
-    <script>
-      var x, i, j, l, ll, selElmnt, a, b, c;
-      /* Look for any elements with the class "custom-select": */
-      x = document.getElementsByClassName("custom-select");
-      l = x.length;
-      for (i = 0; i < l; i++) {
-        selElmnt = x[i].getElementsByTagName("select")[0];
-        ll = selElmnt.length;
-        /* For each element, create a new DIV that will act as the selected item: */
-        a = document.createElement("DIV");
-        a.setAttribute("class", "select-selected");
-        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-        x[i].appendChild(a);
-        /* For each element, create a new DIV that will contain the option list: */
-        b = document.createElement("DIV");
-        b.setAttribute("class", "select-items select-hide");
-        for (j = 1; j < ll; j++) {
-          /* For each option in the original select element,
-          create a new DIV that will act as an option item: */
-          c = document.createElement("DIV");
-          c.innerHTML = selElmnt.options[j].innerHTML;
-          c.addEventListener("click", function (e) {
-            /* When an item is clicked, update the original select box,
-            and the selected item: */
-            var y, i, k, s, h, sl, yl;
-            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-            sl = s.length;
-            h = this.parentNode.previousSibling;
-            for (i = 0; i < sl; i++) {
-              if (s.options[i].innerHTML == this.innerHTML) {
-                s.selectedIndex = i;
-                h.innerHTML = this.innerHTML;
-                y = this.parentNode.getElementsByClassName("same-as-selected");
-                yl = y.length;
-                for (k = 0; k < yl; k++) {
-                  y[k].removeAttribute("class");
-                }
-                this.setAttribute("class", "same-as-selected");
-                break;
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /* Look for any elements with the class "custom-select": */
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /* For each element, create a new DIV that will act as the selected item: */
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /* For each element, create a new DIV that will contain the option list: */
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /* For each option in the original select element,
+        create a new DIV that will act as an option item: */
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /* When an item is clicked, update the original select box,
+          and the selected item: */
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
               }
+              this.setAttribute("class", "same-as-selected");
+              break;
             }
-            h.click();
-          });
-          b.appendChild(c);
-        }
-        x[i].appendChild(b);
-        a.addEventListener("click", function (e) {
-          /* When the select box is clicked, close any other select boxes,
-          and open/close the current select box: */
-          e.stopPropagation();
-          closeAllSelect(this);
-          this.nextSibling.classList.toggle("select-hide");
-          this.classList.toggle("select-arrow-active");
+          }
+          h.click();
         });
+        b.appendChild(c);
       }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /* When the select box is clicked, close any other select boxes,
+        and open/close the current select box: */
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
 
 
-      /* If the user clicks anywhere outside the select box,
-      then close all select boxes: */
-      document.addEventListener("click", closeAllSelect);
-    </script>
+    /* If the user clicks anywhere outside the select box,
+    then close all select boxes: */
+    document.addEventListener("click", closeAllSelect);
+  </script>
+
+
 </body>
 </html>
