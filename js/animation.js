@@ -167,7 +167,7 @@ $(function() {
 
     TweenMax.staggerFrom( $(".header_nav ul li"), time, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, time );
     TweenMax.staggerFrom( $(".left-nav ul li"), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
-    tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"-=0.9");
+    tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"+=1.9");
     tl3.from(".homeSlider p", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     tl3.from(".homeSlider a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     // tl3.from(".homeSlider img" ,1, {x:-600});
