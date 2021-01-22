@@ -157,16 +157,16 @@ $(function() {
     // ****************** animation project section ******************//
     var controller = new ScrollMagic.Controller({vertical: false});
 
-    var tl3 = new TimelineMax();
-
+    var tl3 = new TimelineMax({ paused:true });
+    tl3.addPause();
     var cov = $(this).find("#section01 .cover");
     var img = $(this).find("#section01 img");
 
    
     var time = 0.4;
 
-    TweenMax.staggerFrom( $(".header_nav ul li"), time, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, time );
-    TweenMax.staggerFrom( $(".left-nav ul li"), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
+    tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, time );
+    tl3.staggerFrom( $(".left-nav ul li"), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
     tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"+=1.9");
     tl3.from(".homeSlider p", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     tl3.from(".homeSlider a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
@@ -189,10 +189,12 @@ $(function() {
     .setTween(tl3)
     .addTo(controller);
 
-
-
-
-
+  
+    window.onload = function()
+    {       
+        tl3.play();
+    }                           
+    
 
 
     var controller = new ScrollMagic.Controller({vertical: false});
