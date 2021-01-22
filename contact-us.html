@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="robots" content="INDEX,FOLLOW" />
-    <link rel="canonical" href=""/>
+    <link rel="canonical" href="" />
 
     <meta name="author" content="" />
     <meta name="keywords" content="">
 
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content=" "/>
-    <meta property="og:description" content=""/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" " />
+    <meta property="og:description" content="" />
 
     <meta property="og:url" content="" />
-    <meta property="og:site_name" content=""/>
+    <meta property="og:site_name" content="" />
     <meta property="og:image" content="/images/thumnail.jpg" />
 
     <meta name="twitter:card" content="" />
@@ -25,234 +26,372 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:image" content="/images/thumnail.jpg" />
     <meta name="twitter:creator" content="" />
-    
-    <link rel="stylesheet" href="css/style.css" >
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!-- <style>
+        body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000;
+}
+
+.section {
+  height: 100%;
+  width: calc( 100% / 5 );
+  float: left;
+  position: relative;
+}
+.section:nth-child(1) {
+  background: #F64747;
+}
+.section:nth-child(2) {
+  background: #22A7F0;
+}
+.section:nth-child(3) {
+  background: #F9690E;
+}
+.section:nth-child(4) {
+  background: #9B59B6;
+}
+.section:nth-child(5) {
+  background: #03C9A9;
+}
+.sections {
+  width: 500%;
+  height: 100%;
+}
+.section__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+}
+    </style> -->
 </head>
-<body data-barba="wrapper">
 
-  <div class="cursor"></div>
+<body>
 
-  <div class="loader" id="loader">
+    <!-- dynamic cursor content -->
+    <div class="cursor"></div>
 
-    <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
-        stroke="var(--secondary)" stroke-width="2"></path>
-      <path
-        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
-        stroke="var(--secondary)" stroke-width="2"></path>
-      <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
-        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
-      </path>
-      <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round" stroke="var(--secondary)"></path>
-      <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-  </div>
+    <!-- loader content -->
+    <div class="loader" id="loader">
 
-  <main id="viewport">
-
-
-    <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                  <div class="dropdown">
-                      <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
-                          class="dropdown-toggle" href="#">
-                          <span id="selected">Bangalore</span><img src="images/down-arrow.svg"
-                              class="dropdown-arrow"></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Bangalore</a></li>
-                          <li><a href="#">Chennai</a></li>
-                          <li><a href="#">Mumbai</a></li>
-                          <li><a href="#">Delhi</a></li>
-                      </ul>
-                  </div>
-              </li>
-
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-              <ul class="pt-3">
-                  <li><a href="">Offers</a></li>
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                  <li><a href="">Follow Us</a></li>
-              </ul>
-          </form>
-      </div>
-  </nav>
-
-    <div class="social-icon">
-      <ul>
-        <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
-        <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
-      </ul>
+        <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+                stroke="var(--secondary)" stroke-width="2"></path>
+            <path
+                d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+                stroke="var(--secondary)" stroke-width="2"></path>
+            <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+                d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+            </path>
+            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" stroke="var(--secondary)"></path>
+            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
     </div>
 
-    <nav class="left-nav">
-      <ul>
-        <li><a href="menu.html">Careers</a></li>
-        <li><a href="franchise.html">Franchise</a></li>
-        <li><a href="">Locations</a></li>
-        <li><a class="active" href="about.html">About Us</a></li>
-        <li><a onclick="openNav()">Menu</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </nav>
+    <!-- navigation content -->
+    <div class="fixed-content">
+        <!-- top navbar content -->
+        <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
+          <div class="inner-nav">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <section class="common-height home-section contact-page">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5 col-sm-5 col-12">
-            <h2 class="pt-5 mt-4">Contact Information</h2>
-            <h4>Feel free to drop us a line below!</h4>
-            <div class="d-flex align-items-start">
-                <img src="images/linkedin.svg" alt="" class="img-responsive" />
-                <p class="pl-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus</p>
-            </div>
-            <div class="d-flex align-items-start">
-                <img src="images/linkedin.svg" alt="" class="img-responsive" />
-                <p class="pl-3"><a href="mailto:Xerodegreefood@gmail.com">Xerodegreefood@gmail.com</a></p>
-            </div>
-            <div class="d-flex align-items-start">
-                <img src="images/linkedin.svg" alt="" class="img-responsive" />
-                <p class="pl-3"><a href="tel:91 9902442155">+91 9902442155</a></p>
-            </div>
-            <!-- <div class="d-flex align-items-start">
-                <ul>
-                    <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
-                    <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
-                    <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                                class="dropdown-toggle" href="#">
+                                <span id="selected">Bangalore</span><img src="images/down-arrow.svg"
+                                    class="dropdown-arrow"></a>
+                            <ul class="dropdown-menu dropdown-menuHeader">
+                                <li><a href="#">Bangalore</a></li>
+                                <li><a href="#">Chennai</a></li>
+                                <li><a href="#">Mumbai</a></li>
+                                <li><a href="#">Delhi</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
                 </ul>
-            </div> -->
-        </div>
-        <div class="col-md-7 col-sm-7 col-12">
-          <div class="contactwrapper">
-            <h2 class="pb-4">Send Us a Message</h2>
-            <form action="">
-                <div class="form-group">
-                    <label for="">Name</label>
-                    <input type="text" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="">Business Purpose</label>
-                    <div class="custom-select">
-                      <select>
-                        <option value="0">Select car:</option>
-                        <option value="1">Audi</option>
-                        <option value="2">BMW</option>
-                        <option value="3">Citroen</option>
-                      </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="">Message</label>
-                    <textarea name="" id="" placeholder="Type  a message here…"></textarea>
-                </div>
-                <button type="button" class="btn btn-primary">Submit</>
-            </form>
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="pt-3">
+                        <li><a onclick="openNav()">Offers</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="">Follow Us</a></li>
+                    </ul>
+                </form>
+            </div>
           </div>
+        </nav>
+
+        <!-- social media content -->
+        <div class="social-icon">
+            <ul>
+                <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
+                <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
+            </ul>
         </div>
-      </div>
+        <!-- <nav class="anchor-nav" role="navigation">
+          <a href="#intro" id="intro-anchor">Intro</a>
+          <a href="#section-1" id="anchor1">Section 1</a>
+          <a href="#section-2" id="anchor2">Section 2</a>
+          <a href="#section-3" id="anchor3">Section 3</a>
+        </nav> -->
+        <!-- left nav content -->
+        <nav class="left-nav">
+            <ul class="anchor-nav anchor-nav" role="navigation">
+                <li><a href="index.html#section06" id="anchor6">Careers</a></li>
+                <li><a href="index.html#section05" id="anchor5">Franchise</a></li>
+                <li><a href="index.html#section04" id="anchor4">Locations</a></li>
+                <li><a href="index.html#section03" id="anchor3">About Us</a></li>
+                <li><a href="index.html#section02" id="anchor2">Menu</a></li>
+                <li><a href="index.html" id="anchor1">Home</a></li>
+            </ul>
+        </nav>
     </div>
-  </section>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide</a>
-    <a href="about.html">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="contact-us.html">Contact</a>
-    <div>
-      <p><a id="myInput" href="mailto:hello@gmail.com">gmail</a>
-        <a class="copy-id" onclick="copyToClipboard('#myInput')"><b>Copy</b><br>
-          <span class="copy-span">Copied to clipboard</span></a>
-      </p>
+    <!-- main content -->
+    <div class="inner-page" id="js-wrapper">
+        <main class="sections full-screen" id="intro" role="main">
+            <section class="section full-screen" id="">
+                <!-- home page content -->
+                <main id="viewport">
+                  <div class="common-height contact-page">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-5 col-sm-5 col-12">
+                            <h2 class="pt-5 mt-4">Contact Information</h2>
+                            <h4>Feel free to drop us a line below!</h4>
+                            <div class="d-flex align-items-start">
+                                <img src="images/linkedin.svg" alt="" class="img-responsive" />
+                                <p class="pl-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus</p>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <img src="images/linkedin.svg" alt="" class="img-responsive" />
+                                <p class="pl-3"><a href="mailto:Xerodegreefood@gmail.com">Xerodegreefood@gmail.com</a></p>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <img src="images/linkedin.svg" alt="" class="img-responsive" />
+                                <p class="pl-3"><a href="tel:91 9902442155">+91 9902442155</a></p>
+                            </div>
+                            <!-- <div class="d-flex align-items-start">
+                                <ul>
+                                    <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
+                                    <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
+                                    <li><a href=""><img src="images/linkedin.svg" alt="" class="img-responsive p-2" /></a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-12">
+                          <div class="contactwrapper">
+                            <h2 class="pb-4">Send Us a Message</h2>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Business Purpose</label>
+                                    <div class="dropdown">
+                                      <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        <span id="selectedone">Chose option</span><span class="caret"></span></a>
+                                      <ul class="dropdown-menu dropdown-menuContact">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Message</label>
+                                    <textarea name="" id="" placeholder="Type  a message here…"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary">Submit</>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </main>
+            </section>
+        </main>
     </div>
-  </div>
 
-</main>
-
-  <script src="js/vendor.js"></script>
-  <script src="js/component.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-  <script src="js/animation.js"></script>
-
-  <script>
-
+    <!-- left menu sidebar content -->
+    <div id="mySidenav" class="sidenav">
+        <div class="inner-content">
+          <h2>Converse chunk
+            Taylor sneaker</h2>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close-icon-white.svg"></a>
     
-    var x, i, j, l, ll, selElmnt, a, b, c;
-    /* Look for any elements with the class "custom-select": */
-    x = document.getElementsByClassName("custom-select");
-    l = x.length;
-    for (i = 0; i < l; i++) {
-      selElmnt = x[i].getElementsByTagName("select")[0];
-      ll = selElmnt.length;
-      /* For each element, create a new DIV that will act as the selected item: */
-      a = document.createElement("DIV");
-      a.setAttribute("class", "select-selected");
-      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-      x[i].appendChild(a);
-      /* For each element, create a new DIV that will contain the option list: */
-      b = document.createElement("DIV");
-      b.setAttribute("class", "select-items select-hide");
-      for (j = 1; j < ll; j++) {
-        /* For each option in the original select element,
-        create a new DIV that will act as an option item: */
-        c = document.createElement("DIV");
-        c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function (e) {
-          /* When an item is clicked, update the original select box,
-          and the selected item: */
-          var y, i, k, s, h, sl, yl;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          sl = s.length;
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < sl; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = this.innerHTML;
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              yl = y.length;
-              for (k = 0; k < yl; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
-            }
-          }
-          h.click();
-        });
-        b.appendChild(c);
+          <div class="bottom-content">
+            <div class="sidenav-inner">
+              <h3>12% Off</h3>
+              <p>Display this offer to the staff and
+                show them the code.</p>
+              <p>Your Coupon code</p>
+              <p><strong id="myInput">SUMMER30</strong></p>
+              <a class="copy-id" onclick="copyToClipboard('#myInput')"><b>Copy Code<img src="images/right-arrow.svg" alt="arrow"></b><br>
+                <span class="copy-span">Copied to clipboard</span></a>
+              </p>
+            </div>
+          </div>
+    
+    
+        </div>
+    </div>
+
+
+    <script src="js/vendor.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/component.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+
+    <!-- horizontal scroll -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js'></script>
+    <script>
+      // Init controller
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        duration: $('section').height(),
+        triggerHook: .025,
+        reverse: true
+      },
+      vertical: false
+    });
+
+
+    /*
+    object to hold href values of links inside our nav with
+    the class '.anchor-nav'
+
+    scene_object = {
+      '[scene-name]' : {
+        '[target-scene-id]' : '[anchor-href-value]'
       }
-      x[i].appendChild(b);
-      a.addEventListener("click", function (e) {
-        /* When the select box is clicked, close any other select boxes,
-        and open/close the current select box: */
-        e.stopPropagation();
-        closeAllSelect(this);
-        this.nextSibling.classList.toggle("select-hide");
-        this.classList.toggle("select-arrow-active");
-      });
+    }
+    */
+    var scenes = {
+      'scene1': {
+        'section01': 'anchor1'
+      },
+      'scene2': {
+        'section02': 'anchor2'
+      },
+      'scene3': {
+        'section03': 'anchor3'
+      },
+      'scene4': {
+        'section04': 'anchor4'
+      },
+      'scene5': {
+        'section05': 'anchor5'
+      },
+      'scene6': {
+        'section06': 'anchor6'
+      }
+    }
+
+    for(var key in scenes) {
+      // skip loop if the property is from prototype
+      if (!scenes.hasOwnProperty(key)) continue;
+
+      var obj = scenes[key];
+
+      for (var prop in obj) {
+        // skip loop if the property is from prototype
+        if(!obj.hasOwnProperty(prop)) continue;
+
+        new ScrollMagic.Scene({ triggerElement: '#' + prop })
+            .setClassToggle('#' + obj[prop], 'active')
+            .addTo(controller);
+      }
     }
 
 
-    /* If the user clicks anywhere outside the select box,
-    then close all select boxes: */
-    document.addEventListener("click", closeAllSelect);
-  </script>
+    // Change behaviour of controller
+    // to animate scroll instead of jump
+    controller.scrollTo(function(target) {
+
+      TweenMax.to(window, 0.5, {
+        scrollTo : {
+          x : target,
+          autoKill : true // Allow scroll position to change outside itself
+        },
+        ease : Cubic.easeInOut
+      });
+
+    });
 
 
+    //  Bind scroll to anchor links using Vanilla JavaScript
+    var anchor_nav = document.querySelector('.anchor-nav');
+
+    anchor_nav.addEventListener('click', function(e) {
+      var target = e.target,
+          id     = target.getAttribute('href');
+
+      if(id !== null && id.length > 0) {
+        // e.preventDefault();
+        controller.scrollTo(id);
+
+        if(window.history && window.history.pushState) {
+          history.pushState("", document.title, id);
+        }
+      }
+    });
+
+    window.addEventListener("wheel", onWheel);
+
+    function onWheel(event) {
+      event.preventDefault();
+
+      var normalized;  
+      var delta = event.wheelDelta;
+      var scroll = (window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0) || 0;
+      
+      if (delta) {
+        normalized = (delta % 120) == 0 ? delta / 120 : delta / 12;
+      } else {
+        delta = event.deltaY || event.detail || 0;
+        normalized = -(delta % 3 ? delta * 10 : delta / 3);
+      }
+
+      TweenLite.to(window, 0.4, {scrollTo: {x: scroll + 200 * normalized } });
+    }
+
+
+    </script>
+   
 </body>
+
 </html>

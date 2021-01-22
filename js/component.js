@@ -325,6 +325,10 @@ function copyToClipboard(element) {
 }
 
 
-$('.dropdown-menu a').click(function(){
+$('.dropdown-menuHeader a').click(function(){
   $('#selected').text($(this).text());
+});
+
+$('.dropdown-menuContact a').click(function(){
+  $('#selectedone').text($(this).text());
 });

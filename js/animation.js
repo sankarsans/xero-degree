@@ -28,7 +28,7 @@ $(function() {
 
     // .setPin("#project")
     .setTween(tl1)
-    .setClassToggle("#section05", "active")
+    .setClassToggle("#section06", "active")
     // .addIndicators()
     .addTo(controller);
 
@@ -117,7 +117,7 @@ $(function() {
     tl2.from("#section03 .description", 1, { y:100, opacity:0,  ease : Sine.easeIn });
     // tl2.from("#section02 .card-details", 0.4, { y:200,  ease : Sine.easeIn });
     
-    tl2.from(cov, 1, { scaleX: 0, transformOrigin: "left" });
+    tl2.from(cov, 1, { delay:2, scaleX: 0, transformOrigin: "left" });
     tl2.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
     tl2.from(img, 1, { opacity: 0 }, "reveal");
 
@@ -163,16 +163,16 @@ $(function() {
     var img = $(this).find("#section01 img");
 
    
-    var time = 0.4;
+    var time = 0.3;
 
-    tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, time );
+    tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 1, y:-100, opacity:0, ease : Sine.easeIn }, time );
     tl3.staggerFrom( $(".left-nav ul li"), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
-    tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"+=1.9");
+    tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"-=0.8");
     tl3.from(".homeSlider p", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     tl3.from(".homeSlider a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     // tl3.from(".homeSlider img" ,1, {x:-600});
 
-    tl3.from(cov, 1, { delay:1.5, scaleX: 0, transformOrigin: "left" });
+    tl3.from(cov, 1, { delay:0.5, scaleX: 0, transformOrigin: "left" });
     tl3.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
     tl3.from(img, 1, { opacity: 0 }, "reveal");
 
@@ -202,25 +202,25 @@ $(function() {
     var tl4 = new TimelineMax();
     
 
-    var cov = $(this).find("#section04 .cover");
-    var img = $(this).find("#section04 img");
+    var cov = $(this).find("#section05 .cover");
+    var img = $(this).find("#section05 img");
 
-    tl4.from(cov, 1, { scaleX: 0, transformOrigin: "left" });
+    tl4.from(cov, 1, { delay:2, scaleX: 0, transformOrigin: "left" });
     tl4.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
     tl4.from(img, 1, { opacity: 0 }, "reveal");
 
     // tl2.from("#section02 img" ,1, {x:-600});
     var newtime = 0.4;
 
-    tl4.staggerFrom( $("#section04 .nav li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
-    tl4.from("#section04 h1", 1.0, { y:100,  ease : Sine.easeIn });
-    tl4.from("#section04 p", 1, { y:100, opacity:0,  ease : Sine.easeIn });
-    tl4.from("#section04 .btn", 1.0, { y:100, opacity:0, ease : Sine.easeIn });
+    tl4.staggerFrom( $("#section05 .nav li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl4.from("#section05 h1", 1.0, { y:100,  ease : Sine.easeIn });
+    tl4.from("#section05 p", 1, { y:100, opacity:0,  ease : Sine.easeIn });
+    tl4.from("#section05 .btn", 1.0, { y:100, opacity:0, ease : Sine.easeIn });
 
     // tl2.from("#section02 .card-details", 0.4, { y:200,  ease : Sine.easeIn });
     
     var time = 0.5;
-    tl4.staggerFrom( $("#section04 .card-details"), time, {delay: 2, y:100, opacity:0, ease : Sine.easeIn }, time );
+    tl4.staggerFrom( $("#section05 .card-details"), time, {delay: 2, y:100, opacity:0, ease : Sine.easeIn }, time );
     
     // tl2.to("#section02 img", 0.4, { width:"100%", ease:Power0.easeNone } );
     // debugger;
@@ -230,7 +230,7 @@ $(function() {
     // tl1.from(".left-nav", 0.5,{x:-30, opacity:0, ease: Sine.easeIn},'+=1');
 
     var scene = new ScrollMagic.Scene({
-        triggerElement:"#section04",
+        triggerElement:"#section05",
         triggerHook: "onEnter",
         offset: 350,
         duration: 1000,
@@ -239,7 +239,7 @@ $(function() {
 
     // .setPin("#project")
     .setTween(tl4)
-    .setClassToggle("#section04", "active")
+    .setClassToggle("#section05", "active")
     // .addIndicators()
     .addTo(controller);
 

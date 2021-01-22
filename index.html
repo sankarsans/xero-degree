@@ -28,6 +28,8 @@
     <meta name="twitter:creator" content="" />
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
     <!-- <style>
         body,
 html {
@@ -135,7 +137,7 @@ html {
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <ul class="pt-3">
-                        <li><a href="">Offers</a></li>
+                        <li><a onclick="openNav()">Offers</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
                         <li><a href="">Follow Us</a></li>
                     </ul>
@@ -151,106 +153,138 @@ html {
                 <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
             </ul>
         </div>
-
+        <!-- <nav class="anchor-nav" role="navigation">
+          <a href="#intro" id="intro-anchor">Intro</a>
+          <a href="#section-1" id="anchor1">Section 1</a>
+          <a href="#section-2" id="anchor2">Section 2</a>
+          <a href="#section-3" id="anchor3">Section 3</a>
+        </nav> -->
         <!-- left nav content -->
         <nav class="left-nav">
-            <ul class="anchor-nav">
-                <li><a href="menu.html">Careers</a></li>
-                <li><a href="#section03" id="anchor2">Franchise</a></li>
-                <li><a href="">Locations</a></li>
-                <li><a href="#section02" id="anchor1">About Us</a></li>
-                <li><a onclick="openNav()">Menu</a></li>
-                <li><a class="active" href="index.html#section01" id="intro-anchor">Home</a></li>
+            <ul class="anchor-nav anchor-nav" role="navigation">
+                <li><a href="#section06" id="anchor6">Careers</a></li>
+                <li><a href="#section05" id="anchor5">Franchise</a></li>
+                <li><a href="#section04" id="anchor4">Locations</a></li>
+                <li><a href="#section03" id="anchor3">About Us</a></li>
+                <li><a href="#section02" id="anchor2">Menu</a></li>
+                <li><a href="#section01" id="anchor1">Home</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- main content -->
-    <div class="wrapper" id="js-wrapper">
-        <div class="sections" id="js-slideContainer">
-            <section class="section" id="section01">
+    <div class="" id="js-wrapper">
+        <main class="sections full-screen" id="intro" role="main">
+            <section class="section full-screen" id="section01">
                 <!-- home page content -->
                 <main id="viewport">
-                    <div class="common-height home-section">
-                        <div class="container">
+                    <div class="common-height home-section home-menu">
+                        <div class="container-fluid">
                             <div class="row align-items-center">
-                                <div class="col-md-12 col-sm-12 col-12">
-                                    <div id="carouselExampleIndicators" class="carousel slide homeSlider"
-                                        data-ride="carousel" data-interval="7000">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                                class="active"></li>
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                        </ol>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-6 col-sm-6 col-12">
-                                                      <div class="image-wrapper">
-                                                        <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
-                                                        <div class="cover"></div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-12">
-                                                        <h1>Potato make French fries
-                                                            Chips & Vodka</h1>
-                                                        <p>Xero Degrees believes in two things: hygienic safety
-                                                            standards and lots of good Cheese! Order
-                                                            today from our wide range of comfort food options!</p>
-                                                        <a href="order.html" class="btn btn-primary">Know More</a>
-                                                    </div>
-                                                </div>
+                                <div class="w-100">
+                                  <div class="progress my-2">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 20%;">
+                                        Step 1
+                                    </div>
+                                  </div>
+                                  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='false'>
+                                    <!-- <div class="carousel-buttons d-flex">
+                                        <div class="flex-grow-1"><a class="btn btn-primary btn-block rounded-0" data-target="#myCarousel" data-slide-to="0" href="#">One</a></div>
+                                        <div class="flex-grow-1"><a class="btn btn-primary btn-block rounded-0" data-target="#myCarousel" data-slide-to="1" href="#">Two</a></div>
+                                        <div class="flex-grow-1"><a class="btn btn-primary btn-block rounded-0" data-target="#myCarousel" data-slide-to="2" href="#">Three</a></div>
+                                        <div class="flex-grow-1"><a class="btn btn-primary btn-block rounded-0" data-target="#myCarousel" data-slide-to="3" href="#">Four</a></div>
+                                    </div> -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    </ol>
+                                    <div class='container-fluid'>
+                                    <div class="carousel-inner row homeSlider">
+                                        <div class="carousel-item active " data-step="1">
+                                          <div class="row align-items-center">
+                                            <div class="col-md-5 col-sm-6 col-12">
+                                              <div class="image-wrapper">
+                                                <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
+                                                <div class="cover"></div>
+                                              </div>
                                             </div>
-                                            <div class="carousel-item">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-6 col-sm-6 col-12">
-                                                      <div class="image-wrapper">
-                                                        <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
-                                                        <div class="cover"></div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-12">
-                                                        <h1>Potato make French fries
-                                                            Chips & Vodka</h1>
-                                                        <p>Xero Degrees believes in two things: hygienic safety
-                                                            standards and lots of good Cheese! Order
-                                                            today from our wide range of comfort food options!</p>
-                                                        <a href="order.html" class="btn btn-primary">Know More</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-6 col-sm-6 col-12">
-                                                      <div class="image-wrapper">
-                                                        <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
-                                                        <div class="cover"></div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-6 col-12">
-                                                        <h1>Potato make French fries
-                                                            Chips & Vodka</h1>
-                                                        <p>Xero Degrees believes in two things: hygienic safety
-                                                            standards and lots of good Cheese! Order
-                                                            today from our wide range of comfort food options!</p>
-                                                        <a href="order.html" class="btn btn-primary">Know More</a>
-                                                    </div>
-                                                </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <h1>Potato make French fries
+                                                    Chips & Vodka</h1>
+                                                <p>Xero Degrees believes in two things: hygienic safety
+                                                    standards and lots of good Cheese! Order
+                                                    today from our wide range of comfort food options!</p>
+                                                <a href="order.html" class="btn btn-primary">Know More</a>
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
+                                        </div>
+                                        <div class="carousel-item" data-step="2">
+                                          <div class="row align-items-center">
+                                            <div class="col-md-5 col-sm-6 col-12">
+                                              <div class="image-wrapper">
+                                                <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
+                                                <div class="cover"></div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <h1>Potato make French fries
+                                                    Chips & Vodka</h1>
+                                                <p>Xero Degrees believes in two things: hygienic safety
+                                                    standards and lots of good Cheese! Order
+                                                    today from our wide range of comfort food options!</p>
+                                                <a href="order.html" class="btn btn-primary">Know More</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="carousel-item" data-step="3">
+                                          <div class="row align-items-center">
+                                            <div class="col-md-5 col-sm-6 col-12">
+                                              <div class="image-wrapper">
+                                                <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
+                                                <div class="cover"></div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <h1>Potato make French fries
+                                                    Chips & Vodka</h1>
+                                                <p>Xero Degrees believes in two things: hygienic safety
+                                                    standards and lots of good Cheese! Order
+                                                    today from our wide range of comfort food options!</p>
+                                                <a href="order.html" class="btn btn-primary">Know More</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="carousel-item" data-step="4">
+                                          <div class="row align-items-center">
+                                            <div class="col-md-5 col-sm-6 col-12">
+                                              <div class="image-wrapper">
+                                                <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
+                                                <div class="cover"></div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-12">
+                                                <h1>Potato make French fries
+                                                    Chips & Vodka</h1>
+                                                <p>Xero Degrees believes in two things: hygienic safety
+                                                    standards and lots of good Cheese! Order
+                                                    today from our wide range of comfort food options!</p>
+                                                <a href="order.html" class="btn btn-primary">Know More</a>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
                                 </div>
 
                             </div>
@@ -258,12 +292,12 @@ html {
                     </div>
                 </main>
             </section>
-            <section class="section" id="section02">
+            <section class="section full-screen" id="section02">
               <!-- menu page content -->
               <main id="viewport">
                 <section class="common-height home-section menu-page">
                   <div class="container-fluid">
-                    <div class="row ml-5 align-items-center">
+                    <div class="row align-items-center">
                       <div class="col-md-3 col-sm-3 col-12">
                           <div class="list-menu">
                             <ul>
@@ -486,13 +520,13 @@ html {
                   </div>
                 </section>
               </main>
-          </section>
-            <section class="section" id="section03">
+            </section>
+            <section class="section full-screen" id="section03">
                 <!-- about us page content -->
                 <main id="viewport">
                     <div class="common-height home-section about-nav">
                         <div class="container-fluid">
-                          <div id="myWizard" class="w-100 p-4 d-flex">
+                          <div id="myWizard" class="w-100 d-flex">
                             <div class="progress">
                               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
                                 aria-valuemax="4" style="width: 25%;">
@@ -660,12 +694,20 @@ html {
                     </div>
                 </main>
             </section>
-            <section class="section" id="section04">
+            <section class="section full-screen" id="section04">
+              <!-- contact us page content -->
+              <main id="viewport">
+                <section class="common-height home-section about-nav" id="franchise">
+                    location
+                </section>
+              </main>
+            </section>
+            <section class="section full-screen" id="section05">
                 <!-- franchise page content -->
                 <main id="viewport">
                     <section class="common-height home-section about-nav" id="franchise">
                         <div class="container-fluid">
-                          <div id="myWizard" class="w-100 p-4 d-flex">
+                          <div id="myWizard" class="w-100 d-flex">
                             <div class="progress">
                               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
                                 aria-valuemax="4" style="width: 25%;">
@@ -863,12 +905,12 @@ html {
                     </section>
                 </main>
             </section>
-            <section class="section" id="section05">
+            <section class="section full-screen" id="section06">
                 <!-- contact us page content -->
                 <main id="viewport">
                   <section class="common-height home-section about-nav" id="franchise">
                       <div class="container-fluid">
-                        <div id="myWizard" class="w-100 p-4 d-flex">
+                        <div id="myWizard" class="w-100 d-flex">
                           <div class="progress">
                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
                               aria-valuemax="4" style="width: 25%;">
@@ -1034,18 +1076,20 @@ html {
                 </main>
             </section>
             
-        </div>
+            
+        </main>
     </div>
 
 
-     <!-- The Modal -->
-     <div class="modal franchise-modal" id="myModal">
+    <!-- The Modal -->
+    <div class="modal franchise-modal" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
 
           <!-- Modal body -->
           <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal"><img src="images/close-icon.svg" alt="close-icon"></button>
+            <button type="button" class="close" data-dismiss="modal"><img src="images/close-icon.svg"
+                alt="close-icon"></button>
             <h3>FRANCHISE APPLICATION</h3>
             <h4>Tell us about yourself</h4>
             <form action="">
@@ -1137,15 +1181,14 @@ html {
                         <label class="custom-control-label" for="customRadio2">Or toggle the second option</label>
                       </div>
                     </div> -->
-                  </div>
-                </div>
-                <div class="col-md-12 text-right">
-                  <button type="button" class="btn btn-primary">Submit</button>
                 </div>
               </div>
+              <div class="col-md-12 text-right">
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
             </form>
-
           </div>
+          
 
         </div>
       </div>
@@ -1156,7 +1199,7 @@ html {
         <div class="inner-content">
           <h2>Converse chunk
             Taylor sneaker</h2>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close-icon-white.svg"></a>
     
           <div class="bottom-content">
             <div class="sidenav-inner">
@@ -1179,216 +1222,141 @@ html {
     <script src="js/vendor.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/component.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    
 
+    <!-- horizontal scroll -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js'></script>
     <script>
-        $(function () { // wait for document ready
-
-            var controller = new ScrollMagic.Controller();
-
-            var horizontalSlide = new TimelineMax()
-                // animate panels
-                .to("#js-slideContainer", 1, {
-                    x: "-20%",
-                    className: '+=active'
-                })
-                .to("#js-slideContainer", 1, {
-                    x: "-40%"
-                })
-                .to("#js-slideContainer", 1, {
-                    x: "-60%"
-                })
-                .to("#js-slideContainer", 1, {
-                    x: "-80%"
-                })
+      // Init controller
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        duration: $('section').height(),
+        triggerHook: .025,
+        reverse: true
+      },
+      vertical: false
+    });
 
 
-            // create scene to pin and link animation
-            new ScrollMagic.Scene({
-                    triggerElement: "#js-wrapper",
-                    triggerHook: "onLeave",
-                    duration: "400%"
-                })
-                .setPin("#js-wrapper")
-                .setTween(horizontalSlide)
-                .addTo(controller);
-        });
+    /*
+    object to hold href values of links inside our nav with
+    the class '.anchor-nav'
+
+    scene_object = {
+      '[scene-name]' : {
+        '[target-scene-id]' : '[anchor-href-value]'
+      }
+    }
+    */
+    var scenes = {
+      'scene1': {
+        'section01': 'anchor1'
+      },
+      'scene2': {
+        'section02': 'anchor2'
+      },
+      'scene3': {
+        'section03': 'anchor3'
+      },
+      'scene4': {
+        'section04': 'anchor4'
+      },
+      'scene5': {
+        'section05': 'anchor5'
+      },
+      'scene6': {
+        'section06': 'anchor6'
+      }
+    }
+
+    for(var key in scenes) {
+      // skip loop if the property is from prototype
+      if (!scenes.hasOwnProperty(key)) continue;
+
+      var obj = scenes[key];
+
+      for (var prop in obj) {
+        // skip loop if the property is from prototype
+        if(!obj.hasOwnProperty(prop)) continue;
+
+        new ScrollMagic.Scene({ triggerElement: '#' + prop })
+            .setClassToggle('#' + obj[prop], 'active')
+            .addTo(controller);
+      }
+    }
+
+
+    // Change behaviour of controller
+    // to animate scroll instead of jump
+    controller.scrollTo(function(target) {
+
+      TweenMax.to(window, 0.5, {
+        scrollTo : {
+          x : target,
+          autoKill : true // Allow scroll position to change outside itself
+        },
+        ease : Cubic.easeInOut
+      });
+
+    });
+
+
+    //  Bind scroll to anchor links using Vanilla JavaScript
+    var anchor_nav = document.querySelector('.anchor-nav');
+
+    anchor_nav.addEventListener('click', function(e) {
+      var target = e.target,
+          id     = target.getAttribute('href');
+
+      if(id !== null && id.length > 0) {
+        e.preventDefault();
+        controller.scrollTo(id);
+
+        if(window.history && window.history.pushState) {
+          history.pushState("", document.title, id);
+        }
+      }
+    });
+
+    window.addEventListener("wheel", onWheel);
+
+    function onWheel(event) {
+      event.preventDefault();
+
+      var normalized;  
+      var delta = event.wheelDelta;
+      var scroll = (window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0) || 0;
+      
+      if (delta) {
+        normalized = (delta % 120) == 0 ? delta / 120 : delta / 12;
+      } else {
+        delta = event.deltaY || event.detail || 0;
+        normalized = -(delta % 3 ? delta * 10 : delta / 3);
+      }
+
+      TweenLite.to(window, 0.4, {scrollTo: {x: scroll + 200 * normalized } });
+    }
+
+
     </script>
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/plugins/ScrollToPlugin.min.js"></script>
-  <script>
+    <!-- home page carousel progress bar -->
+    <script>
+      var totalSteps = 4;
 
-   // Init controller
-// var controllerone = new ScrollMagic.Controller({
-//   globalSceneOptions: {
-//     duration: $('.wrapper section').height(),
-//     triggerHook: .025,
-//     reverse: true
-//   },
-//   vertical: false
-// });
-
-
-// /*
-// object to hold href values of links inside our nav with
-// the class '.anchor-nav'
-
-// scene_object = {
-//   '[scene-name]' : {
-//     '[target-scene-id]' : '[anchor-href-value]'
-//   }
-// }
-// */
-// var scenes = {
-//   'intro': {
-//     'section01': 'intro-anchor'
-//   },
-//   'scene2': {
-//     'section02': 'anchor1'
-//   },
-//   'scene3': {
-//     'section03': 'anchor2'
-//   }
-//   // 'scene4': {
-//   //   'section-3': 'anchor3'
-//   // }
-// }
-
-// for(var key in scenes) {
-//   // skip loop if the property is from prototype
-//   if (!scenes.hasOwnProperty(key)) continue;
-
-//   var obj = scenes[key];
-
-//   for (var prop in obj) {
-//     // skip loop if the property is from prototype
-//     if(!obj.hasOwnProperty(prop)) continue;
-
-//     new ScrollMagic.Scene({ triggerElement: '#' + prop })
-//         .setClassToggle('#' + obj[prop], 'active')
-//         .addTo(controllerone);
-//   }
-// }
-
-
-// // Change behaviour of controller
-// // to animate scroll instead of jump
-// controllerone.scrollTo(function(target) {
-
-//   TweenMax.to(window, 0.5, {
-//     scrollTo : {
-//       x : target,
-//       autoKill : true // Allow scroll position to change outside itself
-//     },
-//     ease : Cubic.easeInOut
-//   });
-
-// });
-
-
-// //  Bind scroll to anchor links using Vanilla JavaScript
-// var anchor_nav = document.querySelectorAll('.anchor-nav li a');
-
-// for (var i in anchor_nav) {
-//   anchor_nav[i].onclick = function(e) {
-//     // showComment();
-//     alert("hello");
-//     // debugger
-//     var target = e.target,
-//         id     = target.getAttribute('href');
-
-//     if(id !== null && id.length > 0) {
-//       e.preventDefault();
-//       controllerone.scrollTo(id);
-//       debugger
-//       if(window.history && window.history.pushState) {
-//         history.pushState("", document.title, id);
-//       }
-//     }
-//   };
-// }
-
-
-// var $navs = $('.anchor-nav li a');
-
-// window.addEventListener("wheel", onWheel);
-
-// function onWheel(event) {
-//   event.preventDefault();
-
-//   var normalized;  
-//   var delta = event.wheelDelta;
-//   var scroll = (window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0) || 0;
-  
-//   if (delta) {
-//     normalized = (delta % 120) == 0 ? delta / 120 : delta / 12;
-//   } else {
-//     delta = event.deltaY || event.detail || 0;
-//     normalized = -(delta % 3 ? delta * 10 : delta / 3);
-//   }
-
-//   var currentIndex = $navs.index($('.active'));
-//   var newIndex;
-//   newIndex = normalized > 0 ? currentIndex + 1 : currentIndex - 1;
-
-//   if(newIndex >=0 && newIndex < $navs.length){
-//     $navs.eq(newIndex)[0].click()
-//   }
-  
-// }
-
-// $('.anchor-nav li a').addEventListener('click', function(e) {
-//   alert("hello");
-//   debugger
-//   var target = e.target,
-//       id     = target.getAttribute('href');
-
-//   if(id !== null && id.length > 0) {
-//     e.preventDefault();
-//     controller.scrollTo(id);
-
-//     if(window.history && window.history.pushState) {
-//       history.pushState("", document.title, id);
-//     }
-//   }
-// });
-
-  
+        $('#myCarousel').carousel();
+        $('#myCarousel').on('slide.bs.carousel', function (e) {
+          
+          //update progress
+          var step = $(e.relatedTarget).data('step');
+          var percent = (parseInt(step) / totalSteps) * 100;
+          
+          $('.progress-bar').css({width: percent + '%'});
+          $('.progress-bar').text("Step " + step);
+          
+        })
     </script>
-
-
-<script>
   
-
-// window.onload = function(){
-//    setTimeout(loadAfterTime, 5000)
-// };
-
-
-// function loadAfterTime() { 
-// // code you need to execute goes here. 
-// let sectionFive = document.querySelector("#section05");
-      
-//       if(sectionFive.classList.contains("active")){
-//         alert("hello");
-//         debugger
-//       } else{
-//           debugger
-//       }
-// }
-    // (function(){
-    //   let sectionFive = document.querySelector("#section05");
-      
-    //   if(sectionFive.classList.contains("active")){
-    //     alert("hello");
-    //     debugger
-    //   } else{
-    //       debugger
-    //   }
-    // })(5000);
-  </script>
 </body>
 
 </html>
