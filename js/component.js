@@ -332,3 +332,9 @@ $('.dropdown-menuHeader a').click(function(){
 $('.dropdown-menuContact a').click(function(){
   $('#selectedone').text($(this).text());
 });
+$('.dropdown-menuContactone a').click(function(){
+  $('#selectedtwo').text($(this).text());
+});
+$('.dropdown-menuContacttwo a').click(function(){
+  $('#selectedthree').text($(this).text());
+});

@@ -44,22 +44,22 @@ $(function() {
     // ****************** animation project section ******************//
     var controller = new ScrollMagic.Controller({vertical: false});
 
-    var tl2 = new TimelineMax();
+    var tl8 = new TimelineMax();
     
 
     var cov = $(this).find("#section02 .cover");
     var img = $(this).find("#section02 img");
 
-    tl2.from(cov, 1, { scaleX: 0, transformOrigin: "left" });
-    tl2.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
-    tl2.from(img, 1, { opacity: 0 }, "reveal");
+    tl8.from(cov, 1, { scaleX: 0, transformOrigin: "left" });
+    tl8.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
+    tl8.from(img, 1, { opacity: 0 }, "reveal");
 
     // tl2.from("#section02 img" ,1, {x:-600});
     var newtime = 0.4;
 
-    tl2.from("#section02 h2", 1.0, { y:-100,  ease : Sine.easeIn });
-    tl2.staggerFrom( $("#section02 .list-menu li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
-    tl2.staggerFrom( $("#section02 .text-center"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl8.from("#section02 h2", 1.0, { y:-100,  ease : Sine.easeIn });
+    tl8.staggerFrom( $("#section02 .list-menu li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl8.staggerFrom( $("#section02 .text-center"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
 
     // tl2.from("#section02 h1", 1.0, { y:100,  ease : Sine.easeIn });
     // tl2.from("#section02 .description", 1, { y:100, opacity:0,  ease : Sine.easeIn });
@@ -84,7 +84,7 @@ $(function() {
     })
 
     // .setPin("#project")
-    .setTween(tl2)
+    .setTween(tl8)
     .setClassToggle("#section02", "active")
     // .addIndicators()
     .addTo(controller);
@@ -163,9 +163,9 @@ $(function() {
     var img = $(this).find("#section01 img");
 
    
-    var time = 0.3;
+    var time = 0.2;
 
-    tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 1, y:-100, opacity:0, ease : Sine.easeIn }, time );
+    tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, time );
     tl3.staggerFrom( $(".left-nav ul li"), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
     tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"-=0.8");
     tl3.from(".homeSlider p", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
@@ -246,11 +246,115 @@ $(function() {
 
 
 
+    var controller = new ScrollMagic.Controller({vertical: false});
+
+    var tl5 = new TimelineMax();
+    
+    var newtime = 0.4;
+
+    tl5.staggerFrom( $("#section06 .career-perks"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl5.from("#section06 h2", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+   
+    var scene = new ScrollMagic.Scene({
+        triggerElement:"#section06",
+        triggerHook: "onEnter",
+        offset: 350,
+        duration: 1000,
+        reverse: true,
+    })
+
+    // .setPin("#project")
+    .setTween(tl5)
+    .setClassToggle("#section06", "active")
+    // .addIndicators()
+    .addTo(controller);
+
+
+
+
+    var controller = new ScrollMagic.Controller({vertical: false});
+
+    var tl6 = new TimelineMax();
+    
+    var newtime = 0.4;
+
+    tl6.staggerFrom( $("#section07 img"), newtime, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl6.from("#section07 h2", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+    tl6.from("#section07 h4", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement:"#section07",
+        triggerHook: "onEnter",
+        offset: 350,
+        duration: 1000,
+        reverse: true,
+    })
+
+    // .setPin("#project")
+    .setTween(tl6)
+    .setClassToggle("#section07", "active")
+    // .addIndicators()
+    .addTo(controller);
+
+
+
+    var controller = new ScrollMagic.Controller({vertical: false});
+
+    var tl7 = new TimelineMax();
+    
+    // var newtime = 0.4;
+
+    // tl7.staggerFrom( $("#section07 img"), newtime, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl7.from("#section04 .list-content", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+    tl7.from("#section04 .col-md-8", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement:"#section04",
+        triggerHook: "onEnter",
+        offset: 350,
+        duration: 1000,
+        reverse: true,
+    })
+
+    // .setPin("#project")
+    .setTween(tl7)
+    .setClassToggle("#section04", "active")
+    // .addIndicators()
+    .addTo(controller);
 
 
 
 
 
+
+    var controller = new ScrollMagic.Controller({vertical: false});
+
+    var tl9 = new TimelineMax();
+    
+    // var newtime = 0.4;
+
+    // tl7.staggerFrom( $("#section07 img"), newtime, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl9.from("#contact h2", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+    tl9.from("#contact h4", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+    tl9.from("#contact .align-items-start", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
+    tl9.from("#contact .contactwrapper", 0.5, { y:100, opacity:0,  ease : Sine.easeIn });
+
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement:"#contact",
+        triggerHook: "onEnter",
+        offset: 0,
+        duration: 000,
+        reverse: true,
+    })
+
+    // .setPin("#project")
+    .setTween(tl9)
+    .setClassToggle("#contact", "active")
+    // .addIndicators()
+    .addTo(controller);
 
 
 
