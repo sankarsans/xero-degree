@@ -112,8 +112,8 @@ $(function() {
     var newtime = 0.4;
 
     tl2.staggerFrom( $("#section03 .nav li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
-    tl2.from("#section03 h3", 1.0, { y:-100,  ease : Sine.easeIn });
-    tl2.from("#section03 h1", 1.0, { y:100,  ease : Sine.easeIn });
+    tl2.from("#section03 h3", 1.0, { y:-100, opacity:0, ease : Sine.easeIn },'+=8');
+    tl2.from("#section03 h1", 1.0, { y:100,opacity:0,  ease : Sine.easeIn });
     tl2.from("#section03 .description", 1, { y:100, opacity:0,  ease : Sine.easeIn });
     // tl2.from("#section02 .card-details", 0.4, { y:200,  ease : Sine.easeIn });
     
@@ -213,7 +213,7 @@ $(function() {
     var newtime = 0.4;
 
     tl4.staggerFrom( $("#section05 .nav li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
-    tl4.from("#section05 h1", 1.0, { y:100,  ease : Sine.easeIn });
+    tl4.from("#section05 h1", 1.0, { y:100, opacity:0, ease : Sine.easeIn },'+=8');
     tl4.from("#section05 p", 1, { y:100, opacity:0,  ease : Sine.easeIn });
     tl4.from("#section05 .btn", 1.0, { y:100, opacity:0, ease : Sine.easeIn });
 
