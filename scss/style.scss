@@ -1410,9 +1410,16 @@ body{
     border-radius: 6px;
     border: none;
     background-color: #f95858;
+    border: 1px solid #f95858;
     margin-top: 20px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
     &:hover{
-      color: #fff;
+      color: #f95858;
+      background-color: #fff;
+      -webkit-transition: all .3s ease-out;
+       transition: all .3s ease-out;
+       border: 1px solid #f95858;
     }
   }
 }
@@ -1505,11 +1512,13 @@ html {
   border: solid 0.5px #d1d1d1;
   background-color: #ffffff;
   overflow-y: scroll;
-  height: 90vh;;
+  height: 90vh;
+  padding-bottom: 100px;
 }
 // contact-page
 .contact-page{
   background: #fff;
+  // padding-bottom: 130px;
   h2{
     font-size: 32px;
     font-weight: bold;
@@ -1574,8 +1583,16 @@ html {
     border: none;
     background-color: #f95858;
     margin-top: 20px;
+    border: 1px solid #f95858;
+    margin-top: 20px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
     &:hover{
-      color: #fff;
+      color: #f95858;
+      background-color: #fff;
+      -webkit-transition: all .3s ease-out;
+       transition: all .3s ease-out;
+       border: 1px solid #f95858;
     }
     &:focus{
       outline: none;

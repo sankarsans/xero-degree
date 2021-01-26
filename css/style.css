@@ -11690,10 +11690,17 @@ body {
   border-radius: 6px;
   border: none;
   background-color: #f95858;
+  border: 1px solid #f95858;
   margin-top: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .home-section .btn:hover {
-  color: #fff;
+  color: #f95858;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 1px solid #f95858;
 }
 
 body,
@@ -11769,6 +11776,7 @@ html {
   background-color: #ffffff;
   overflow-y: scroll;
   height: 90vh;
+  padding-bottom: 100px;
 }
 
 .contact-page {
@@ -11836,9 +11844,17 @@ html {
   border: none;
   background-color: #f95858;
   margin-top: 20px;
+  border: 1px solid #f95858;
+  margin-top: 20px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .contact-page .btn:hover {
-  color: #fff;
+  color: #f95858;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 1px solid #f95858;
 }
 .contact-page .btn:focus {
   outline: none;
