@@ -11639,20 +11639,27 @@ body {
   line-height: normal;
   margin: 0 10px;
   color: #242424;
+  transition: 0.5s;
 }
-.header_nav ul li a.active, .left-nav ul li a.active {
-  color: #f95858;
-  position: relative;
-}
-.header_nav ul li a.active::after, .left-nav ul li a.active::after {
+.header_nav ul li a::after, .left-nav ul li a::after {
   position: absolute;
   content: "";
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #f95858;
+  background: #fff;
   left: -7px;
   bottom: 50%;
+  transition: 0.5s;
+}
+.header_nav ul li a.active, .header_nav ul li a:hover, .left-nav ul li a.active, .left-nav ul li a:hover {
+  color: #f95858;
+  position: relative;
+  transition: 0.5s;
+}
+.header_nav ul li a.active::after, .header_nav ul li a:hover::after, .left-nav ul li a.active::after, .left-nav ul li a:hover::after {
+  transition: 0.5s;
+  background: #f95858;
 }
 
 .home-section h1 {

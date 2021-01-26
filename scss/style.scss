@@ -1354,18 +1354,25 @@ body{
         line-height: normal;
         margin: 0 10px;
         color: #242424;
-        &.active{
+        transition: 0.5s;
+        &::after{        
+          position: absolute;
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #fff;
+          left: -7px;
+          bottom: 50%;
+          transition: 0.5s;
+        }
+        &.active, &:hover{
           color: #f95858;
           position: relative;
-          &::after{        
-            position: absolute;
-            content: "";
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
+          transition: 0.5s;
+          &::after{ 
+            transition: 0.5s;
             background: #f95858;
-            left: -7px;
-            bottom: 50%;
           }
         }
       }
