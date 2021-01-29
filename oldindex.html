@@ -30,156 +30,55 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <style>
+        body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
-    <!-- Demo styles -->
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000;
+}
 
-        /* body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0; 
-        }*/
-
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-            /* margin-left: auto;
-            margin-right: auto; */
-        }
-
-        .swiper-slide {
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            /* -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center; */
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-        #viewport{
-            width: 100%;
-        }
-        .swiper-pagination{
-            position: absolute;
-            left: 15px;
-            width: 100px;
-            height: 100%;
-            display: flex;
-            z-index: 3;
-            flex-direction: column;
-            top: 71px;
-            width: 66px!important;
-            height: 89%;
-            /* transform: rotate(180deg); */
-            justify-content: space-between;
-            flex-direction: column-reverse;
-            background: #fef6f0;
-    /* padding-right: 10px; */
-    box-shadow: 11px 0px 23px -6px rgb(214 212 212 / 84%);
-        }
-        .swiper-pagination-bullet{
-            width: 100px;
-            height: 100px;  
-            opacity: 1;
-            background: transparent;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-            margin: 0px 0px;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-            position: relative;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::after{
-            color: #f95858;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::before{        
-            position: absolute;
-            content: "";
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: #fff;
-            left: 44px;
-            bottom: 42%;
-            transition: 0.5s;
-            transform: rotate( -90deg);
-            background: transparent;
-            width: 5px;
-            height: 5px;
-            z-index: 9;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before{
-            background: #f95858;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::after{
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #fff;
-            width: 100px;
-            height: 100px;
-            transform: rotate(-90deg);
-            font-size: 14px;
-            font-weight: 500;
-            line-height: normal;
-            margin: 0 10px;
-            color: #242424;
-            transition: 0.5s;
-            left: -70%;
-            display: flex;
-    justify-content: center;
-    align-items: flex-end;
-        }
-
-
-
-
-
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after{
-            content: "Home";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after{
-            content: "Menu";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after{
-            content: "About Us";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after{
-            content: "Locations";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5)::after{
-            content: "Franchise";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(6)::after{
-            content: "Careers";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child{
-            /* content: "Home"; */
-            display: none;
-        }
-        .swiper-slide {
-          width: 100%;
-        }
-
-
-    </style>
+.section {
+  height: 100%;
+  width: calc( 100% / 5 );
+  float: left;
+  position: relative;
+}
+.section:nth-child(1) {
+  background: #F64747;
+}
+.section:nth-child(2) {
+  background: #22A7F0;
+}
+.section:nth-child(3) {
+  background: #F9690E;
+}
+.section:nth-child(4) {
+  background: #9B59B6;
+}
+.section:nth-child(5) {
+  background: #03C9A9;
+}
+.sections {
+  width: 500%;
+  height: 100%;
+}
+.section__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+}
+    </style> -->
 </head>
 
 <body>
@@ -254,11 +153,15 @@
                 <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
             </ul>
         </div>
-       
-        <!-- <nav class="left-nav">
+        <!-- <nav class="anchor-nav" role="navigation">
+          <a href="#intro" id="intro-anchor">Intro</a>
+          <a href="#section-1" id="anchor1">Section 1</a>
+          <a href="#section-2" id="anchor2">Section 2</a>
+          <a href="#section-3" id="anchor3">Section 3</a>
+        </nav> -->
+        <!-- left nav content -->
+        <nav class="left-nav">
             <ul class="anchor-nav anchor-nav" role="navigation">
-                
-                
                 <li><a href="#section06" id="anchor6">Careers</a></li>
                 <li><a href="#section05" id="anchor5">Franchise</a></li>
                 <li><a href="#section04" id="anchor4">Locations</a></li>
@@ -266,14 +169,13 @@
                 <li><a href="#section02" id="anchor2">Menu</a></li>
                 <li><a href="#section01" id="anchor1">Home</a></li>
             </ul>
-        </nav> -->
+        </nav>
     </div>
 
     <!-- main content -->
-    <div class="swiper-container swiper-container-app" id="js-wrapper">
-        <div class="swiper-pagination new-nav"></div>
-        <main class="sections swiper-wrapper" id="intro" role="main">
-            <section class="section swiper-slide" data-hash="slide1" id="section01">
+    <div class="" id="js-wrapper">
+        <main class="sections full-screen" id="intro" role="main">
+            <section class="section full-screen" id="section01">
                 <!-- home page content -->
                 <main id="viewport">
                     <div class="common-height home-section home-menu">
@@ -389,7 +291,7 @@
                     </div>
                 </main>
             </section>
-            <section class="section swiper-slide" data-hash="slide2" id="section02">
+            <section class="section full-screen" id="section02">
               <!-- menu page content -->
               <main id="viewport">
                 <section class="common-height home-section menu-page">
@@ -618,16 +520,16 @@
                 </section>
               </main>
             </section>
-            <section class="section swiper-slide" data-hash="slide3" id="section03">
+            <section class="section full-screen" id="section03">
               <!-- about us page content -->
               <main id="viewport">
                   <div class="common-height home-section about-nav">
                       <div class="container-fluid">
                         <div id="myWizard" class="w-100 d-flex">
-                          <!-- <div class="progress">
+                          <div class="progress">
                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
                               aria-valuemax="4" style="width: 25%;">
-                            
+                              <!-- Step 1 of 4 -->
                             </div>
                           </div>
                           <div class="navbar">
@@ -658,168 +560,142 @@
                                 </li>
                               </ul>
                             </div>
-                          </div> -->
-
-                           <div class="w-100">
-                              <div class="swiper-container swiper-about-container">
-                                  <main class="sections swiper-wrapper">
-                                    
-                                      <div class="section swiper-slide">
-                                        <main id="viewport">
-                                          <div class="common-height">
-                                            <div class="whowe-section" id="step1">
-                                              <div class="row align-items-center">
-                                                <div class="col-md-5 col-sm-6 col-12">
-                                                  <div class="image-wrapper">
-                                                    <img class="img-fluid"
-                                                    src="images/about-banner.png"
-                                                    alt="First slide">
-                                                    <div class="cover"></div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-12">
-                                                  <h3>Who we are and Why xero degree</h3>
-                                                  <h1 class="mt-0">A date that marks
-                                                    our history</h1>
-                                                  <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-                                                  <div class="d-flex justify-content-between flex-lg-row flex-md-row w-75 about-details text-center">
-                                                    <div class="card-details">
-                                                      <p class="mb-0">Since</p>
-                                                      <span>1920</span>
-                                                    </div>
-                                                    <div class="card-details">
-                                                      <p class="mb-0">RESTAURANTS</p>
-                                                      <span>50</span>
-                                                    </div>
-                                                    <div class="card-details">
-                                                      <p class="mb-0">Locations</p>
-                                                      <span>100</span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </main>
-                                      </div>
-                                      <div class="section swiper-slide">
-                                        <main id="viewport">
-                                          <div class="common-height">
-                                            <div class="whowe-section" id="step2">
-                                              <div class="row align-items-center">
-                                                <div class="col-md-5 col-sm-6 col-12">
-                                                  <img class="img-fluid"
-                                                    src="images/about-whatwe.png" 
-                                                    alt="First slide">
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-12">
-                                                  <h3>WHAT WE’RE ABOUT</h3>
-                                                  <h1 class="mt-0">Our journey
-                                                    towards good.</h1>
-                                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-                                
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </main>
-                                      </div>
-                                      <div class="section swiper-slide">
-                                        <main id="viewport">
-                                          <div class="common-height">
-                                            <div class="team-section pt-5 mt-3" id="step3">
-                                              <div class="row">
-                                                <div class="col-md-3 col-sm-3 col-12">
-                                                  <div class="pt-middle">
-                                                    <img src="images/about-team-1.png" alt="" class="img-fluid" />
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-3 col-12">
-                                                  <div>
-                                                    <img src="images/about-team-2.png" alt="" class="img-fluid" />
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 col-12">
-                                                  <div>
-                                                    <h3>Our work deos make sense<br>
-                                                      only if it is a faithful witness<br>
-                                                      of his time.</h3>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and<br>
-                                                       typesetting industry. Lorem Ipsum has been the industry’s<br> standard dummy text ever since the 1500s.</p>
-                                                    <img src="images/about-team-3.png" alt="" class="img-fluid" />
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </main>
-                                      </div>
-                                      <div class="section swiper-slide">
-                                        <main id="viewport">
-                                          <div class="common-height">
-                                            <div class="" id="step4">
-                                              <div class="row">
-                                                <div class="col-md-3">
-                                                  <div class="pt-middle card-wrapper" data-tilt>
-                                                    <h5>01</h5>
-                                                    <div class="inner-card">
-                                                      <h3>SUMMER30</h3>
-                                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                                        the
-                                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                  <div class="card-wrapper" data-tilt>
-                                                    <h5>02</h5>
-                                                    <div class="inner-card">
-                                                      <h3>SUMMER30</h3>
-                                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                                        the
-                                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                  <div class="pt-middle card-wrapper" data-tilt>
-                                                    <h5>03</h5>
-                                                    <div class="inner-card"  >
-                                                      <h3>SUMMER30</h3>
-                                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                                        the
-                                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                  <div class="card-wrapper" data-tilt>
-                                                    <h5>04</h5>
-                                                    <div class="inner-card">
-                                                      <h3>SUMMER30</h3>
-                                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                                        the
-                                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </main>
-                                      </div>
-                                  </main>
-                                  <div class="swiper-pagination swiper-pagination-about"></div>
-                              </div>
                           </div>
-
+                          <div class="tab-content w-100">
+                            <div class="tab-pane fade in active whowe-section" id="step1">
+                              <div class="row align-items-center">
+                                <div class="col-md-5 col-sm-6 col-12">
+                                  <div class="image-wrapper">
+                                    <img class="img-fluid"
+                                    src="images/about-banner.png"
+                                    alt="First slide">
+                                    <div class="cover"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <h3>Who we are and Why xero degree</h3>
+                                  <h1 class="mt-0">A date that marks
+                                    our history</h1>
+                                  <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
+                                  <div class="d-flex justify-content-between flex-lg-row flex-md-row w-75 about-details text-center">
+                                    <div class="card-details">
+                                      <p class="mb-0">Since</p>
+                                      <span>1920</span>
+                                    </div>
+                                    <div class="card-details">
+                                      <p class="mb-0">RESTAURANTS</p>
+                                      <span>50</span>
+                                    </div>
+                                    <div class="card-details">
+                                      <p class="mb-0">Locations</p>
+                                      <span>100</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="tab-pane fade whowe-section" id="step2">
+                              <div class="row align-items-center">
+                                <div class="col-md-5 col-sm-6 col-12">
+                                  <img class="img-fluid"
+                                    src="images/about-whatwe.png" 
+                                    alt="First slide">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <h3>WHAT WE’RE ABOUT</h3>
+                                  <h1 class="mt-0">Our journey
+                                    towards good.</h1>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
+                
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="tab-pane team-section fade pt-5 mt-3" id="step3">
+                              <div class="row">
+                                <div class="col-md-3 col-sm-3 col-12">
+                                  <div class="pt-middle">
+                                    <img src="images/about-team-1.png" alt="" class="img-fluid" />
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-12">
+                                  <div>
+                                    <img src="images/about-team-2.png" alt="" class="img-fluid" />
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                  <div>
+                                    <h3>Our work deos make sense<br>
+                                      only if it is a faithful witness<br>
+                                      of his time.</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and<br>
+                                       typesetting industry. Lorem Ipsum has been the industry’s<br> standard dummy text ever since the 1500s.</p>
+                                    <img src="images/about-team-3.png" alt="" class="img-fluid" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="tab-pane fade" id="step4">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="pt-middle card-wrapper" data-tilt>
+                                    <h5>01</h5>
+                                    <div class="inner-card">
+                                      <h3>SUMMER30</h3>
+                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                        the
+                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card-wrapper" data-tilt>
+                                    <h5>02</h5>
+                                    <div class="inner-card">
+                                      <h3>SUMMER30</h3>
+                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                        the
+                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="pt-middle card-wrapper" data-tilt>
+                                    <h5>03</h5>
+                                    <div class="inner-card"  >
+                                      <h3>SUMMER30</h3>
+                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                        the
+                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card-wrapper" data-tilt>
+                                    <h5>04</h5>
+                                    <div class="inner-card">
+                                      <h3>SUMMER30</h3>
+                                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                        the
+                                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                
+                          </div>
                         </div>
                         <div id="push"></div>
                       </div>
                   </div>
               </main>
-            </section>
-            <section class="section swiper-slide" data-hash="slide4" id="section04">
+          </section>
+
+
+            <section class="section full-screen" id="section04">
               <!-- location page content -->
               <main id="viewport">
                 <section class="common-height location-section" id="franchise">
@@ -902,7 +778,7 @@
                 </section>
               </main>
             </section>
-            <section class="section swiper-slide" data-hash="slide5" id="section05">
+            <section class="section full-screen" id="section05">
                 <!-- franchise page content -->
                 <main id="viewport">
                     <section class="common-height home-section about-nav" id="franchise">
@@ -1117,37 +993,7 @@
                     </section>
                 </main>
             </section>
-            <section class="section swiper-slide" data-hash="slide6" id="section07">
-              <!-- contact us page content -->
-              <main id="viewport">
-                <section class="common-height home-section career-section" id="franchise">
-                    <div class="container-fluid">
-                      <div class="row right-section">
-                        <div class="col-md-4 col-sm-6 col-12 ">
-                          <h2>Working culture
-                            at xerodegree</h2>
-                            <h4>A mission to become the world’s number one coffee brand. Giving everyone.</h4>
-                        </div>
-                        <div class="col-md-8 p-0">
-                          <div class="row align-items-end">
-                            <div class="col-md-4 col-sm-4 col-12">
-                              <img src="images/career-1.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-12 pb-5">
-                              <img src="images/career-2.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-12">
-                              <img src="images/career-3.png" class="img-fluid pb-5" alt="">
-                              <img src="images/career-4.png" class="img-fluid" alt="">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </section>
-              </main>
-            </section>
-            <section class="section swiper-slide" data-hash="slide7" id="section06">
+            <section class="section full-screen" id="section06">
                 <!-- contact us page content -->
                 <main id="viewport">
                   <section class="common-height home-section career-section" id="franchise">
@@ -1197,6 +1043,36 @@
                   </section>
                 </main>
             </section>
+            <section class="section full-screen" id="section07">
+              <!-- contact us page content -->
+              <main id="viewport">
+                <section class="common-height home-section career-section" id="franchise">
+                    <div class="container-fluid">
+                      <div class="row right-section">
+                        <div class="col-md-4 col-sm-6 col-12 ">
+                          <h2>Working culture
+                            at xerodegree</h2>
+                            <h4>A mission to become the world’s number one coffee brand. Giving everyone.</h4>
+                        </div>
+                        <div class="col-md-8 p-0">
+                          <div class="row align-items-end">
+                            <div class="col-md-4 col-sm-4 col-12">
+                              <img src="images/career-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-12 pb-5">
+                              <img src="images/career-2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-12">
+                              <img src="images/career-3.png" class="img-fluid pb-5" alt="">
+                              <img src="images/career-4.png" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+              </main>
+          </section>
             
             
         </main>
@@ -1401,55 +1277,120 @@
     <script src="js/component.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- horizontal scroll -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js'></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {})
-            $('#slide3').click(swiper,function(){
-                swiper.slideTo(3);
-        })
-    </script>
-    <!-- Initialize Swiper -->
-    <script>
+      // Init controller
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        duration: $('section').height(),
+        triggerHook: .025,
+        reverse: true
+      },
+      vertical: false
+    });
 
+
+    /*
+    object to hold href values of links inside our nav with
+    the class '.anchor-nav'
+
+    scene_object = {
+      '[scene-name]' : {
+        '[target-scene-id]' : '[anchor-href-value]'
+      }
+    }
+    */
+    var scenes = {
+      'scene1': {
+        'section01': 'anchor1'
+      },
+      'scene2': {
+        'section02': 'anchor2'
+      },
+      'scene3': {
+        'section03': 'anchor3'
+      },
+      'scene4': {
+        'section04': 'anchor4'
+      },
+      'scene5': {
+        'section05': 'anchor5'
+      },
+      'scene6': {
+        'section06': 'anchor6'
+      }
+    }
+
+    for(var key in scenes) {
+      // skip loop if the property is from prototype
+      if (!scenes.hasOwnProperty(key)) continue;
+
+      var obj = scenes[key];
+
+      for (var prop in obj) {
+        // skip loop if the property is from prototype
+        if(!obj.hasOwnProperty(prop)) continue;
+
+        new ScrollMagic.Scene({ triggerElement: '#' + prop })
+            .setClassToggle('#' + obj[prop], 'active')
+            .addTo(controller);
+      }
+    }
+
+
+    // Change behaviour of controller
+    // to animate scroll instead of jump
+    controller.scrollTo(function(target) {
+
+      TweenMax.to(window, 0.5, {
+        scrollTo : {
+          x : target,
+          autoKill : true // Allow scroll position to change outside itself
+        },
+        ease : Cubic.easeInOut
+      });
+
+    });
+
+
+    //  Bind scroll to anchor links using Vanilla JavaScript
+    var anchor_nav = document.querySelector('.anchor-nav');
+
+    anchor_nav.addEventListener('click', function(e) {
+      var target = e.target,
+          id     = target.getAttribute('href');
+
+      if(id !== null && id.length > 0) {
+        e.preventDefault();
+        controller.scrollTo(id);
+
+        if(window.history && window.history.pushState) {
+          history.pushState("", document.title, id);
+        }
+      }
+    });
+
+    window.addEventListener("wheel", onWheel);
+
+    function onWheel(event) {
+      event.preventDefault();
+
+      var normalized;  
+      var delta = event.wheelDelta;
+      var scroll = (window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0) || 0;
       
-        var swiperOne = new Swiper('.swiper-container-app', {
-            direction: 'horizontal',
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            centeredSlides: false,
-            keyboardControl: true,
-            speed: 1000,
-            mousewheel: true,
-            allowTouchMove: true,
-            freeMode: true,
-            hashNavigation: true,
-            // slidesOffsetBefore: -100,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
+      if (delta) {
+        normalized = (delta % 120) == 0 ? delta / 120 : delta / 12;
+      } else {
+        delta = event.deltaY || event.detail || 0;
+        normalized = -(delta % 3 ? delta * 10 : delta / 3);
+      }
 
-        var swiperTwo = new Swiper('.swiper-about-container', {
-            direction: 'horizontal',
-            slidesPerView: 'auto',
-            keyboardControl: true,
-            // slidesOffsetAfter: 130,
-            speed: 1000,
-            allowTouchMove: true,
-            // centeredSlides: false,
-            // slidesOffsetBefore: 100,
-            spaceBetween: 0,
-            mousewheel: true,
-            freeMode: true,
-            hashNavigation: true,
-            spaceBetween: 0,
-            nested: true,
-            pagination: {
-                el: '.swiper-pagination-about',
-                clickable: true,
-            },
-        });
+      TweenLite.to(window, 0.4, {scrollTo: {x: scroll + 200 * normalized } });
+    }
+
+
     </script>
 
     <!-- home page carousel progress bar -->

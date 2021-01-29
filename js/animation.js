@@ -166,7 +166,7 @@ $(function() {
     var time = 0.2;
 
     tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, time );
-    tl3.staggerFrom( $(".left-nav ul li"), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
+    tl3.staggerFrom( $(".new-nav ul li", 'swiper-pagination ul li'), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
     tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"-=0.8");
     tl3.from(".homeSlider p", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     tl3.from(".homeSlider a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});

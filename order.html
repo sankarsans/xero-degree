@@ -160,14 +160,14 @@ html {
           <a href="#section-3" id="anchor3">Section 3</a>
         </nav> -->
         <!-- left nav content -->
-        <nav class="left-nav">
+        <nav class="left-nav new-nav">
             <ul class="anchor-nav anchor-nav" role="navigation">
-                <li><a href="index.html" id="anchor6">Careers</a></li>
-                <li><a href="index.html" id="anchor5">Franchise</a></li>
-                <li><a href="index.html" id="anchor4">Locations</a></li>
-                <li><a href="index.html" id="anchor3">About Us</a></li>
-                <li><a href="index.html" id="anchor2">Menu</a></li>
-                <li><a href="index.html" id="anchor1">Home</a></li>
+              <li><a href="index.html#slide6" id="anchor6">Careers</a></li>
+              <li><a href="index.html#slide5" id="anchor5">Franchise</a></li>
+              <li><a href="index.html#slide4" id="anchor4">Locations</a></li>
+              <li><a href="index.html#slide3" id="anchor3">About Us</a></li>
+              <li><a href="index.html#slide2" id="anchor2">Menu</a></li>
+              <li><a href="index.html#slide1" id="anchor1">Home</a></li>
             </ul>
         </nav>
     </div>
@@ -301,123 +301,6 @@ html {
     <script src="js/animation.js"></script>
     <script src="js/component.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
-
-    <!-- horizontal scroll -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js'></script>
-    <script>
-      // Init controller
-    var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        duration: $('section').height(),
-        triggerHook: .025,
-        reverse: true
-      },
-      vertical: false
-    });
-
-
-    /*
-    object to hold href values of links inside our nav with
-    the class '.anchor-nav'
-
-    scene_object = {
-      '[scene-name]' : {
-        '[target-scene-id]' : '[anchor-href-value]'
-      }
-    }
-    */
-    var scenes = {
-      'scene1': {
-        'section01': 'anchor1'
-      },
-      'scene2': {
-        'section02': 'anchor2'
-      },
-      'scene3': {
-        'section03': 'anchor3'
-      },
-      'scene4': {
-        'section04': 'anchor4'
-      },
-      'scene5': {
-        'section05': 'anchor5'
-      },
-      'scene6': {
-        'section06': 'anchor6'
-      }
-    }
-
-    for(var key in scenes) {
-      // skip loop if the property is from prototype
-      if (!scenes.hasOwnProperty(key)) continue;
-
-      var obj = scenes[key];
-
-      for (var prop in obj) {
-        // skip loop if the property is from prototype
-        if(!obj.hasOwnProperty(prop)) continue;
-
-        new ScrollMagic.Scene({ triggerElement: '#' + prop })
-            .setClassToggle('#' + obj[prop], 'active')
-            .addTo(controller);
-      }
-    }
-
-
-    // Change behaviour of controller
-    // to animate scroll instead of jump
-    controller.scrollTo(function(target) {
-
-      TweenMax.to(window, 0.5, {
-        scrollTo : {
-          x : target,
-          autoKill : true // Allow scroll position to change outside itself
-        },
-        ease : Cubic.easeInOut
-      });
-
-    });
-
-
-    //  Bind scroll to anchor links using Vanilla JavaScript
-    var anchor_nav = document.querySelector('.anchor-nav');
-
-    anchor_nav.addEventListener('click', function(e) {
-      var target = e.target,
-          id     = target.getAttribute('href');
-
-      if(id !== null && id.length > 0) {
-        // e.preventDefault();
-        controller.scrollTo(id);
-
-        if(window.history && window.history.pushState) {
-          history.pushState("", document.title, id);
-        }
-      }
-    });
-
-    window.addEventListener("wheel", onWheel);
-
-    function onWheel(event) {
-      event.preventDefault();
-
-      var normalized;  
-      var delta = event.wheelDelta;
-      var scroll = (window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0) || 0;
-      
-      if (delta) {
-        normalized = (delta % 120) == 0 ? delta / 120 : delta / 12;
-      } else {
-        delta = event.deltaY || event.detail || 0;
-        normalized = -(delta % 3 ? delta * 10 : delta / 3);
-      }
-
-      TweenLite.to(window, 0.4, {scrollTo: {x: scroll + 200 * normalized } });
-    }
-
-
-    </script>
 
 <script>
   $(document).ready(function () {
