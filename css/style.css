@@ -10633,7 +10633,7 @@ ul.transition li {
 }
 .left-nav ul {
   left: 0;
-  padding-top: 100px;
+  padding-top: 135px;
   height: 92%;
   display: flex;
   writing-mode: vertical-rl;
@@ -10662,6 +10662,10 @@ ul.transition li {
   padding-top: 0 !important;
   padding-left: 0 !important;
 }
+.order-page input {
+  font-size: 24px;
+  font-weight: bold;
+}
 .order-page .nav-tabs {
   border: none;
   display: flex;
@@ -10678,9 +10682,9 @@ ul.transition li {
   letter-spacing: normal;
   color: #4a4a4a;
   display: inline-block;
-  width: 230px;
-  padding: 0;
-  padding-top: 30px;
+  width: auto;
+  padding: 0 20px;
+  padding-top: 0px;
   text-align: center;
   border-bottom: solid 4px rgba(249, 88, 88, 0.2);
 }
@@ -10706,6 +10710,7 @@ ul.transition li {
 }
 .order-page .input-group button:focus {
   outline: none;
+  box-shadow: none;
 }
 .order-page .input-group button span {
   color: #4a4a4a;
@@ -10984,7 +10989,7 @@ ul.transition li {
   padding-left: 125px;
 }
 .home-section .carousel .carousel-indicators {
-  bottom: -20px;
+  bottom: -40px;
   right: unset;
   width: 19%;
 }
@@ -11007,6 +11012,12 @@ ul.transition li {
 }
 .common-height.home-section {
   background: url(../images/home-bg.png) 0 0 no-repeat;
+}
+
+.inner-pages .carousel .carousel-indicators {
+  bottom: 0px;
+  right: unset;
+  width: 70%;
 }
 
 .about-nav .whowe-section .about-details p {
@@ -11156,9 +11167,9 @@ ul.transition li {
 }
 .about-nav .progress {
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
+  bottom: 6px;
+  left: 81px;
+  width: 86%;
   height: 5px;
   background: rgba(249, 88, 88, 0.2);
 }
@@ -11169,9 +11180,9 @@ ul.transition li {
 
 .home-menu .progress {
   position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 100%;
+  bottom: 6px;
+  left: 141px;
+  width: 83%;
   height: 5px;
   background: rgba(249, 88, 88, 0.2);
 }
@@ -11401,8 +11412,8 @@ ul.transition li {
   box-shadow: 0 12px 14px 0 rgba(207, 132, 132, 0.1);
   background-color: #ffffff;
   border-radius: 4px;
-  padding: 30px;
-  /* width */
+  padding: 30px 0;
+  padding-left: 69px;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -11418,14 +11429,14 @@ ul.transition li {
   background: #eaeaea;
 }
 .list-menu::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #acacac;
 }
 .list-menu ul {
   flex-direction: column;
   overflow-y: scroll;
 }
 .list-menu ul li {
-  padding: 10px 0;
+  padding: 7px 0;
 }
 
 .menu-page h2 {
@@ -11449,7 +11460,7 @@ ul.transition li {
   letter-spacing: normal;
   color: #242424;
 }
-.menu-page p.active {
+.menu-page ul li a.active p {
   font-weight: 600;
   color: #f95858;
 }
@@ -11472,7 +11483,7 @@ ul.transition li {
   background: #f1f1f1;
 }
 .menu-items::-webkit-scrollbar-thumb {
-  background: blue;
+  background: #d8d3d3;
 }
 .menu-items::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -11662,6 +11673,23 @@ body {
   background: #f95858;
 }
 
+.navbar-collapse a::after {
+  display: none;
+}
+
+.inner-pages .left-nav ul li a {
+  color: #242424;
+}
+.inner-pages .left-nav ul li a:hover {
+  color: #f95858;
+}
+.inner-pages .left-nav ul li a:hover::after {
+  display: block;
+}
+.inner-pages .left-nav ul li a::after {
+  display: none;
+}
+
 .home-section h1 {
   font-family: "Oswald", sans-serif;
   font-size: 48px;
@@ -11694,6 +11722,7 @@ body {
   margin-top: 20px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  margin-bottom: 50px;
 }
 .home-section .btn:hover {
   color: #f95858;
@@ -11745,6 +11774,8 @@ html {
   z-index: 8;
   background: #fef6f0;
   padding-right: 10px;
+  box-shadow: 11px 0px 23px -6px rgba(214, 212, 212, 0.84);
+  -webkit-box-shadow: 11px 0px 23px -6px rgba(214, 212, 212, 0.84);
 }
 
 .image-wrapper {

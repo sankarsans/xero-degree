@@ -338,3 +338,26 @@ $('.dropdown-menuContactone a').click(function(){
 $('.dropdown-menuContacttwo a').click(function(){
   $('#selectedthree').text($(this).text());
 });
+
+
+
+// var elements = document.querySelectorAll(".a, .b");
+// for (var i = 0; i < elements.length; i++) {
+//   elements[i].addEventListener("click", function() {
+//     console.log("clicked");
+//   });
+// }
+
+
+$(document).ready(function(){
+
+  $(document).on("click", ".list-menu a", function (ev) {
+    // $(this).text("Liked!");
+    // alert("hello");
+    $('.list-menu a').removeClass('active');
+    $(this).addClass("active");
+    $('.menu-heading').text($(this).find('p').text());
+    $('.menu-items p').text($(this).find('p').text());
+    // console.log($(this).find('p').text())
+  });
+});

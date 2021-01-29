@@ -81,7 +81,7 @@ html {
     </style> -->
 </head>
 
-<body>
+<body class="inner-pages">
 
     <!-- dynamic cursor content -->
     <div class="cursor"></div>
@@ -139,7 +139,7 @@ html {
                     <ul class="pt-3">
                         <li><a onclick="openNav()">Offers</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="">Follow Us</a></li>
+                     
                     </ul>
                 </form>
             </div>
@@ -211,7 +211,7 @@ html {
                           </div>
                         </div>
                         <div class="col-md-7 col-sm-6 col-12">
-                          <h2>Beaf steak, rice and 
+                          <h2>Beaf steak, rice and <br>
                             vegetables power bow</h2>
                           <h1 class="mt-0">$123</h1>
                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem,
@@ -226,7 +226,7 @@ html {
                                   <span>-</span>
                                 </button>
                               </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1"
+                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1"
                                 max="100">
                               <span class="input-group-btn">
                                 <button type="button" class="quantity-right-plus btn-success btn-number" data-type="plus"
@@ -418,6 +418,43 @@ html {
 
 
     </script>
+
+<script>
+  $(document).ready(function () {
+
+    var quantitiy = 0;
+    $('.quantity-right-plus').click(function (e) {
+
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      var quantity = parseInt($('#quantity').val());
+
+      // If is not undefined
+
+      $('#quantity').val(quantity + 1);
+
+
+      // Increment
+
+    });
+
+    $('.quantity-left-minus').click(function (e) {
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      var quantity = parseInt($('#quantity').val());
+
+      // If is not undefined
+
+      // Increment
+      if (quantity > 0) {
+        $('#quantity').val(quantity - 1);
+      }
+    });
+
+  });
+</script>
    
 </body>
 

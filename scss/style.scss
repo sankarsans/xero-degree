@@ -213,8 +213,8 @@ body {
     ul{
       // position: absolute;
       left: 0;
-      padding-top: 100px;
-      height: 92%;
+      padding-top: 135px;
+    height: 92%;
       display: flex;
       writing-mode: vertical-rl;
       text-orientation: mixed;
@@ -244,6 +244,10 @@ body {
     padding-top: 0!important;
     padding-left: 0!important;
   }
+  input{
+    font-size: 24px;
+  font-weight: bold;
+  }
   .nav-tabs {
     border: none;
     display: flex;
@@ -260,9 +264,9 @@ body {
       color: #4a4a4a;
       // opacity: 0.2;
       display: inline-block;
-    width: 230px;
-      padding: 0;
-      padding-top: 30px;
+      width: auto;
+      padding: 0 20px;
+      padding-top: 0px;
       text-align: center;
       border-bottom: solid 4px rgba(249,88,88,0.2);
       &:focus{
@@ -287,6 +291,7 @@ body {
       background: #fff;
       &:focus{
         outline: none;
+        box-shadow: none;
       }
       span{
         color: #4a4a4a;
@@ -581,12 +586,13 @@ body {
     opacity: 1;
   }
 }
+
   .home-section{
     .carousel{
       padding-top: 15vh;
       padding-left: 125px;
       .carousel-indicators{
-        bottom: -20px;
+        bottom: -40px;
         right: unset;
         width: 19%;
       }
@@ -612,7 +618,15 @@ body {
       background: url(../images/home-bg.png) 0 0 no-repeat;
     }
   }
-
+.inner-pages{
+  .carousel{
+    .carousel-indicators{
+      bottom: 0px;
+      right: unset;
+      width: 70%;
+    }
+  }
+}
   .about-nav{
     // margin-top: -10vh;
     .whowe-section{
@@ -795,9 +809,10 @@ body {
     }
     .progress{
       position: absolute;
-      bottom: 0px;
-      left: 0;
-      width: 100%;
+      bottom: 6px;
+      left: 81px;
+      width: 86%;
+      // width: 100%;
       height: 5px;
       background: rgba(249,88,88,0.2);
       div{
@@ -810,9 +825,9 @@ body {
   .home-menu{
     .progress{
       position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 100%;
+      bottom: 6px;
+    left: 141px;
+    width: 83%;
       height: 5px;
       background: rgba(249, 88, 88, 0.2);
       div{
@@ -1034,9 +1049,8 @@ body {
   box-shadow: 0 12px 14px 0 rgba(207, 132, 132, 0.1);
   background-color: #ffffff;
   border-radius: 4px;
-  padding: 30px;
-  // margin-bottom: 30px;
-  /* width */
+  padding: 30px 0;
+  padding-left: 69px;
   p{
 
   }
@@ -1057,14 +1071,14 @@ body {
 
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
-      background: #555;
+      background: #acacac;
     }
   ul{
     flex-direction: column;
     overflow-y: scroll;
 
     li{
-      padding: 10px 0;
+      padding: 7px 0;
     }
   }
 }
@@ -1090,10 +1104,20 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #242424;
-    &.active{
-      font-weight: 600;
-      color: #f95858;
-
+   
+  }
+  ul{
+    li{
+      a{
+        &.active{
+          p{
+              font-weight: 600;
+              color: #f95858;
+        
+            
+          }
+        }
+      }
     }
   }
 }
@@ -1115,7 +1139,7 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: blue;
+    background: #d8d3d3;
   }
 
   /* Handle on hover */
@@ -1379,8 +1403,27 @@ body{
     }
   }
 }
-
-
+.navbar-collapse{
+  a{
+    &::after{
+      display: none;
+    }
+  }
+}
+.inner-pages .left-nav ul li {
+  a{
+    color: #242424;
+    &:hover{
+      color: #f95858;
+      &::after{
+        display: block;
+      }
+    }
+    &::after{
+      display: none;
+    }
+  }
+}
 .home-section{
   h1{
     font-family: 'Oswald', sans-serif;
@@ -1414,6 +1457,9 @@ body{
     margin-top: 20px;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
+
+    margin-bottom: 50px;
+
     &:hover{
       color: #f95858;
       background-color: #fff;
@@ -1481,7 +1527,8 @@ html {
     z-index: 8;
     background: #fef6f0;
     padding-right: 10px;
-
+    box-shadow: 11px 0px 23px -6px rgb(214 212 212 / 84%);
+    -webkit-box-shadow: 11px 0px 23px -6px rgb(214 212 212 / 84%);
   }
 }
 
