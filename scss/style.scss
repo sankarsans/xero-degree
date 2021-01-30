@@ -1426,7 +1426,15 @@ body{
     }
   }
 }
+
 .home-section{
+  &.career-opening{
+    .btn{
+      background: transparent;
+      color: #f95858;
+      border: 1px solid #f95858;
+    }
+  }
   h1{
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
@@ -1443,6 +1451,9 @@ body{
     line-height: 1.71;
     letter-spacing: normal;
     color: #4a4a4a;
+
+    max-width: 90%;
+
   }
   .btn{
     font-size: 14px;
@@ -1542,6 +1553,11 @@ html {
   overflow: hidden;
   img{
     position: absolute;
+  }
+}
+.career-home{
+  img{
+    // width: 90%;
   }
 }
 
