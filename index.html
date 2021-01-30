@@ -76,107 +76,14 @@
         #viewport{
             width: 100%;
         }
-        .swiper-pagination{
-            position: absolute;
-            left: 15px;
-            width: 100px;
-            height: 100%;
-            display: flex;
-            z-index: 3;
-            flex-direction: column;
-            top: 71px;
-            width: 66px!important;
-            height: 89%;
-            /* transform: rotate(180deg); */
-            justify-content: space-between;
-            flex-direction: column-reverse;
-            background: #fef6f0;
-    /* padding-right: 10px; */
-    box-shadow: 11px 0px 23px -6px rgb(214 212 212 / 84%);
-        }
-        .swiper-pagination-bullet{
-            width: 100px;
-            height: 100px;  
-            opacity: 1;
-            background: transparent;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-            margin: 0px 0px;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-            position: relative;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::after{
-            color: #f95858;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::before{        
-            position: absolute;
-            content: "";
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: #fff;
-            left: 44px;
-            bottom: 42%;
-            transition: 0.5s;
-            transform: rotate( -90deg);
-            background: transparent;
-            width: 5px;
-            height: 5px;
-            z-index: 9;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before{
-            background: #f95858;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::after{
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #fff;
-            width: 100px;
-            height: 100px;
-            transform: rotate(-90deg);
-            font-size: 14px;
-            font-weight: 500;
-            line-height: normal;
-            margin: 0 10px;
-            color: #242424;
-            transition: 0.5s;
-            left: -70%;
-            display: flex;
-    justify-content: center;
-    align-items: flex-end;
-        }
-
-
-
-
-
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after{
-            content: "Home";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after{
-            content: "Menu";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after{
-            content: "About Us";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after{
-            content: "Locations";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5)::after{
-            content: "Franchise";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(6)::after{
-            content: "Careers";
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child{
-            /* content: "Home"; */
-            display: none;
-        }
+        
         .swiper-slide {
           width: 100%;
         }
+        .swiper-pagination-about{
+
+        }
+        
 
 
     </style>
@@ -221,26 +128,36 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
-                        <div class="dropdown">
-                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
-                                class="dropdown-toggle" href="#">
-                                <span id="selected">Bangalore</span><img src="images/down-arrow.svg"
-                                    class="dropdown-arrow"></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#!">Bangalore</a></li>
-                                <li><a href="#!">Chennai</a></li>
-                                <li><a href="#!">Mumbai</a></li>
-                                <li><a href="#!">Delhi</a></li>
-                            </ul>
-                        </div>
+                      <div class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                            class="dropdown-toggle" href="#">
+                            <span id="selected">Bangalore</span><img src="images/down-arrow.svg"
+                                class="dropdown-arrow"></a>
+                        <ul class="dropdown-menu dropdown-menuHeader">
+                            <li><a href="#">Bangalore</a></li>
+                            <li><a href="#">Chennai</a></li>
+                            <li><a href="#">Mumbai</a></li>
+                            <li><a href="#">Delhi</a></li>
+                        </ul>
+                    </div>
                     </li>
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <ul class="pt-3">
+                    <ul class="mb-0 align-items-center">
                         <li><a onclick="openNav()">Offers</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
-                        <!-- <li><a href="">Follow Us</a></li> -->
+                        <li>
+                          <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="images/profile.png" class="">&nbsp;&nbsp;<img src="images/down-arrow.svg" class="dropdown-arrow">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Logout</a>
+                              <a class="dropdown-item" href="#">Settings</a>
+                            </div>
+                          </div>
+                        </li>
                     </ul>
                 </form>
             </div>
@@ -623,48 +540,16 @@
               <main id="viewport">
                   <div class="common-height home-section about-nav">
                       <div class="container-fluid">
-                        <div id="myWizard" class="w-100 d-flex">
-                          <!-- <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
-                              aria-valuemax="4" style="width: 25%;">
-                            
-                            </div>
-                          </div>
-                          <div class="navbar">
-                            <div class="navbar-inner">
-                              <ul class="nav nav-pills nav-wizard">
-                                <li class="active">
-                                  <a class="active" href="#step1" data-toggle="tab" data-step="1">Who We are
-                                    <span class="nav-arrow"></span>
-                                  </a>
-                                </li>
-                                <li class="disabled">
-                                  <div class="nav-wedge"></div>
-                                  <a class="" href="#step2" data-toggle="tab" data-step="2">What we’re about
-                                    <span class="nav-arrow"></span>
-                                  </a>
-                                </li>
-                                <li class="disabled">
-                                  <div class="nav-wedge"></div>
-                                  <a class="" href="#step3" data-toggle="tab" data-step="3">Our Team
-                                    <span class="nav-arrow"></span>
-                                  </a>
-                                </li>
-                                <li class="disabled">
-                                  <div class="nav-wedge"></div>
-                                  <a class="" href="#step4" data-toggle="tab" data-step="4">Our Values
-                                    <span class="nav-arrow"></span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div> -->
 
-                           <div class="w-100">
+                        <div id="myWizard" class="w-100 d-flex">
+                          <div class="col-md-2 swiper-about-container">
+                            <div class="swiper-pagination swiper-pagination-about"></div>
+                          </div>
+                           <div class="col-md-10 pl-0">
                               <div class="swiper-container swiper-about-container">
                                   <main class="sections swiper-wrapper">
                                     
-                                      <div class="section swiper-slide">
+                                      <div class="section swiper-slide" data-hash="slide21">
                                         <main id="viewport">
                                           <div class="common-height">
                                             <div class="whowe-section" id="step1">
@@ -702,7 +587,7 @@
                                           </div>
                                         </main>
                                       </div>
-                                      <div class="section swiper-slide">
+                                      <div class="section swiper-slide" data-hash="slide22">
                                         <main id="viewport">
                                           <div class="common-height">
                                             <div class="whowe-section" id="step2">
@@ -714,7 +599,7 @@
                                                 </div>
                                                 <div class="col-md-6 col-sm-6 col-12">
                                                   <h3>WHAT WE’RE ABOUT</h3>
-                                                  <h1 class="mt-0">Our journey
+                                                  <h1 class="mt-0">Our journey<br>
                                                     towards good.</h1>
                                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
                                 
@@ -758,8 +643,8 @@
                                         <main id="viewport">
                                           <div class="common-height">
                                             <div class="" id="step4">
-                                              <div class="row">
-                                                <div class="col-md-3">
+                                              <div class="row pt-5">
+                                                <div class="col-md-3 pl-5">
                                                   <div class="pt-middle card-wrapper" data-tilt>
                                                     <h5>01</h5>
                                                     <div class="inner-card">
@@ -809,12 +694,10 @@
                                         </main>
                                       </div>
                                   </main>
-                                  <div class="swiper-pagination swiper-pagination-about"></div>
                               </div>
                           </div>
-
                         </div>
-                        <div id="push"></div>
+
                       </div>
                   </div>
               </main>
@@ -825,9 +708,9 @@
                 <section class="common-height location-section" id="franchise">
                   <div class="container-fluid">
                     <div class="row">
-                      <div class="col-md-4">
+                      <div class="col-md-4 pr-0">
                         <div class="list-content">
-                          <div class="col-sm-12 text-center">
+                          <div class="col-sm-12 p-0">
                             <button type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
                               <div class="handle"></div>
                             </button>
@@ -889,8 +772,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-8 pt-5 ">
-                        <img src="images/map.png" alt="" class="img-fluid pt-5">
+                      <div class="col-md-8 p-0">
+                        <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99739938177!2d77.35073861286678!3d12.9538477195883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1612016801772!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="search-location">
                           <input type="text" class="searchbox w-100 " placeholder="Use my location">
                           <img src="images/search.svg" alt="" class="search-icon">
@@ -905,214 +788,207 @@
             <section class="section swiper-slide" data-hash="slide5" id="section05">
                 <!-- franchise page content -->
                 <main id="viewport">
-                    <section class="common-height home-section about-nav" id="franchise">
+                    <section class="common-height home-section" id="franchise">
                         <div class="container-fluid">
+
                           <div id="myWizard" class="w-100 d-flex">
-                            <div class="progress">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1"
-                                aria-valuemax="4" style="width: 25%;">
-                                <!-- Step 1 of 4 -->
-                              </div>
+                            <div class="col-md-2 swiper-franchise-container">
+                              <div class="swiper-pagination swiper-pagination-franchise"></div>
                             </div>
-                            <div class="navbar">
-                              <div class="navbar-inner">
-                                <ul class="nav nav-pills nav-wizard">
-                                  <li class="active">
-                                    <a class="active" href="#step5" data-toggle="tab" data-step="1">What is Franchise
-                                      <span class="nav-arrow"></span>
-                                    </a>
-                                  </li>
-                                  <li class="disabled">
-                                    <div class="nav-wedge"></div>
-                                    <a class="" href="#step6" data-toggle="tab" data-step="2">Process
-                                      <span class="nav-arrow"></span>
-                                    </a>
-                                  </li>
-                                  <li class="disabled">
-                                    <div class="nav-wedge"></div>
-                                    <a class="" href="#step7" data-toggle="tab" data-step="3">Types of Franchise
-                                      <span class="nav-arrow"></span>
-                                    </a>
-                                  </li>
-                                  <li class="disabled">
-                                    <div class="nav-wedge"></div>
-                                    <a class="" href="#step8" data-toggle="tab" data-step="4">FAQ’s
-                                      <span class="nav-arrow"></span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="tab-content w-100 franchise-section">
-                              <div class="tab-pane fade in active" id="step5">
-                                <div class="row align-items-center">
-                                  <div class="col-md-5 col-sm-6 col-12">
-                                    <div class="image-wrapper">
-                                      <img class="img-fluid" src="images/franchise-banner.png" alt="First slide">
-                                      <div class="cover"></div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6 col-sm-6 col-12 what-franchise">
-                                    <h3>Who we are and Why xero degree</h3>
-                                    <h1>A date that marks
-                                      our history</h1>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
-                                      minus. Rem, optio enim porro similique minus excepturi</p>
-                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Apply for franchising</a>
-                                  </div>
-                                </div>
-                              </div>
-                  
-                              <div class="tab-pane fade franchise-process" id="step6">
-                                <div class="row align-items-center">
-                                  <div class="col-md-5">
-                                    <h3>The focus on every 
-                                       detail you add.</h3>
-                                  </div>
-                                  <div class="col-md-7">
-                                    <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h6>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="process-wrapper">
-                                      <div class="process-box">
-                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                      </div>
-                                      <h4>Franchise<br>
-                                        Application</h4>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="process-wrapper">
-                                      <div class="process-box">
-                                        <img src="images/group-2.svg" class="img-fluid" alt="">
-                                      </div>
-                                      <h4>Approval<br>
-                                        Process</h4>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="process-wrapper">
-                                      <div class="process-box">
-                                        <img src="images/group-3.svg" class="img-fluid" alt="">
-                                      </div>
-                                      <h4>Site Search</h4>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="process-wrapper">
-                                      <div class="process-box">
-                                        <img src="images/group-4.svg" class="img-fluid" alt="">
-                                      </div>
-                                      <h4>Store opening &<br>
-                                        ongoing support</h4>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="process-wrapper">
-                                      <div class="process-box">
-                                        <img src="images/group-5.svg" class="img-fluid" alt="">
-                                      </div>
-                                      <h4>Training</h4>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="process-wrapper">
-                                      <div class="process-box">
-                                        <img src="images/group-6.svg" class="img-fluid" alt="">
-                                      </div>
-                                      <h4>Construction</h4>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                  
-                              <div class="tab-pane fade" id="step7">
-                                <div class="row align-items-center">
-                                  <div class="col-md-5 col-sm-6 col-12">
-                                    <img class="img-fluid" src="images/franchise-banner.png" alt="First slide">
-                                  </div>
-                                  <div class="col-md-6 col-sm-6 col-12">
-                                    <div class="width-90">
-                                      <h1>Investment</h1>
-                                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                  
-                              <div class="tab-pane fade" id="step8">
-                                <div class="row align-items-center faq-section">
-                                  <div class="col-md-5 colsm-5 col-12">
-                                    <h6>Still have questions?</p>
-                                    <h2>Relax because we 
-                                      always will be here
-                                      for you.</h2>
-                                  </div>
-                                  <div class="col-md-7 col-sm-7 col-12">
-                                    <div class="container">
-                                      <div id="accordion" class="accordion">
-                                        <div class="card mb-0">
-
-                                          <div class="accordian-wrpper">
-                                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                                              <a class="card-title">Who founded the hero degree? When and where did the first restaurant open? </a>
+                            <div class="col-md-10 pl-0">
+                                <div class="swiper-container swiper-franchise-container">
+                                    <main class="sections swiper-wrapper">
+                                      
+                                        <div class="section swiper-slide franchise-section">
+                                          <main id="viewport">
+                                            <div class="common-height">
+                                              <div class="whowe-section" id="step1">
+                                                <div class="row align-items-center">
+                                                  <div class="col-md-5 col-sm-6 col-12">
+                                                    <div class="image-wrapper">
+                                                      <img class="img-fluid" src="images/franchise-banner.png" alt="First slide">
+                                                      <div class="cover"></div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6 col-sm-6 col-12 what-franchise">
+                                                    <h3>Who we are and Why xero degree</h3>
+                                                    <h1>A date that marks
+                                                      our history</h1>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam
+                                                      minus. Rem, optio enim porro similique minus excepturi</p>
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Apply for franchising</a>
+                                                  </div>
+                                                </div>
+                                              </div>
                                             </div>
-                                            <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
-                                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                                                probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                            </div>
-                                          </div>
-
-                                          <div class="accordian-wrpper">
-                                            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
-                                              href="#collapseTwo">
-                                              <a class="card-title"> Item 2 </a>
-                                            </div>
-                                            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
-                                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                                                probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                            </div>
-                                          </div>
-
-                                          <div class="accordian-wrpper">
-                                            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
-                                              href="#collapseThree">
-                                              <a class="card-title"> Item 3 </a>
-                                            </div>
-                                            <div id="collapseThree" class="card-body collapse" data-parent="#accordion">
-                                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                                                probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                            </div>
-                                          </div>
-
+                                          </main>
                                         </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                        <div class="section swiper-slide franchise-process">
+                                          <main id="viewport">
+                                            <div class="common-height">
+                                              <div class="whowe-section" id="step2">
+                                                <div class="row align-items-center pb-2 pt-5">
+                                                  <div class="col-md-5">
+                                                    <h3>The focus on every 
+                                                      detail you add.</h3>
+                                                  </div>
+                                                  <div class="col-md-7">
+                                                    <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h6>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-md-4 col-sm-4 col-12">
+                                                    <div class="process-wrapper">
+                                                      <div class="process-box">
+                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
+                                                      </div>
+                                                      <h4>Franchise<br>
+                                                        Application</h4>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4 col-sm-4 col-12">
+                                                    <div class="process-wrapper">
+                                                      <div class="process-box">
+                                                        <img src="images/group-2.svg" class="img-fluid" alt="">
+                                                      </div>
+                                                      <h4>Approval<br>
+                                                        Process</h4>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4 col-sm-4 col-12">
+                                                    <div class="process-wrapper">
+                                                      <div class="process-box">
+                                                        <img src="images/group-3.svg" class="img-fluid" alt="">
+                                                      </div>
+                                                      <h4>Site Search</h4>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4 col-sm-4 col-12">
+                                                    <div class="process-wrapper">
+                                                      <div class="process-box">
+                                                        <img src="images/group-4.svg" class="img-fluid" alt="">
+                                                      </div>
+                                                      <h4>Store opening &<br>
+                                                        ongoing support</h4>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4 col-sm-4 col-12">
+                                                    <div class="process-wrapper">
+                                                      <div class="process-box">
+                                                        <img src="images/group-5.svg" class="img-fluid" alt="">
+                                                      </div>
+                                                      <h4>Training</h4>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-4 col-sm-4 col-12">
+                                                    <div class="process-wrapper">
+                                                      <div class="process-box">
+                                                        <img src="images/group-6.svg" class="img-fluid" alt="">
+                                                      </div>
+                                                      <h4>Construction</h4>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </main>
+                                        </div>
+                                        <div class="section swiper-slide">
+                                          <main id="viewport">
+                                            <div class="common-height">
+                                              <div class="team-section pt-5 mt-3" id="step3">
+                                                <div class="row align-items-center">
+                                                  <div class="col-md-5 col-sm-6 col-12">
+                                                    <img class="img-fluid" src="images/franchise-types.png" alt="First slide">
+                                                  </div>
+                                                  <div class="col-md-6 col-sm-6 col-12">
+                                                    <div class="width-90">
+                                                      <h1>Area Required</h1>
+                                                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </main>
+                                        </div>
+                                        <div class="section swiper-slide">
+                                          <main id="viewport">
+                                            <div class="common-height">
+                                              <div class="" id="step4">
+                                                <div class="row align-items-center faq-section">
+                                                  <div class="col-md-5 colsm-5 col-12">
+                                                    <h6>Still have questions?</p>
+                                                    <h2>Relax because we 
+                                                      always will be here
+                                                      for you.</h2>
+                                                  </div>
+                                                  <div class="col-md-7 col-sm-7 col-12">
+                                                    <div class="container">
+                                                      <div id="accordion" class="accordion">
+                                                        <div class="card mb-0">
+                
+                                                          <div class="accordian-wrpper">
+                                                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                                              <a class="card-title">Who founded the hero degree? When and where did the first restaurant open? </a>
+                                                            </div>
+                                                            <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                                                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                                                probably haven't heard of them accusamus labore sustainable VHS. </p>
+                                                            </div>
+                                                          </div>
+                
+                                                          <div class="accordian-wrpper">
+                                                            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                                                              href="#collapseTwo">
+                                                              <a class="card-title"> Item 2 </a>
+                                                            </div>
+                                                            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                                                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                                                probably haven't heard of them accusamus labore sustainable VHS. </p>
+                                                            </div>
+                                                          </div>
+                
+                                                          <div class="accordian-wrpper">
+                                                            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                                                              href="#collapseThree">
+                                                              <a class="card-title"> Item 3 </a>
+                                                            </div>
+                                                            <div id="collapseThree" class="card-body collapse" data-parent="#accordion">
+                                                              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                                                                beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                                                lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                                                probably haven't heard of them accusamus labore sustainable VHS. </p>
+                                                            </div>
+                                                          </div>
+                
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </main>
+                                        </div>
+                                    </main>
                                 </div>
-                              </div>
-                  
                             </div>
                           </div>
-                          <div id="push"></div>
                         </div>
                     </section>
                 </main>
@@ -1197,7 +1073,30 @@
                   </section>
                 </main>
             </section>
-            
+            <section class="section swiper-slide" data-hash="slide7" id="section08">
+              <!-- contact us page content -->
+              <main id="viewport">
+                <section class="common-height home-section career-section" id="franchise">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-5 col-sm-6 col-12">
+                          <div class="image-wrapper">
+                            <img class="d-block img-fluid" data-tilt src="images/career-bg.png" alt="First slide">
+                            <div class="cover"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <h1>Enjoy benefits that<br>
+                              are made for you</h1>
+                            <p>A mission to become the world’s number one coffee brand. Giving everyone, everywhere the chance to get their hands on the coffee they love. It’s a big vision and one almighty challenge, but with a passion for what we do, the courage to follow our convictions and the support of a warm and trusting environment, we’ll get there. Now is the moment to be part of it.</p>
+                            <p>A mission to become the world’s number one coffee brand. Giving everyone, everywhere the chance to get their hands on the coffee they love.</p>
+                            <a href="order.html" class="btn btn-primary">Know More</a>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+              </main>
+          </section>
             
         </main>
     </div>
@@ -1421,11 +1320,11 @@
             speed: 1000,
             mousewheel: true,
             allowTouchMove: true,
-            freeMode: true,
+            // freeMode: true,
             hashNavigation: true,
             // slidesOffsetBefore: -100,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.new-nav',
                 clickable: true,
             },
         });
@@ -1441,12 +1340,33 @@
             // slidesOffsetBefore: 100,
             spaceBetween: 0,
             mousewheel: true,
-            freeMode: true,
+            // freeMode: true,
             hashNavigation: true,
             spaceBetween: 0,
             nested: true,
             pagination: {
                 el: '.swiper-pagination-about',
+                clickable: true,
+            },
+        });
+
+        var swiperThree = new Swiper('.swiper-franchise-container', {
+            direction: 'horizontal',
+            slidesPerView: 'auto',
+            keyboardControl: true,
+            // slidesOffsetAfter: 130,
+            speed: 1000,
+            allowTouchMove: true,
+            // centeredSlides: false,
+            // slidesOffsetBefore: 100,
+            spaceBetween: 0,
+            mousewheel: true,
+            // freeMode: true,
+            hashNavigation: true,
+            spaceBetween: 0,
+            nested: true,
+            pagination: {
+                el: '.swiper-pagination-franchise',
                 clickable: true,
             },
         });

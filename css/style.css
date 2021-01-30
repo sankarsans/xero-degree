@@ -10633,8 +10633,8 @@ ul.transition li {
 }
 .left-nav ul {
   left: 0;
-  padding-top: 135px;
-  height: 92%;
+  padding-top: 93px;
+  height: 95%;
   display: flex;
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -10653,7 +10653,7 @@ ul.transition li {
 .inner-nav {
   width: 100%;
   display: flex;
-  max-width: 92%;
+  max-width: 89%;
   margin: 0 auto;
 }
 
@@ -10765,7 +10765,7 @@ ul.transition li {
 }
 
 .address-list .address-list-view {
-  padding: 16px 74px 16px 16px;
+  padding: 16px 16px 10px 16px;
   border-radius: 2px;
   border: solid 0.5px #d1d1d1;
   background-color: #ffffff;
@@ -10778,8 +10778,8 @@ ul.transition li {
   line-height: normal;
   letter-spacing: normal;
   color: #242424;
-  padding-top: 40px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 .address-list h4 {
   font-size: 14px;
@@ -10799,6 +10799,7 @@ ul.transition li {
   letter-spacing: normal;
   color: #929090;
   padding: 10px 0 20px 0;
+  max-width: 85%;
 }
 .address-list .btn {
   font-size: 14px;
@@ -10817,9 +10818,9 @@ ul.transition li {
 
 .location-section .search-location {
   position: absolute;
-  top: 30vh;
-  width: 200px;
-  left: 0;
+  top: 27vh;
+  width: 190px;
+  left: 2vw;
   height: 50px;
   display: flex;
   padding: 8px 12px 8px 30px;
@@ -10834,7 +10835,7 @@ ul.transition li {
   outline: none;
 }
 .location-section .search-location .searchbox {
-  padding: 0px 12px 0px 12px;
+  padding: 0px 12px 0px 20px;
   border-radius: 4px;
   border: none;
   background-color: #ffffff;
@@ -10851,7 +10852,7 @@ ul.transition li {
 }
 .location-section .search-location .search-icon {
   position: absolute;
-  left: 10px;
+  left: 15px;
   width: 18px;
   top: 16px;
   background: #fff;
@@ -11028,6 +11029,7 @@ ul.transition li {
   line-height: normal;
   letter-spacing: normal;
   color: #000000;
+  max-width: 90%;
 }
 .about-nav .whowe-section .about-details span {
   display: block;
@@ -11094,7 +11096,7 @@ ul.transition li {
   border: solid 1px #ffd3d3;
   background-color: #ffffff;
   position: relative;
-  width: 240px;
+  width: 97%;
   min-height: auto;
 }
 .about-nav .card-wrapper .inner-card {
@@ -11587,7 +11589,7 @@ input, textarea {
   display: inline-block;
 }
 .dropdown .dropdown-arrow {
-  width: 13px;
+  width: 10px;
 }
 .dropdown .dropdown-toggle::after {
   display: none;
@@ -11791,7 +11793,7 @@ html {
 .cover {
   width: 100%;
   height: 100%;
-  background: black;
+  background: transparent;
   position: absolute;
   left: 0;
   max-width: 100%;
@@ -11984,11 +11986,8 @@ html {
 }
 .franchise-process .process-wrapper .process-box {
   width: 100px;
-  height: 100px;
   margin: 0 auto;
   box-shadow: 0 12px 14px 0 #fef2e9;
-  border: solid 1px #ffd3d3;
-  background-color: #ffffff;
   border-radius: 50%;
 }
 .franchise-process .process-wrapper h4 {
@@ -12222,6 +12221,7 @@ html {
   border: solid 1px #ffd3d3;
   background-color: #ffffff;
   margin-bottom: 40px;
+  min-height: 220px;
 }
 .career-section .career-perks h3 {
   font-size: 14px;
@@ -12241,6 +12241,162 @@ html {
   line-height: 1.75;
   letter-spacing: normal;
   color: #4a4a4a;
+}
+
+.swiper-container-app .swiper-pagination {
+  position: absolute;
+  left: 15px;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  z-index: 3;
+  flex-direction: column;
+  top: 71px;
+  width: 66px !important;
+  height: 89%;
+  /* transform: rotate(180deg); */
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  background: #fff;
+  /* padding-right: 10px; */
+  box-shadow: 11px 0px 23px -6px rgba(214, 212, 212, 0.84);
+}
+.swiper-container-app .swiper-pagination-bullet {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  background: transparent;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0px 0px;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet {
+  position: relative;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  color: #f95858;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  left: 44px;
+  bottom: 42%;
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  background: transparent;
+  width: 5px;
+  height: 5px;
+  z-index: 9;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  background: #f95858;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 10px;
+  color: #242424;
+  transition: 0.5s;
+  left: -70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
+  content: "Home";
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after {
+  content: "Menu";
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after {
+  content: "About Us";
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
+  content: "Locations";
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5)::after {
+  content: "Franchise";
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(6)::after {
+  content: "Careers";
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  /* content: "Home"; */
+  display: none;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(7) {
+  /* content: "Home"; */
+  display: none;
+}
+
+.swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet::after, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet::after {
+  transform: none;
+  left: 0;
+  justify-content: flex-start;
+}
+.swiper-about-container .swiper-pagination, .swiper-franchise-container .swiper-pagination {
+  width: 100% !important;
+  height: auto;
+  padding-left: 30px;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: none;
+}
+.swiper-about-container .swiper-pagination-bullet::after, .swiper-franchise-container .swiper-pagination-bullet::after {
+  height: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+.swiper-about-container img, .swiper-franchise-container img {
+  max-width: 95%;
+}
+.swiper-about-container .swiper-pagination-bullet::before, .swiper-franchise-container .swiper-pagination-bullet::before {
+  display: none;
+}
+.swiper-about-container .swiper-pagination-bullet, .swiper-franchise-container .swiper-pagination-bullet {
+  height: 41px;
+  width: 100%;
+}
+.swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
+  content: "Who We are";
+}
+.swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after {
+  content: "What we’re about";
+}
+.swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after {
+  content: "Our Team";
+}
+.swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
+  content: "Our Values";
+}
+.swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  /* content: "Home"; */
+  display: block;
+}
+
+.swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
+  content: "What is Franchise";
+}
+.swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after {
+  content: "Process";
+}
+.swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after {
+  content: "Types of Franchise";
+}
+.swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
+  content: "FAQ’s";
 }
 
 /*# sourceMappingURL=style.css.map */

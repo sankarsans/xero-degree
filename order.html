@@ -136,12 +136,22 @@ html {
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <ul class="pt-3">
-                        <li><a onclick="openNav()">Offers</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                     
-                    </ul>
-                </form>
+                  <ul class="mb-0 align-items-center">
+                      <li><a onclick="openNav()">Offers</a></li>
+                      <li><a href="contact-us.html">Contact Us</a></li>
+                      <li>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/profile.png" class="">&nbsp;&nbsp;<img src="images/down-arrow.svg" class="dropdown-arrow">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Logout</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                          </div>
+                        </div>
+                      </li>
+                  </ul>
+              </form>
             </div>
           </div>
         </nav>
