@@ -12213,7 +12213,7 @@ html {
   padding: 90px 90px 0 90px;
 }
 .career-section .row {
-  padding: 90px 20px 0 80px;
+  padding: 90px 0px 0 20px;
 }
 .career-section .right-section h2 {
   padding-top: 10vh;
@@ -12242,12 +12242,12 @@ html {
   padding-bottom: 25px;
 }
 .career-section .career-perks {
-  padding: 40px 24px 33px 24px;
+  padding: 30px 24px 3px 24px;
   box-shadow: 0 12px 14px 0 #fef2e9;
   border: solid 1px #ffd3d3;
   background-color: #ffffff;
   margin-bottom: 40px;
-  min-height: 220px;
+  min-height: 200px;
 }
 .career-section .career-perks h3 {
   font-size: 14px;
@@ -12365,7 +12365,6 @@ html {
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
   /* content: "Home"; */
-  display: none;
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(7) {
   /* content: "Home"; */
@@ -12415,6 +12414,10 @@ html {
 .swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child, .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
   /* content: "Home"; */
   display: block;
+}
+
+.swiper-career-cpntainer .swiper-pagination-bullet {
+  display: none;
 }
 
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
