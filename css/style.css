@@ -11595,6 +11595,26 @@ input, textarea {
   display: none;
 }
 
+.dropdown-item {
+  padding: 5px 10px;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: unset;
+  width: auto;
+  /* padding: 0; */
+  /* margin: 0; */
+  min-width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu li {
+  padding: 2px 10px;
+}
+.dropdown-menu li a {
+  margin-left: 0;
+}
+
 body {
   cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='000000' r='4'/%3E%3C/svg%3E") 3 3, auto;
 }
@@ -12249,6 +12269,11 @@ html {
   color: #4a4a4a;
 }
 
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .swiper-container-app .swiper-pagination {
   position: absolute;
   left: 15px;
@@ -12403,6 +12428,71 @@ html {
 }
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
   content: "FAQ’s";
+}
+
+.home-banner .swiper-home-container {
+  padding-top: 110px;
+}
+.home-banner .swiper-home-container h1 {
+  margin-top: -66px;
+}
+.home-banner .swiper-home-container h3 {
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: normal;
+  color: #242424;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+}
+.home-banner .swiper-home-container h3 span {
+  color: #ff8a1e;
+}
+.home-banner .swiper-pagination-bullets .swiper-pagination-bullet::after {
+  transform: none;
+  left: 0;
+  justify-content: flex-start;
+}
+.home-banner .swiper-pagination {
+  width: 300px !important;
+  height: auto;
+  padding-left: 30px;
+  justify-content: center;
+  flex-direction: row;
+  box-shadow: none;
+  left: 16%;
+  bottom: 4%;
+  /* height: 100%; */
+  top: unset;
+}
+.home-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f95858;
+}
+.home-banner .swiper-pagination-bullet::after {
+  display: none !important;
+  height: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+.home-banner img {
+  max-width: 95%;
+}
+.home-banner .swiper-pagination-bullet::before {
+  display: none;
+}
+.home-banner .swiper-pagination-bullet {
+  position: relative;
+  height: 11px;
+  width: 11px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  margin: 0 5px !important;
+}
+.home-banner .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  /* content: "Home"; */
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

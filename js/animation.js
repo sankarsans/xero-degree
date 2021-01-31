@@ -169,12 +169,12 @@ $(function() {
 
     tl3.staggerFrom( $(".header_nav ul li"), time, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, time );
     tl3.staggerFrom( $(".new-nav ul li", 'swiper-pagination ul li'), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
-    tl3.from(".homeSlider h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"-=0.8");
-    tl3.from(".homeSlider p", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
-    tl3.from(".homeSlider a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
+    tl3.from(".swiper-home-container h1", 0.4,{y:-30, opacity:0, ease: Sine.easeIn},"-=0.8");
+    tl3.from(".swiper-home-container h3", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
+    tl3.from(".swiper-home-container a", 0.4,{y:-10, opacity:0, ease: Sine.easeIn});
     // tl3.from(".homeSlider img" ,1, {x:-600});
 
-    tl3.from(cov, 1, { delay:0.5, scaleX: 0, transformOrigin: "left" });
+    tl3.from(cov, 1, { delay:0, scaleX: 0, transformOrigin: "left" });
     tl3.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
     tl3.from(img, 1, { opacity: 0 }, "reveal");
 

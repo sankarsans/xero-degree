@@ -1262,6 +1262,24 @@ input, textarea{
     display: none;
   }
 }
+.dropdown-item{
+  padding: 5px 10px;
+}
+.dropdown-menu{
+  right: 0;
+    left: unset;
+    width: auto;
+    /* padding: 0; */
+    /* margin: 0; */
+    min-width: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    li{
+      padding:2px 10px;
+      a{
+        margin-left: 0;
+      }
+    }
+}
 
 // cursor
 body{
@@ -2063,7 +2081,11 @@ html {
   }
 }
 
+.btn:focus{
+  outline: none;
+  box-shadow: none;
 
+}
 
 .swiper-container-app{
     .swiper-pagination{
@@ -2171,7 +2193,6 @@ html {
     transform: none;
     left: 0;
     justify-content: flex-start;
-
   }
   .swiper-pagination{
     width: 100%!important;
@@ -2230,5 +2251,76 @@ html {
   }
   .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after{
       content: "FAQ’s";
+  }
+}
+
+
+.home-banner{
+  .swiper-home-container{
+    padding-top: 110px;
+    h1{
+      margin-top: -66px;
+    }
+    h3{
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.58;
+      letter-spacing: normal;
+      color: #242424;
+      font-family: 'Poppins', sans-serif;
+      padding-bottom: 40px;
+  span{
+    color: #ff8a1e;
+  }
+    }
+  }
+  .swiper-pagination-bullets .swiper-pagination-bullet::after{
+    transform: none;
+    left: 0;
+    justify-content: flex-start;
+  }
+  .swiper-pagination{
+   
+    width: 300px!important;
+    height: auto;
+    padding-left: 30px;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: none;
+    left: 16%;
+    bottom: 4%;
+    /* height: 100%; */
+    top: unset;
+
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #f95858;
+  }
+  .swiper-pagination-bullet::after{
+    // height: 23px;
+    display: none!important;
+    height: auto!important;
+    width: 100%!important;
+    background: transparent!important;
+  }
+  img{
+    max-width: 95%;
+  }
+  .swiper-pagination-bullet::before{
+    display: none;
+  }
+  .swiper-pagination-bullet{
+    position: relative;
+    height: 11px;
+    width: 11px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 5px!important;
+  }
+  .swiper-pagination-bullets .swiper-pagination-bullet:last-child{
+    /* content: "Home"; */
+    display: block;
   }
 }
