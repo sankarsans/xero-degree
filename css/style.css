@@ -10876,6 +10876,7 @@ ul.transition li {
 }
 .location-section .list-content .address-scroll:hover::-webkit-scrollbar-thumb {
   background: #acacac;
+  border-radius: 15px;
 }
 .location-section .list-content .address-scroll::-webkit-scrollbar {
   width: 10px;
@@ -10886,6 +10887,7 @@ ul.transition li {
 }
 .location-section .list-content .address-scroll::-webkit-scrollbar-thumb {
   background: #d8d3d3;
+  border-radius: 15px;
 }
 .location-section .list-content .address-scroll::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -11446,6 +11448,7 @@ ul.transition li {
 }
 .list-menu:hover::-webkit-scrollbar-thumb {
   background: #acacac;
+  border-radius: 15px;
 }
 .list-menu::-webkit-scrollbar {
   width: 10px;
@@ -11456,6 +11459,7 @@ ul.transition li {
 }
 .list-menu::-webkit-scrollbar-thumb {
   background: #eaeaea;
+  border-radius: 15px;
 }
 .list-menu::-webkit-scrollbar-thumb:hover {
   background: #acacac;
@@ -11503,6 +11507,7 @@ ul.transition li {
 }
 .menu-items:hover::-webkit-scrollbar-thumb {
   background: #acacac;
+  border-radius: 15px;
 }
 .menu-items::-webkit-scrollbar {
   width: 10px;
@@ -11516,6 +11521,7 @@ ul.transition li {
 }
 .menu-items::-webkit-scrollbar-thumb {
   background: #d8d3d3;
+  border-radius: 15px;
 }
 .menu-items::-webkit-scrollbar-thumb:hover {
   background: #555;
