@@ -1227,6 +1227,92 @@ input, textarea{
 }
 
 
+.modal{
+  .btn-close{
+    position: absolute;
+    top: 10px;
+ }
+ .modal-dialog{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  max-width: 1000px;
+  min-height: 100vh;
+  overflow: scroll;
+ }
+ .modal-content{
+  min-height: 100vh;
+ }
+ .row{
+
+  padding: 50px 20px 30px;
+
+ }
+  ul{
+    list-style: none;
+    display: inline-block;
+    li{
+      display: inline-block;
+      margin: 8px 0;
+      a{
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #242424;
+      
+      }
+    }
+  }
+  .list-box{
+    padding: 24px 48px 24px 16px;
+    border-radius: 2px;
+    border: solid 0.5px #d1d1d1;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    h2{
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #434242;
+    }
+    p{
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 25px;
+      letter-spacing: normal;
+      color: #929090;
+      margin: 10px 0 20px;
+    }
+  
+    .btn-pickup{
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #434242;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: solid 0.5px #d1d1d1;
+      background-color: #ffffff;
+
+      &.active{
+        color: #929090;
+      }
+    }
+  }
+}
+
 // custom select option
 .custom-select {
   position: relative;

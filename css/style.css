@@ -11553,6 +11553,85 @@ input, textarea {
   overflow-x: hidden;
 }
 
+.modal .btn-close {
+  position: absolute;
+  top: 10px;
+}
+.modal .modal-dialog {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  max-width: 1000px;
+  min-height: 100vh;
+  overflow: scroll;
+}
+.modal .modal-content {
+  min-height: 100vh;
+}
+.modal .row {
+  padding: 50px 20px 30px;
+}
+.modal ul {
+  list-style: none;
+  display: inline-block;
+}
+.modal ul li {
+  display: inline-block;
+  margin: 8px 0;
+}
+.modal ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #242424;
+}
+.modal .list-box {
+  padding: 24px 48px 24px 16px;
+  border-radius: 2px;
+  border: solid 0.5px #d1d1d1;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.modal .list-box h2 {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #434242;
+}
+.modal .list-box p {
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 25px;
+  letter-spacing: normal;
+  color: #929090;
+  margin: 10px 0 20px;
+}
+.modal .list-box .btn-pickup {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #434242;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: solid 0.5px #d1d1d1;
+  background-color: #ffffff;
+}
+.modal .list-box .btn-pickup.active {
+  color: #929090;
+}
+
 .custom-select {
   position: relative;
   padding: 0;
