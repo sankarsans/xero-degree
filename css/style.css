@@ -11769,6 +11769,8 @@ body {
   -webkit-transform: scale(var(--scale));
   transform: scale(var(--scale));
   transition: 300ms opacity cubic-bezier(0.39, 0.575, 0.565, 1), 300ms transform cubic-bezier(0.39, 0.575, 0.565, 1), 150ms border-radius cubic-bezier(0.39, 0.575, 0.565, 1);
+  background: url(../images/logo.png) 0 center no-repeat;
+  background-size: 35px;
 }
 
 .mystyle::after {
@@ -12402,7 +12404,6 @@ html {
   height: 89%;
   /* transform: rotate(180deg); */
   justify-content: space-between;
-  flex-direction: column-reverse;
   background: #fff;
   /* padding-right: 10px; */
   box-shadow: 11px 0px 23px -6px rgba(214, 212, 212, 0.84);
@@ -12428,15 +12429,15 @@ html {
   content: "";
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  border-radius: 0;
   background: #fff;
-  left: 44px;
-  bottom: 42%;
+  left: 9px;
+  bottom: 48%;
   transition: 0.5s;
   transform: rotate(-90deg);
   background: transparent;
-  width: 5px;
-  height: 5px;
+  width: 65%;
+  height: 2px;
   z-index: 9;
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {

@@ -1500,6 +1500,8 @@ body{
   transition: 300ms opacity cubic-bezier(0.39, 0.575, 0.565, 1),
               300ms transform cubic-bezier(0.39, 0.575, 0.565, 1),
               150ms border-radius cubic-bezier(0.39, 0.575, 0.565, 1);
+              background: url(../images/logo.png) 0 center no-repeat;
+              background-size: 35px;
 }
 
 .mystyle{
@@ -2232,7 +2234,7 @@ html {
       height: 89%;
       /* transform: rotate(180deg); */
       justify-content: space-between;
-      flex-direction: column-reverse;
+      // flex-direction: csolumn-reverse;
       background: #fff;
       /* padding-right: 10px; */
       box-shadow: 11px 0px 23px -6px rgb(214 212 212 / 84%);
@@ -2254,20 +2256,20 @@ html {
       color: #f95858;
   }
   .swiper-pagination-bullets .swiper-pagination-bullet::before{        
-      position: absolute;
-      content: "";
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: #fff;
-      left: 44px;
-      bottom: 42%;
-      transition: 0.5s;
-      transform: rotate( -90deg);
-      background: transparent;
-      width: 5px;
-      height: 5px;
-      z-index: 9;
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 0;
+    background: #fff;
+    left: 9px;
+    bottom: 48%;
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    background: transparent;
+    width: 65%;
+    height: 2px;
+    z-index: 9;
   }
   .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before{
       background: #f95858;
