@@ -280,7 +280,7 @@ $(function() {
     
     var newtime = 0.4;
 
-    tl6.staggerFrom( $("#section07 img"), newtime, {delay: 3, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
+    tl6.staggerFrom( $("#section07 img"), newtime, {delay: 3, opacity:0, ease : Sine.easeIn }, newtime );
     tl6.from("#section07 h2", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
     tl6.from("#section07 h4", 1.0, { y:100, opacity:0,  ease : Sine.easeIn });
 

@@ -11777,6 +11777,17 @@ body {
   border: 2px solid blue;
 }
 
+.hover-animation {
+  border-radius: 4px;
+}
+.hover-animation img {
+  transition: all 0.8s ease;
+}
+.hover-animation img:hover {
+  transition: all 0.8s ease;
+  transform: scale(1.045) rotate(1.2deg);
+}
+
 .bg-light {
   box-shadow: 0 6px 9px 0 #f4ece6;
   background-color: #ffffff;
