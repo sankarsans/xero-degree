@@ -243,6 +243,9 @@ body {
     padding-bottom: 60px;
     padding-top: 0!important;
     padding-left: 0!important;
+    img{
+      border-radius: 4px;
+    }
   }
   input{
     font-size: 24px;
@@ -284,10 +287,12 @@ body {
   background-color: #ffffff;
   text-align: center;
   width: 130px;
+  border-radius: 4px;
     button{
       border: none;
       height: 48px;
       width: 48px;
+      border-radius: 4px; 
       background: #fff;
       &:focus{
         outline: none;
@@ -452,7 +457,7 @@ body {
     }
   }
   .list-content{
-    padding: 190px 20px 0 90px;
+    padding: 190px 0px 0 73px;
     box-shadow: 3px 10px 18px 0 rgba(228, 212, 198, 0.37);
     background-color: #ffffff;
     .address-scroll{
@@ -460,6 +465,7 @@ body {
       overflow: scroll;
       margin-top: 40px;
       padding-bottom: 130px;
+      padding-right: 30px;
       &:hover{
         &::-webkit-scrollbar-thumb {
           background: #acacac;
@@ -467,7 +473,7 @@ body {
         }
       }
         &::-webkit-scrollbar {
-          width: 10px;
+          width: 5px;
           border-radius: 5px;
         }
     
@@ -674,6 +680,9 @@ body {
           letter-spacing: normal;
           color: #000000;
           max-width: 90%;
+
+    padding-top: 30px;
+
         }
         span{
           display: block;
@@ -1079,7 +1088,7 @@ body {
 }
 .list-menu{
   overflow-y: scroll;
-  max-height: 86vh;
+  max-height: 90vh;
   margin-top: 11vh;
   box-shadow: 0 12px 14px 0 rgba(207, 132, 132, 0.1);
   background-color: #ffffff;
@@ -1093,7 +1102,7 @@ body {
     }
   }
     &::-webkit-scrollbar {
-      width: 10px;
+      width: 5px;
       border-radius: 5px;
     }
 
@@ -1171,7 +1180,7 @@ body {
     }
   }
     &::-webkit-scrollbar {
-      width: 10px;
+      width: 5px;
       border-radius: 5px;
     }
   p{
@@ -1227,17 +1236,22 @@ input, textarea{
 }
 
 
-.modal{
+.order-modal{
   .btn-close{
     position: absolute;
     top: 10px;
+ }
+ .overflow-content{
+  overflow-y: scroll;
+  height: 100vh;
+
  }
  .modal-dialog{
   position: absolute;
   right: 0;
   top: 0;
   margin: 0;
-  max-width: 1000px;
+  max-width: 700px;
   min-height: 100vh;
   overflow: scroll;
  }
@@ -1532,7 +1546,11 @@ body{
 
 }
 
-
+.profile-pic{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
 .header_nav, .left-nav{
   ul{
     li{
@@ -1555,12 +1573,12 @@ body{
           transition: 0.5s;
         }
         &.active, &:hover{
-          color: #f95858;
+          color: #fff;
           position: relative;
           transition: 0.5s;
           &::after{ 
             transition: 0.5s;
-            background: #f95858;
+            background: #fff;
           }
         }
       }
@@ -1927,7 +1945,7 @@ html {
       width: 100px;
       // height: 100px;
       margin: 0 auto;
-      box-shadow: 0 12px 14px 0 #fef2e9;
+      box-shadow: 0 12px 14px 0 #fffaf6;
       // border: solid 1px #ffd3d3;
       // background-color: #ffffff;
       border-radius: 50%;
@@ -2229,6 +2247,13 @@ html {
   box-shadow: none;
 
 }
+.inner-pages{
+  .left-nav ul{
+
+    flex-direction: row-reverse;
+
+  }
+}
 
 .swiper-container-app{
     .swiper-pagination{
@@ -2241,7 +2266,7 @@ html {
       flex-direction: column;
       top: 71px;
       width: 66px!important;
-      height: 89%;
+      height: 92%;
       /* transform: rotate(180deg); */
       justify-content: space-between;
       // flex-direction: csolumn-reverse;
@@ -2295,7 +2320,7 @@ html {
       font-size: 14px;
       font-weight: 500;
       line-height: normal;
-      margin: 0 10px;
+      margin: 0 10px 0 0;
       color: #242424;
       transition: 0.5s;
       left: -70%;
@@ -2303,23 +2328,60 @@ html {
       justify-content: center;
       align-items: flex-end;
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after{
+  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1){
+    &::after{
       content: "Home";
+    }
+    &::before{
+      width: 46%;
+      left: 10px;
+    }
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after{
+  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2){
+    &::after{
       content: "Menu";
+    }
+    &::before{
+      width: 45%;
+      left: 10px;
+
+    }
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after{
+  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3){
+    &::after{
       content: "About Us";
+    }
+    &::before{
+      width: 63%;
+    left: 1px;
+    }
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after{
+  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4){
+    &::after{
       content: "Locations";
+    }
+    &::before{
+      left: -2px;
+      width: 69%;
+    }
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5)::after{
+  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5){
+    &::after{
       content: "Franchise";
+    }
+    &::before{
+      // width: 58%;
+      left: 3px;
+    }
   }
-  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(6)::after{
+  .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(6){
+    &::after{
       content: "Careers";
+    }
+    &::before{
+      width: 58%;
+      left: 3px;
+    }
   }
   .swiper-pagination-bullets .swiper-pagination-bullet:last-child{
       /* content: "Home"; */
