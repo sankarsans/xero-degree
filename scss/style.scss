@@ -1754,8 +1754,8 @@ html {
 }
 .contactwrapper{
   padding: 30px 50px;
-  border: solid 0.5px #d1d1d1;
-  background-color: #ffffff;
+  // border: solid 0.5px #d1d1d1;
+  // background-color: #ffffff;
   overflow-y: scroll;
   height: 90vh;
   padding-bottom: 100px;
@@ -1763,6 +1763,41 @@ html {
 // contact-page
 .contact-page{
   background: #fff;
+  position: relative;
+  .left-contact-bg{
+    background: url(../images/contact-bg.png) 0 bottom no-repeat;
+    background-size: 100%;
+  }
+  .inner-width{
+    padding: 180px 90px 0 70px;
+  }
+  .row{
+    position: relative;
+    padding: 0!important;
+    border-radius: 4px;
+    border: solid 0.5px #fcb31f;
+    padding-left: 30px!important;
+      &::after{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 53%;
+      // z-index: -1;
+      content: "";
+      background: #ffe9d5;
+    }
+    &::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      // z-index: -1;
+      content: "";
+      background: #fffcfa;
+    }
+  }
   // padding-bottom: 130px;
   h2{
     font-size: 32px;
@@ -1797,23 +1832,23 @@ html {
       opacity: 0.97;
       // font-family: Poppins;
       font-size: 12px;
-      font-weight: normal;
+      font-weight: 600;
       font-stretch: normal;
       font-style: normal;
       line-height: 2;
       letter-spacing: normal;
-      color: #979797;
+      color: #4a4a4a;
     }
     a{
       opacity: 0.97;
       // font-family: Poppins;
       font-size: 12px;
-      font-weight: normal;
+      font-weight: 600;
       font-stretch: normal;
       font-style: normal;
       line-height: 2;
       letter-spacing: normal;
-      color: #979797;
+      color: #4a4a4a;
     }
   }
   .btn{
@@ -1889,6 +1924,7 @@ html {
   }
   textarea{
     min-height: 128px;
+    padding-right: 20px;
   }
 
 }
