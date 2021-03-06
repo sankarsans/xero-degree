@@ -268,7 +268,7 @@
                                                   <div class="row align-items-center">
                                                     <div class="col-md-5 col-sm-6 col-12">
                                                       <div class="image-wrapper">
-                                                        <img class="d-block img-fluid" data-tilt src="images/banner-4.png" alt="First slide">
+                                                        <img class="d-block img-fluid" data-tilt src="images/banner-4.png" style="max-width: 90%;" alt="First slide">
                                                         <div class="cover"></div>
                                                       </div>
                                                     </div>
@@ -763,14 +763,14 @@
                             </div>
                             <div class="dropdown ml-2">
                               <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span id="selectedone">Filter by</span><span class="caret"></span></a>
+                                <span id="selectedone" style="color:#929090">Filter by</span><span class="caret"></span></a>
                               <ul class="dropdown-menu dropdown-menuContact">
                                 <li><a href="#!">Option 1</a></li>
                                 <li><a href="#!">Option 2</a></li>
                                 <li><a href="#!">Option 3</a></li>
                                 <li><a href="#!">Option 4</a></li>
                               </ul>
-                              <img src="images/search.svg" alt="" class="filter-icon">
+                              <img src="images/filter.svg" alt="" class="filter-icon">
                             </div>
                           </div>
                           <div class="address-scroll">
@@ -780,10 +780,10 @@
                                 <h4>Glendale, AZ</h4>
                                 <h6>480 W Bell Rd Ste #108 Glendale, AZ 85308
                                   (623) 773-0956</h6>
-                                <button type="button" class="btn">Order Pick-Up</button>
-                                <button type="button" class="btn">Postmates</button>
-                                <button type="button" class="btn">DoorDash</button>
-                                <button type="button" class="btn">UberEats</button>
+                                <button type="button" class="btn" onclick="addActive(this)">Order Pick-Up</button>
+                                <button type="button" class="btn" onclick="addActive(this)">Postmates</button>
+                                <button type="button" class="btn" onclick="addActive(this)">DoorDash</button>
+                                <button type="button" class="btn" onclick="addActive(this)">UberEats</button>
                               </div>
                             </div>
                             <div class="address-list">
@@ -792,10 +792,10 @@
                                 <h4>Glendale, AZ</h4>
                                 <h6>480 W Bell Rd Ste #108 Glendale, AZ 85308
                                   (623) 773-0956</h6>
-                                <button type="button" class="btn">Order Pick-Up</button>
-                                <button type="button" class="btn">Postmates</button>
-                                <button type="button" class="btn">DoorDash</button>
-                                <button type="button" class="btn">UberEats</button>
+                                <button type="button" class="btn" onclick="addActive(this)">Order Pick-Up</button>
+                                <button type="button" class="btn" onclick="addActive(this)">Postmates</button>
+                                <button type="button" class="btn" onclick="addActive(this)">DoorDash</button>
+                                <button type="button" class="btn" onclick="addActive(this)">UberEats</button>
                               </div>
                             </div>
                             <div class="address-list">
@@ -804,10 +804,10 @@
                                 <h4>Glendale, AZ</h4>
                                 <h6>480 W Bell Rd Ste #108 Glendale, AZ 85308
                                   (623) 773-0956</h6>
-                                <button type="button" class="btn">Order Pick-Up</button>
-                                <button type="button" class="btn">Postmates</button>
-                                <button type="button" class="btn">DoorDash</button>
-                                <button type="button" class="btn">UberEats</button>
+                                <button type="button" class="btn" onclick="addActive(this)">Order Pick-Up</button>
+                                <button type="button" class="btn" onclick="addActive(this)">Postmates</button>
+                                <button type="button" class="btn" onclick="addActive(this)">DoorDash</button>
+                                <button type="button" class="btn" onclick="addActive(this)">UberEats</button>
                               </div>
                             </div>
                           </div>
@@ -815,10 +815,8 @@
                       </div>
                       <div class="col-md-8 p-0">
                         <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99739938177!2d77.35073861286678!3d12.9538477195883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1612016801772!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        <div class="search-location">
-                          <input type="text" class="searchbox w-100 " placeholder="Use my location">
-                          <img src="images/search.svg" alt="" class="search-icon">
-
+                        <div class="search-location">                         
+                          <button> <img src="images/location-detet.svg" alt="" class="search-icon">Use my location</button>
                         </div>
                       </div>
                     </div>

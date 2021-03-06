@@ -10450,17 +10450,47 @@ svg.tea #steamR {
     opacity: 0;
   }
 }
+@font-face {
+  font-family: "SF UI Text Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Regular"), url("../fonts/SFUIText-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "SF UI Text Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Light"), url("../fonts/SFUIText-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "SF UI Text Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Medium"), url("../fonts/SFUIText-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "SF UI Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Semibold"), url("../fonts/SFUIText-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "SF UI Text Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Bold"), url("../fonts/SFUIText-Bold.woff") format("woff");
+}
 /* general-styles */
 body {
   background-color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF UI Text Medium";
   color: #000;
   -webkit-font-smoothing: antialiased;
   position: relative;
 }
 
 body p {
-  font-family: "Poppins", sans-serif;
+  font-family: "SF UI Text Medium";
 }
 
 body .btn:focus {
@@ -10823,11 +10853,15 @@ ul.transition li {
   border: solid 0.5px #d1d1d1;
   background-color: #ffffff;
 }
+.address-list .btn.active {
+  color: #f95858;
+  border: 1px solid #f95858;
+}
 
 .location-section .search-location {
   position: absolute;
   top: 27vh;
-  width: 190px;
+  width: 185px;
   left: 2vw;
   height: 50px;
   display: flex;
@@ -10842,8 +10876,8 @@ ul.transition li {
 .location-section .search-location:focus {
   outline: none;
 }
-.location-section .search-location .searchbox {
-  padding: 0px 12px 0px 20px;
+.location-section .search-location button {
+  padding: 0px 12px 0px 15px;
   border-radius: 4px;
   border: none;
   background-color: #ffffff;
@@ -10855,7 +10889,7 @@ ul.transition li {
   letter-spacing: normal;
   color: #434242;
 }
-.location-section .search-location .searchbox:focus {
+.location-section .search-location button:focus {
   outline: none;
 }
 .location-section .search-location .search-icon {
@@ -10902,7 +10936,7 @@ ul.transition li {
   position: absolute;
   left: 10px;
   width: 18px;
-  top: 11px;
+  top: 13px;
   background: #fff;
 }
 .location-section .list-content .filter-icon {
@@ -10913,7 +10947,7 @@ ul.transition li {
   background: #fff;
 }
 .location-section .list-content .searchbox {
-  padding: 10px 8px 10px 38px;
+  padding: 13px 8px 12px 38px;
   border-radius: 4px;
   border: solid 0.5px #d1d1d1;
   font-size: 14px;
@@ -11567,6 +11601,7 @@ input, textarea {
 .order-modal .overflow-content {
   overflow-y: scroll;
   height: 100vh;
+  padding-bottom: 90px;
 }
 .order-modal .modal-dialog {
   position: absolute;
@@ -11602,7 +11637,7 @@ input, textarea {
 }
 .order-modal .list-box {
   padding: 24px 48px 24px 16px;
-  border-radius: 2px;
+  border-radius: 4px;
   border: solid 0.5px #d1d1d1;
   background-color: #ffffff;
   margin-bottom: 20px;
@@ -11640,7 +11675,8 @@ input, textarea {
   background-color: #ffffff;
 }
 .order-modal .list-box .btn-pickup.active {
-  color: #929090;
+  color: #f95858;
+  border: 1px solid #f95858;
 }
 
 .custom-select {
@@ -11703,6 +11739,25 @@ input, textarea {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.order-modal .nav-tabs {
+  border-bottom: 0px;
+}
+.order-modal .nav-item {
+  margin-bottom: 8px;
+}
+.order-modal .nav-item .nav-link {
+  border: none;
+}
+.order-modal .nav-item .nav-link:hover {
+  border: none;
+}
+.order-modal .nav-item a {
+  padding: 0;
+}
+.order-modal .nav-item a.active {
+  color: #f95858;
+  border: none;
+}
 .order-modal .modal-dialog {
   margin: 0 0 0 auto;
 }
@@ -11793,6 +11848,7 @@ body {
 }
 .hover-animation img {
   transition: all 0.8s ease;
+  border-radius: 4px;
 }
 .hover-animation img:hover {
   transition: all 0.8s ease;
@@ -11838,6 +11894,10 @@ body {
 .header_nav ul li a.active::after, .header_nav ul li a:hover::after, .left-nav ul li a.active::after, .left-nav ul li a:hover::after {
   transition: 0.5s;
   background: #fff;
+}
+
+.header_nav ul li a:hover {
+  color: #242424;
 }
 
 .navbar-collapse a::after {
@@ -12389,6 +12449,61 @@ html {
 .inner-page .full-screen .row {
   padding: 90px 90px 0 90px;
 }
+.order-scroll {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.order-page-row {
+  padding-top: 30vh !important;
+}
+
+.order-food-details .table-responsive {
+  background-color: #ffffff;
+}
+.order-food-details .table-responsive table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.order-food-details .table-responsive .headtr tr {
+  border-bottom: 1px solid #4342422d;
+}
+.order-food-details .table-responsive tr {
+  border-bottom: 1px solid #f6f6f6;
+}
+.order-food-details .table-responsive th {
+  color: #161616;
+  font-weight: 600;
+}
+.order-food-details .table-responsive td {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+.order-food-details .table-responsive td, .order-food-details .table-responsive th {
+  text-align: left;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.order-food-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #161616;
+  padding: 30px 0 20px;
+}
+.order-food-details p {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
 .career-section .row {
   padding: 90px 0px 0 20px;
 }
@@ -12465,12 +12580,13 @@ html {
   flex-direction: column;
   top: 71px;
   width: 66px !important;
-  height: 92%;
+  height: 90%;
   /* transform: rotate(180deg); */
   justify-content: space-between;
   background: #fff;
   /* padding-right: 10px; */
   box-shadow: 11px 0px 23px -6px rgba(214, 212, 212, 0.84);
+  padding-left: 9px;
 }
 .swiper-container-app .swiper-pagination-bullet {
   width: 100px;
@@ -12500,7 +12616,7 @@ html {
   transition: 0.5s;
   transform: rotate(-90deg);
   background: transparent;
-  width: 65%;
+  width: 59%;
   height: 2px;
   z-index: 9;
 }
@@ -12558,7 +12674,8 @@ html {
   content: "Franchise";
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5)::before {
-  left: 3px;
+  width: 66%;
+  left: 0px;
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(6)::after {
   content: "Careers";
@@ -12638,7 +12755,7 @@ html {
 }
 
 .home-banner .swiper-home-container {
-  padding-top: 110px;
+  padding-top: 90px;
 }
 .home-banner .swiper-home-container h1 {
   margin-top: -66px;

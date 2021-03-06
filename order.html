@@ -190,7 +190,7 @@ html {
                 <main id="viewport">
                   <div class="common-height home-section order-page">
                     <div class="container-fluid">
-                      <div class="row">
+                      <div class="row order-page-row">
                         <div class="col-md-5 col-sm-6 col-12">
                           <!-- <a href="index.html">Back to Home</a> -->
                           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -220,58 +220,516 @@ html {
                             </a>
                           </div>
                         </div>
-                        <div class="col-md-7 col-sm-6 col-12">
-                          <h2>Beaf steak, rice and <br>
-                            vegetables power bow</h2>
-                          <h1 class="mt-0">$123</h1>
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem,
-                            optio enim porro similique minus excepturi</p>
-                          <h5>Who we are and Why xero degree</h5>
-              
-                          <div class="col-12 p-0">
-                            <div class="input-group">
-                              <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn-danger btn-number" data-type="minus"
-                                  data-field="">
-                                  <span>-</span>
-                                </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1"
-                                max="100">
-                              <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn-success btn-number" data-type="plus"
-                                  data-field="">
-                                  <span>+</span>
-                                </button>
-                              </span>
+                        <div class="col-md-7 col-sm-6 col-12 ">
+                          <div class="order-scroll">
+                            <h2>Beaf steak, rice and <br>
+                              vegetables power bow</h2>
+                            <h1 class="mt-0">$123</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta officiis exercitationem aperiam minus. Rem,
+                              optio enim porro similique minus excepturi</p>
+                            <h5>Who we are and Why xero degree</h5>
+                
+                            <div class="col-12 p-0">
+                              <div class="input-group">
+                                <span class="input-group-btn">
+                                  <button type="button" class="quantity-left-minus btn-danger btn-number" data-type="minus"
+                                    data-field="">
+                                    <span>-</span>
+                                  </button>
+                                </span>
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1"
+                                  max="100">
+                                <span class="input-group-btn">
+                                  <button type="button" class="quantity-right-plus btn-success btn-number" data-type="plus"
+                                    data-field="">
+                                    <span>+</span>
+                                  </button>
+                                </span>
+                              </div>
                             </div>
-                          </div>
-              
-                          <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Order Now</a>
-              
-                          <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                                aria-selected="true">Nutritional Information</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                                aria-selected="false">Allergen Information</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                                aria-selected="false">Cereals Containing Gluten</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab"
-                                aria-controls="contact1" aria-selected="false">Cereals Containing Gluten</a>
-                            </li>
-                          </ul>
-                          <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">one</div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">two</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">three</div>
-                            <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">four</div>
+                
+                            <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">Order Now</a>
+                
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#homee" role="tab" aria-controls="home"
+                                  aria-selected="true">Nutritional Information</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                  aria-selected="false">Allergen Information</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                                  aria-selected="false">Cereals Containing Gluten</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab"
+                                  aria-controls="contact1" aria-selected="false">Cereals Containing Gluten</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="homee" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="order-food-details">
+                                  <div class="table-responsive pt-3">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Nutriant name</th>
+                                        <th>Per 100g/ml</th>
+                                        <th>Take - out(182ml) </th>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (KJ)</td>
+                                        <td>194</td>
+                                        <td>352</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (kcal)</td>
+                                        <td>46</td>
+                                        <td>83</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fat (g)</td>
+                                        <td>1.5</td>
+                                        <td>2.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is saturates (g)</td>
+                                        <td>0.9</td>
+                                        <td>1.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Carbohydrate (g)</td>
+                                        <td>5.3</td>
+                                        <td>9.6</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is sugars (g)</td>
+                                        <td>4.7</td>
+                                        <td>8.5</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="details-header">
+                                    <h3>Cereals Containing Gluten</h3>
+                                    <p>We use shared equipment, we cannot guarantee that our unpackaged food items or hand-crafted drinks are suitable for people with severe allergies. Check our Allergen Information or ask a Costa Coffee team member each visit as ingredients may have changed since your last purchase.</p>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Cereals Containing Gluten</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Wheat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rye Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Barley Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Oat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Allergens Present</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Soya Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Egg Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Milk Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fish Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Crustacean Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mollusc Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="order-food-details">
+                                  <div class="table-responsive pt-3">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Nutriant name</th>
+                                        <th>Per 100g/ml</th>
+                                        <th>Take - out(182ml) </th>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (KJ)</td>
+                                        <td>194</td>
+                                        <td>352</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (kcal)</td>
+                                        <td>46</td>
+                                        <td>83</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fat (g)</td>
+                                        <td>1.5</td>
+                                        <td>2.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is saturates (g)</td>
+                                        <td>0.9</td>
+                                        <td>1.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Carbohydrate (g)</td>
+                                        <td>5.3</td>
+                                        <td>9.6</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is sugars (g)</td>
+                                        <td>4.7</td>
+                                        <td>8.5</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="details-header">
+                                    <h3>Cereals Containing Gluten</h3>
+                                    <p>We use shared equipment, we cannot guarantee that our unpackaged food items or hand-crafted drinks are suitable for people with severe allergies. Check our Allergen Information or ask a Costa Coffee team member each visit as ingredients may have changed since your last purchase.</p>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Cereals Containing Gluten</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Wheat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rye Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Barley Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Oat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Allergens Present</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Soya Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Egg Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Milk Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fish Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Crustacean Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mollusc Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="order-food-details">
+                                  <div class="table-responsive pt-3">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Nutriant name</th>
+                                        <th>Per 100g/ml</th>
+                                        <th>Take - out(182ml) </th>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (KJ)</td>
+                                        <td>194</td>
+                                        <td>352</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (kcal)</td>
+                                        <td>46</td>
+                                        <td>83</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fat (g)</td>
+                                        <td>1.5</td>
+                                        <td>2.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is saturates (g)</td>
+                                        <td>0.9</td>
+                                        <td>1.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Carbohydrate (g)</td>
+                                        <td>5.3</td>
+                                        <td>9.6</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is sugars (g)</td>
+                                        <td>4.7</td>
+                                        <td>8.5</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="details-header">
+                                    <h3>Cereals Containing Gluten</h3>
+                                    <p>We use shared equipment, we cannot guarantee that our unpackaged food items or hand-crafted drinks are suitable for people with severe allergies. Check our Allergen Information or ask a Costa Coffee team member each visit as ingredients may have changed since your last purchase.</p>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Cereals Containing Gluten</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Wheat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rye Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Barley Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Oat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Allergens Present</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Soya Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Egg Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Milk Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fish Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Crustacean Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mollusc Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="order-food-details">
+                                  <div class="table-responsive pt-3">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Nutriant name</th>
+                                        <th>Per 100g/ml</th>
+                                        <th>Take - out(182ml) </th>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (KJ)</td>
+                                        <td>194</td>
+                                        <td>352</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Energy (kcal)</td>
+                                        <td>46</td>
+                                        <td>83</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fat (g)</td>
+                                        <td>1.5</td>
+                                        <td>2.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is saturates (g)</td>
+                                        <td>0.9</td>
+                                        <td>1.7</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Carbohydrate (g)</td>
+                                        <td>5.3</td>
+                                        <td>9.6</td>
+                                      </tr>
+                                      <tr>
+                                        <td>of which is sugars (g)</td>
+                                        <td>4.7</td>
+                                        <td>8.5</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="details-header">
+                                    <h3>Cereals Containing Gluten</h3>
+                                    <p>We use shared equipment, we cannot guarantee that our unpackaged food items or hand-crafted drinks are suitable for people with severe allergies. Check our Allergen Information or ask a Costa Coffee team member each visit as ingredients may have changed since your last purchase.</p>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Cereals Containing Gluten</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Wheat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rye Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Barley Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Oat Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table>
+                                      <tr class="head-tr">
+                                        <th>Allergens Present</th>
+                                        <th></th>
+                                        <th></th>
+                                      </tr>
+                                      <tr>
+                                        <td>Soya Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Egg Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Milk Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Fish Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Crustacean Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Mollusc Products</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -322,15 +780,31 @@ html {
           </button>
 
           <div class="col-2">
-            <ul>
-              <li><a href="#!">Arizona</a></li>
-              <li><a href="#!">California</a></li>
-              <li><a href="#!">Colorado</a></li>
-              <li><a href="#!">Florida</a></li>
-              <li><a href="#!">Lousiana</a></li>
-              <li><a href="#!">Nevada</a></li>
-              <li><a href="#!">Oregon</a></li>
-              <li><a href="#!">Texas</a></li>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a href="#!" class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Arizona</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true">California</a>
+              </li>
+              <li class="nav-item">
+                 <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">Colorado</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home3" role="tab" aria-controls="home3" aria-selected="true">Florida</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home4" role="tab" aria-controls="home4" aria-selected="true">Lousiana</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home5" role="tab" aria-controls="home5" aria-selected="true">Nevada</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home6" role="tab" aria-controls="home6" aria-selected="true">Oregon</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link" id="home-tab" data-toggle="tab" href="#home7" role="tab" aria-controls="home7" aria-selected="true">Texas</a>
+              </li>
             </ul>
           </div>
           <div class="col-10">
@@ -339,25 +813,37 @@ html {
                 <h2>Austin Region</h2>
                 <p>800 W Whitestone Blvd, Cedar Park, TX 78613<br>
                   (512) 514-0955</p>
-                  <button class="btn btn-pickup">Order Pick-Up</button>
+                  <button class="btn btn-pickup" onclick="addActive(this)">Order Pick-Up</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">UberEats</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">DoorDash</button>
+
               </div>
               <div class="list-box">
                 <h2>Austin Region</h2>
                 <p>800 W Whitestone Blvd, Cedar Park, TX 78613<br>
                   (512) 514-0955</p>
-                  <button class="btn btn-pickup">Order Pick-Up</button>
+                  <button class="btn btn-pickup" onclick="addActive(this)">Order Pick-Up</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">UberEats</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">DoorDash</button>
+
               </div>
               <div class="list-box">
                 <h2>Austin Region</h2>
                 <p>800 W Whitestone Blvd, Cedar Park, TX 78613<br>
                   (512) 514-0955</p>
-                  <button class="btn btn-pickup">Order Pick-Up</button>
+                  <button class="btn btn-pickup" onclick="addActive(this)">Order Pick-Up</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">UberEats</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">DoorDash</button>
+
               </div>
               <div class="list-box">
                 <h2>Austin Region</h2>
                 <p>800 W Whitestone Blvd, Cedar Park, TX 78613<br>
                   (512) 514-0955</p>
-                  <button class="btn btn-pickup">Order Pick-Up</button>
+                  <button class="btn btn-pickup" onclick="addActive(this)">Order Pick-Up</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">UberEats</button>
+                  <button class="btn btn-pickup ml-3" onclick="addActive(this)">DoorDash</button>
+
               </div>
             </div>
           </div>
