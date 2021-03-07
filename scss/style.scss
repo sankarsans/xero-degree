@@ -1192,10 +1192,21 @@ ul.transition li {
 		}
 	}
 }
-
+.swiper-scrollbar{
+	bottom: 70px!important;
+	&.swiper-scrollbar-about, &.swiper-scrollbar-career{
+		bottom: 0px !important;
+	}
+	&.swiper-scrollbar-franchise{
+		bottom: 25px !important;
+	}
+	.swiper-scrollbar-drag{
+		background-color: #f95858;
+	}
+}
 .menu-items {
 	overflow-y: scroll;
-	height: 70vh;
+	height: 82vh;
 	&:hover {
 		&::-webkit-scrollbar-thumb {
 			background: #acacac;

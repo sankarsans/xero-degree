@@ -11540,9 +11540,22 @@ ul.transition li {
   color: #f95858;
 }
 
+.swiper-scrollbar {
+  bottom: 70px !important;
+}
+.swiper-scrollbar.swiper-scrollbar-about, .swiper-scrollbar.swiper-scrollbar-career {
+  bottom: 0px !important;
+}
+.swiper-scrollbar.swiper-scrollbar-franchise {
+  bottom: 25px !important;
+}
+.swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #f95858;
+}
+
 .menu-items {
   overflow-y: scroll;
-  height: 70vh;
+  height: 82vh;
   /* Track */
   /* Handle */
   /* Handle on hover */
