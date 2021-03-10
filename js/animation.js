@@ -47,17 +47,17 @@ $(function() {
     var tl8 = new TimelineMax();
     
 
-    var cov = $(this).find("#section02 .cover");
-    var img = $(this).find("#section02 img");
+    // var cov = $(this).find("#section02 .cover");
+    // var img = $(this).find("#section02 img");
 
-    tl8.from(cov, 1, { scaleX: 0, transformOrigin: "left" });
-    tl8.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
-    tl8.from(img, 1, { opacity: 0 }, "reveal");
+    // tl8.from(cov, 1, { scaleX: 0, transformOrigin: "left" });
+    // tl8.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
+    // tl8.from(img, 1, { opacity: 0 }, "reveal");
 
-    // tl2.from("#section02 img" ,1, {x:-600});
+    // // tl2.from("#section02 img" ,1, {x:-600});
     var newtime = 0.4;
 
-    tl8.from("#section02 h2", 1.0, { y:-100,  ease : Sine.easeIn });
+    tl8.from("#section02 h2", 1.0, { y:-100,delay:5,  ease : Sine.easeIn });
     tl8.staggerFrom( $("#section02 .list-menu li"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
     tl8.staggerFrom( $("#section02 .text-center"), newtime, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, newtime );
 
@@ -65,7 +65,7 @@ $(function() {
     // tl2.from("#section02 .description", 1, { y:100, opacity:0,  ease : Sine.easeIn });
     // tl2.from("#section02 .card-details", 0.4, { y:200,  ease : Sine.easeIn });
     
-    var time = 0.5;
+    // var time = 0.5;
     // tl2.staggerFrom( $("#section02 .card-details"), time, {delay: 2, y:100, opacity:0, ease : Sine.easeIn }, time );
     
     // tl2.to("#section02 img", 0.4, { width:"100%", ease:Power0.easeNone } );
@@ -77,8 +77,8 @@ $(function() {
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#section02",
-        triggerHook: "onEnter",
-        offset: 350,
+        triggerHook: 200,
+        offset: 0,
         duration: 1000,
         reverse: true,
     })

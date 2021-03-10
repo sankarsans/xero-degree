@@ -10861,7 +10861,7 @@ ul.transition li {
 
 .location-section .search-location {
   position: absolute;
-  top: 27vh;
+  top: 28vh;
   width: 185px;
   left: 2vw;
   height: 50px;
@@ -10901,14 +10901,14 @@ ul.transition li {
   background: #fff;
 }
 .location-section .list-content {
-  padding: 190px 0px 0 73px;
+  padding: 210px 0px 0 93px;
   box-shadow: 3px 10px 18px 0 rgba(228, 212, 198, 0.37);
   background-color: #ffffff;
 }
 .location-section .list-content .address-scroll {
   height: 83vh;
   overflow: scroll;
-  margin-top: 40px;
+  margin-top: 25px;
   padding-bottom: 130px;
   padding-right: 30px;
   /* Track */
@@ -10967,7 +10967,7 @@ ul.transition li {
   border-radius: 4px;
   border: solid 0.5px #d1d1d1;
   background-color: #ffffff;
-  width: 40%;
+  width: 33%;
 }
 .location-section .example .btn-toggle {
   top: 50%;
