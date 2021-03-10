@@ -10717,17 +10717,17 @@ ul.transition li {
   color: #4a4a4a;
   display: inline-block;
   width: auto;
-  padding: 0 20px;
+  padding: 10px 10px;
   padding-top: 0px;
   text-align: center;
-  border-bottom: solid 4px rgba(249, 88, 88, 0.2);
+  border-bottom: solid 3px rgba(249, 88, 88, 0.2);
 }
 .order-page .nav-tabs .nav-link:focus {
   outline: none;
   background: transparent;
 }
 .order-page .nav-tabs .nav-link.active {
-  border-bottom: solid 4px #f95858;
+  border-bottom: solid 3px #f95858;
   background: transparent;
 }
 .order-page .input-group {
@@ -12162,9 +12162,8 @@ html {
   border-radius: 6px;
   border: none;
   background-color: #f95858;
-  margin-top: 20px;
   border: 1px solid #f95858;
-  margin-top: 20px;
+  margin-top: 0px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -12194,7 +12193,7 @@ html {
 .contact-page textarea,
 .contact-page select,
 .contact-page .dropdown {
-  padding: 12px 294px 12px 16px;
+  padding: 8px 16px 8px 16px;
   border: solid 1px #e1e1e1;
 }
 .contact-page input:focus,
@@ -12225,7 +12224,7 @@ html {
   color: #555;
 }
 .contact-page textarea {
-  min-height: 128px;
+  min-height: 108px;
   padding-right: 20px;
 }
 
@@ -12257,6 +12256,30 @@ html {
   letter-spacing: normal;
   color: #5d0f0f;
   font-family: "Oswald", sans-serif;
+}
+.franchise-process .connection-arrow {
+  position: absolute;
+  top: 0;
+}
+.franchise-process .arrow1 {
+  top: 33px;
+  right: -21px;
+  width: 260px;
+}
+.franchise-process .arrow2 {
+  top: 83px;
+  right: -21px;
+  width: 260px;
+}
+.franchise-process .arrow3 {
+  top: 33px;
+  right: -21px;
+  width: 260px;
+}
+.franchise-process .arrow4 {
+  top: 83px;
+  right: -21px;
+  width: 260px;
 }
 .franchise-process h6 {
   font-size: 14px;
@@ -12494,6 +12517,11 @@ body::-webkit-scrollbar {
   padding-top: 30vh !important;
 }
 
+.order-food-details .details-header {
+  background-color: #fff;
+  padding: 15px;
+  margin: 20px 0;
+}
 .order-food-details .table-responsive {
   background-color: #ffffff;
 }
@@ -12510,6 +12538,7 @@ body::-webkit-scrollbar {
 .order-food-details .table-responsive th {
   color: #161616;
   font-weight: 600;
+  border-bottom: 1px solid #4342422c;
 }
 .order-food-details .table-responsive td {
   color: #4a4a4a;
@@ -12518,7 +12547,7 @@ body::-webkit-scrollbar {
 .order-food-details .table-responsive td,
 .order-food-details .table-responsive th {
   text-align: left;
-  padding: 15px 0;
+  padding: 15px 15px;
   font-size: 14px;
 }
 .order-food-details h3 {
