@@ -1462,6 +1462,7 @@ textarea {
 	}
 	.dropdown-arrow {
 		width: 10px;
+		transform: rotate(180deg);
 	}
 	.dropdown-toggle::after {
 		display: none;
