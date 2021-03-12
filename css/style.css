@@ -11992,9 +11992,21 @@ body {
 }
 .inner-pages .left-nav ul li a:hover::after {
   display: block;
+  transition: 0.5s;
 }
 .inner-pages .left-nav ul li a::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 106%;
+  background: #fff;
+  left: -7px;
+  border-radius: 0;
+  bottom: 0;
+  transition: 0.5s;
+  background: #f95858;
   display: none;
+  transition: 0.5s;
 }
 
 .home-section.career-opening .btn {
