@@ -2505,6 +2505,9 @@ body {
 	.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 		background: #f95858;
 	}
+	.swiper-pagination-bullets .swiper-pagination-bullet:hover::before {
+		background: #f95858;
+	}
 	.swiper-pagination-bullets .swiper-pagination-bullet::after {
 		position: absolute;
 		left: 0;
