@@ -1592,7 +1592,7 @@ body {
 		border-radius: 4px;
 		&:hover {
 			transition: all .8s ease;
-			transform: scale(1.045) rotate(1.2deg);
+			transform: scale(1.045) rotate(1.2deg)!important;
 		}
 	}
 }
@@ -1670,7 +1670,7 @@ body {
 	a {
 		color: #242424;
 		&:hover {
-			color: #f95858;
+			color: #b69e9e;
 			&::after {
 				display: block;
 				transition: 0.5s;
@@ -1820,14 +1820,14 @@ html {
 	}
 }
 
-.cover {
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	position: absolute;
-	left: 0;
-	max-width: 100%;
-}
+// .cover {
+// 	width: 100%;
+// 	height: 100%;
+// 	background: transparent;
+// 	position: absolute;
+// 	left: 0;
+// 	max-width: 100%;
+// }
 
 .carousel-control-next,
 .carousel-control-prev {
