@@ -221,7 +221,7 @@ $(function() {
      var time = 0.2;
 
     tl10.staggerFrom( $("#new9 .card-wrapper"), 0.2, {x:+100, opacity:0, ease: Elastic }, time);
-
+    // tl10.to(".square", 3, {rotation:"360", ease:Linear.easeNone, repeat:-1});
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new9",
@@ -291,6 +291,8 @@ $(function() {
     tl13.from("#new11 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl13.from("#new11 h6", 0.3,{y:+10, opacity:0, ease: Back});
     tl13.staggerFrom( $("#new11 .process-wrapper"), 0.2, {x:-100, opacity:0, ease: Elastic }, time);
+    tl13.staggerFrom( $("#new11 .connection-arrow"), 0.2, {y:+100, opacity:0, ease: Elastic }, time);
+
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new11",
@@ -841,3 +843,5 @@ $(function() {
 
 // left.from($("#rect"),2,{width:0},1)
 // .from($("#rect"),2,{right:400},1)
+
+

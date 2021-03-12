@@ -11981,13 +11981,6 @@ body {
   transition: all 0.3s ease-out;
   margin-bottom: 50px;
 }
-.home-section .btn:hover {
-  color: #f95858;
-  background-color: #fff;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border: 1px solid #f95858;
-}
 
 body,
 html {
@@ -12898,6 +12891,38 @@ body::-webkit-scrollbar {
 .home-banner .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
   /* content: "Home"; */
   display: block;
+}
+
+.btn-common {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-common span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.btn-common:hover {
+  color: #f95858 !important;
+  border: 1px solid #f95858;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.btn-common:hover span {
+  width: 225%;
+  height: 562.5px;
+}
+
+.btn-common:active {
+  background-color: #f95858;
 }
 
 /*# sourceMappingURL=style.css.map */
