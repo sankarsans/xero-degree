@@ -506,6 +506,7 @@ $(function() {
     tl22.from("#order .input-group", 0.3,{y:+10, opacity:0, ease: Back});
     tl22.from("#order a", 0.3,{y:+10, opacity:0, ease: Back});
     tl22.from("#order #myTab", 0.3,{y:+10, opacity:0, ease: Back});
+    tl22.from("#order .tab-content", 0.3,{y:+10, opacity:0, ease: Back});
     tl22.from("#order img" ,1, {x:-600});
 
     var scene = new ScrollMagic.Scene({

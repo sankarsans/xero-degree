@@ -14,7 +14,9 @@ body {
   flex-direction: column;
   z-index: 99;
   position: relative;
-  background: black;
+  // background: black;
+  background: radial-gradient(circle, rgba(255,138,31,1) 0%, rgba(241,26,60,0.9934348739495799) 100%);
+
   width: 100%;
 }
 .loader-wrapper{

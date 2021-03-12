@@ -10309,7 +10309,7 @@ body {
   flex-direction: column;
   z-index: 99;
   position: relative;
-  background: black;
+  background: radial-gradient(circle, #ff8a1f 0%, rgba(241, 26, 60, 0.9934348739) 100%);
   width: 100%;
 }
 
