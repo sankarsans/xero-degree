@@ -520,42 +520,6 @@ $(function() {
 
 
 
-
-    ;(function() {
-  
-        'use strict';
-        
-        var btn = document.querySelector('.btn-page'), 
-            overlay = document.querySelector('.overlay'), 
-            loader = document.querySelector('.overlay-loader'), 
-            overlayTL = new TimelineMax(), 
-            loaderTL = new TimelineMax();
-        
-        var animateOut = function() {
-          overlayTL.to( overlay, .6, { left: '100%', ease: Power4.easeInOut, delay: .25 } );
-          loaderTL.to( loader, .5, { y: '-40', opacity: 0 } );
-        };
-        
-        var animateOut_2 = function() {
-          overlayTL.to( overlay, .6, { right: '100%', ease: Power4.easeInOut, delay: .25 } );
-          loaderTL.to( loader, .5, { y: '40', opacity: 0 } );
-        }
-        
-        var animateIn = function() {
-          overlayTL.fromTo( overlay, .6, { right: '100%', left: 0 }, { right: 0, ease: Power4.easeInOut } );
-          loaderTL.fromTo( loader, .5, { y: '40', opacity: 0, delay: .30 }, { y: 0, opacity: 1, delay: .6, ease: Power2.easeOut } );
-        };
-        
-        animateOut_2();
-        
-        btn.onclick = function() {
-          animateIn();
-          setTimeout(animateOut_2, 2000);
-        };
-        
-      })();
-
-
     // // ****************** animation project section ******************//
     // var controller = new ScrollMagic.Controller({vertical: false});
 

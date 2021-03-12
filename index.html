@@ -90,9 +90,9 @@
     <div class="cursor"></div>
 
     <!-- loader content -->
-    <!-- <div class="loader" id="loader">
+    <div class="loader" id="loader">
 
-        <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
                 stroke="var(--secondary)" stroke-width="2"></path>
@@ -106,12 +106,11 @@
                 stroke-linejoin="round" stroke="var(--secondary)"></path>
             <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-    </div> -->
-
-    <div class="overlay">
-      <div class="overlay-loader"></div>
-    </div>
+        </svg> -->
+        <div class="loader-wrapper">
+          <img src="images/logo.png" alt="">
+        </div>    
+      </div>
     
 
     <!-- navigation content -->
@@ -146,7 +145,7 @@
                 <form class="form-inline my-2 my-lg-0">
                     <ul class="mb-0 align-items-center">
                         <li><a onclick="openNav()">Offers</a></li>
-                        <li><a href="contact-us.html" class="btn-page">Contact Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                         <li>
                           <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -214,7 +213,7 @@
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h1 class="ball">Cheesegasms now<br> start at just Rs 199!</h1>
-                                                        <a href="order.html" class="btn btn-primary btn-common btn-page">Know More<span></span></a>
+                                                        <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -234,7 +233,7 @@
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h3 class="ball">Xero Degrees believes in two things: <span>hygienic<br> safety</span> standards and<span> lots of good Cheese!</span><br> Order today from our wide range of comfort<br> food options!</h3>
-                                                        <a href="order.html" class="btn btn-primary btn-common btn-page">Know More<span></span></a>
+                                                        <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -254,7 +253,7 @@
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h3>We’ve just got back from our expedition! And<br> we’ve brought you new<span> lip-smacking</span> Dishes<br> as a gift! Order now!</h3>
-                                                        <a href="order.html" class="btn btn-primary btn-common btn-page">Know More<span></span></a>
+                                                        <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1442,17 +1441,7 @@
     <script src="js/animation.js"></script>
     <script src="js/component.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
-    <script>
-    //  var bouncingBall = anime({
-    //     targets: '.ball',
-    //     translateY: '50vh',
-    //     duration: 300,
-    //     loop: false,
-    //     direction: 'alternate',
-    //     easing: 'easeInCubic'
-    //   });
-    </script>
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {})
