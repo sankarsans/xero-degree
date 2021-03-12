@@ -12893,6 +12893,25 @@ body::-webkit-scrollbar {
   display: block;
 }
 
+.overlay {
+  z-index: 10;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-loader {
+  width: 100px;
+  height: 100px;
+  background: url(../images/logo.png) 0 0 no-repeat;
+}
+
 .btn-common {
   position: relative;
   overflow: hidden;
