@@ -54,8 +54,17 @@ $(function() {
     var controller = new ScrollMagic.Controller({vertical: false});
 
     var tl2 = new TimelineMax();
-
-    tl2.from("#new2 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
+    var element2 = document.querySelector("#new2 h3");
+    var childSplit2 = new SplitText("h3", {
+        type: "lines, chars",
+        linesClass: "split-child"
+      })
+      var parentSplit2 = new SplitText("h3", {
+        linesClass: "split-parent"
+      })
+      
+      tl2.from(childSplit2.lines, 1.7 ,{  yPercent: 100, ease: 'power4.out', stagger: 0.1 })
+    // tl2.from("#new2 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl2.from("#new2 a", 0.2,{y:+10, opacity:0, ease: Elastic});
     tl2.from("#new2 img" ,0.5, {x:-600},"-=1");
 
