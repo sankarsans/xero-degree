@@ -12027,6 +12027,7 @@ body {
   color: #242424;
   margin-bottom: 15px;
   margin-top: 0;
+  position: relative;
 }
 .home-section p {
   font-size: 14px;
