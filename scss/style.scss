@@ -2773,4 +2773,9 @@ body {
   .btn-common:active {
 	background-color: #f95858;
   }
-	
+  .split-parent {
+	overflow: hidden;
+  }
+  .split-child {
+	display: inline-block;
+  }

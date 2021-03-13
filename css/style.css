@@ -12989,4 +12989,12 @@ body::-webkit-scrollbar {
   background-color: #f95858;
 }
 
+.split-parent {
+  overflow: hidden;
+}
+
+.split-child {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */
