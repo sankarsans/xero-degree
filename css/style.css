@@ -11227,6 +11227,11 @@ ul.transition li {
   width: 97%;
   min-height: auto;
 }
+.about-nav .card-wrapper:hover h5 {
+  color: #f11a3c;
+  opacity: 1;
+  transition: 0.5s;
+}
 .about-nav .card-wrapper .inner-card {
   padding: 30px 20px;
   z-index: 9;
@@ -11236,6 +11241,7 @@ ul.transition li {
 }
 .about-nav .card-wrapper h5 {
   opacity: 0.4;
+  transition: 0.5s;
   -webkit-text-stroke: 1px #f95858;
   font-family: "Oswald", sans-serif;
   font-size: 60px;
@@ -11364,6 +11370,11 @@ ul.transition li {
 }
 .social-icon ul li a img {
   width: 20px;
+  transition: 0.5s;
+}
+.social-icon ul li a:hover img {
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 
 /* The side navigation menu */
@@ -11468,9 +11479,14 @@ ul.transition li {
 .sidenav .sidenav-inner a:hover {
   color: #f95858;
 }
+.sidenav .sidenav-inner a:hover img {
+  width: 23px;
+  transition: 0.5s;
+}
 .sidenav .sidenav-inner a img {
   color: #f95858;
   width: 16px;
+  transition: 0.5s;
   margin-left: 12px;
 }
 .sidenav .sidenav-inner p {
@@ -11504,12 +11520,24 @@ ul.transition li {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
-
+.sidenav .closebtn:hover {
+  border: 1px solid #fff;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
@@ -12747,6 +12775,9 @@ body::-webkit-scrollbar {
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   background: #f95858;
+}
+.swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:hover::after {
+  color: #f95858;
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet:hover::before {
   background: #f95858;

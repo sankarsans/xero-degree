@@ -766,22 +766,13 @@ ul.transition li {
 		// padding: 30px 20px;
 		width: 97%;
 		min-height: auto;
-		// &::before{
-		//   content: "01";
-		//   position: absolute;
-		//   left: 0;
-		//   top: 0;
-		//   opacity: 0.4;
-		//   -webkit-text-stroke: 1px #f95858;
-		//   font-family: 'Oswald', sans-serif;
-		//   font-size: 60px;
-		//   font-weight: bold;
-		//   font-stretch: normal;
-		//   font-style: normal;
-		//   line-height: 0.67;
-		//   letter-spacing: normal;
-		//   color: #ffffff;
-		// }
+		&:hover{
+			h5{
+				color: #f11a3c;
+				opacity: 1;
+				transition: 0.5s;
+			}
+		}
 		.inner-card {
 			padding: 30px 20px;
 			z-index: 9;
@@ -791,6 +782,7 @@ ul.transition li {
 		}
 		h5 {
 			opacity: 0.4;
+			transition: 0.5s;
 			-webkit-text-stroke: 1px #f95858;
 			font-family: 'Oswald', sans-serif;
 			font-size: 60px;
@@ -929,6 +921,13 @@ ul.transition li {
 			a {
 				img {
 					width: 20px;
+					transition: 0.5s;
+				}
+				&:hover{
+					img{
+						transition: 0.5s;
+						transform: scale(1.2);
+					}
 				}
 			}
 		}
@@ -1037,10 +1036,15 @@ ul.transition li {
 			color: #f95858;
 			&:hover {
 				color: #f95858;
+				img{
+					width: 23px;
+					transition: 0.5s;
+				}
 			}
 			img {
 				color: #f95858;
 				width: 16px;
+				transition: 0.5s;
 				margin-left: 12px;
 			}
 		}
@@ -1084,10 +1088,26 @@ ul.transition li {
 
 .sidenav .closebtn {
 	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	border: 1px solid transparent;
+	transition: 0.5s;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 50%;
+	&:hover{
+		border: 1px solid #fff;
+		transition: 0.5s;
+		transform: scale(1.2);
+		img{
+
+		}
+	}
 }
 
 
@@ -2518,6 +2538,9 @@ body {
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 		background: #f95858;
+	}
+	.swiper-pagination-bullets .swiper-pagination-bullet:hover::after {
+		color: #f95858;
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:hover::before {
 		background: #f95858;
