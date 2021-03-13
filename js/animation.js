@@ -8,14 +8,35 @@ $(function() {
    
     var time = 0.2;
     
-    // var element = document.querySelector("#new1 h1");
-    // var childSplit = new SplitText("h1", {
-    //     type: "lines, chars",
-    //     linesClass: "split-child"
-    //   })
-    //   var parentSplit = new SplitText("h1", {
-    //     linesClass: "split-parent"
-    //   })
+    // let revealText = document.querySelectorAll("#new1 h1");
+    // let results = Splitting({ target: revealText, by: "lines" });
+
+    // results.forEach((splitResult) => {
+    //     const wrappedLines = splitResult.lines
+    //     .map(
+    //         (wordsArr) => `
+    //         <span class="line"><div class="words">
+    //         ${wordsArr
+    //             .map(
+    //             (word) => `${word.outerHTML}<span class="whitespace"> 
+    //         </span>`
+    //             )
+    //             .join("")}
+    //         </div></span>`
+    //     )
+    //     .join("");
+    //     splitResult.el.innerHTML = wrappedLines;
+    // });
+
+    // gsap.registerPlugin(ScrollTrigger);
+    // let revealLines = revealText.forEach((element) => {
+    //     alert("hell")
+    //     const lines = element.querySelectorAll(".line .words");
+    //     let tl11 = gsap.timeline({scrollTrigger: {trigger: "#new1",start: "top top",toggleActions:"restart none none reset",}});
+
+    //     tl11.set(revealText, { autoAlpha: 1 });
+    //     tl11.from(lines, 1, {yPercent: 100,ease: Power3.out,stagger: 0.25,delay: 0.2});
+    // });
 
     tl1.staggerFrom( $(".header_nav ul li"), time, {delay: 0, y:-100, opacity:0, ease : Sine.easeIn }, time );
     tl1.staggerFrom( $(".new-nav ul li", 'swiper-pagination ul li'), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
@@ -25,8 +46,6 @@ $(function() {
 
     // tl1.from(childSplit.lines, 1.7 ,{  yPercent: 100, ease: 'power4.out', stagger: 0.1 })
         // .to(childSplit.chars, 1.7, { x: 39,ease: 'power4.out',stagger: 0   }, '+=1')
-
-
 
 
 
