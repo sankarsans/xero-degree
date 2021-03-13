@@ -11090,9 +11090,13 @@ ul.transition li {
   width: 95px;
   color: #f95858;
   transition: left 0.25s;
+  border-radius: 6px 0 0 6px;
 }
 .location-section .btn-toggle.active {
   transition: background-color 0.25s;
+}
+.location-section .btn-toggle.active .handle {
+  border-radius: 0 6px 6px 0;
 }
 .location-section .btn-toggle.active > .handle {
   left: 99px;
@@ -11839,12 +11843,12 @@ textarea {
 }
 
 .dropdown span {
-  width: 90px;
   display: inline-block;
 }
 .dropdown .dropdown-arrow {
   width: 10px;
   transform: rotate(180deg);
+  margin-left: 8px;
 }
 .dropdown .dropdown-toggle::after {
   display: none;
@@ -12624,7 +12628,7 @@ body::-webkit-scrollbar {
 }
 
 .career-section .row {
-  padding: 90px 0px 0 20px;
+  padding: 90px 0px 0 70px;
 }
 .career-section .right-section h2 {
   padding-top: 10vh;
@@ -12659,6 +12663,7 @@ body::-webkit-scrollbar {
   background-color: #ffffff;
   margin-bottom: 40px;
   min-height: 200px;
+  border-radius: 4px;
 }
 .career-section .career-perks h3 {
   font-size: 14px;

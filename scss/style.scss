@@ -607,9 +607,14 @@ ul.transition li {
 		// border-radius: 1.125rem;
 		color: #f95858;
 		transition: left 0.25s;
+		border-radius: 6px 0 0 6px;
 	}
+	
 	.btn-toggle.active {
 		transition: background-color 0.25s;
+		.handle{
+			border-radius: 0 6px 6px 0;
+		}
 	}
 	.btn-toggle.active>.handle {
 		left: 99px;
@@ -1457,12 +1462,13 @@ textarea {
 
 .dropdown {
 	span {
-		width: 90px;
+		// width: 90px;
 		display: inline-block;
 	}
 	.dropdown-arrow {
 		width: 10px;
 		transform: rotate(180deg);
+		margin-left: 8px;
 	}
 	.dropdown-toggle::after {
 		display: none;
@@ -2386,7 +2392,7 @@ body {
 
 .career-section {
 	.row {
-		padding: 90px 0px 0 20px;
+		padding: 90px 0px 0 70px;
 	}
 	.right-section {
 		h2 {
@@ -2423,6 +2429,7 @@ body {
 		background-color: #ffffff;
 		margin-bottom: 40px;
 		min-height: 200px;
+		border-radius: 4px;
 		h3 {
 			font-size: 14px;
 			font-weight: 600;

@@ -12,7 +12,7 @@ $(function() {
     tl1.staggerFrom( $(".new-nav ul li", 'swiper-pagination ul li'), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
     tl1.from("#new1 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.3");
     tl1.from("#new1 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl1.from("#new1 img" ,0.5, {x:-600});
+    tl1.from("#new1 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
@@ -42,13 +42,13 @@ $(function() {
    
     tl2.from("#new2 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl2.from("#new2 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl2.from("#new2 img" ,0.5, {x:-600});
+    tl2.from("#new2 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new2",
         triggerHook: "onEnter",
-        offset: 800,
+        offset: 1300,
         reverse: true,
     })
 
@@ -63,13 +63,13 @@ $(function() {
    
     tl3.from("#new3 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl3.from("#new3 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl3.from("#new3 img" ,0.5, {x:-600});
+    tl3.from("#new3 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new3",
         triggerHook: "onEnter",
-        offset: 800,
+        offset: 1300,
         reverse: true,
     })
 
@@ -85,13 +85,13 @@ $(function() {
    
     tl4.from("#new4 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl4.from("#new4 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl4.from("#new4 img" ,0.5, {x:-600});
+    tl4.from("#new4 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new4",
         triggerHook: "onEnter",
-        offset: 800,
+        offset: 1300,
         reverse: true,
     })
 
@@ -106,13 +106,13 @@ $(function() {
    
     tl5.from("#new5 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl5.from("#new5 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl5.from("#new5 img" ,0.5, {x:-600});
+    tl5.from("#new5 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new5",
         triggerHook: "onEnter",
-        offset: 800,
+        offset: 1300,
         reverse: true,
     })
 
@@ -155,7 +155,7 @@ $(function() {
     tl7.from("#new6 h1", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     tl7.from("#new6 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     tl7.from("#new6 .card-details", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl7.from("#new6 img" ,0.5, {x:-600});
+    tl7.from("#new6 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
@@ -177,7 +177,7 @@ $(function() {
     tl8.from("#new7 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl8.from("#new7 h1", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     tl8.from("#new7 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl8.from("#new7 img" ,0.5, {x:-600});
+    tl8.from("#new7 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
@@ -267,7 +267,7 @@ $(function() {
     tl12.from("#new10 h1", 0.2,{y:+10, opacity:0, ease: Back});
     tl12.from("#new10 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     tl12.from("#new10 a", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl12.from("#new10 img" ,0.5, {x:-600});
+    tl12.from("#new10 img" ,0.5, {x:-600},"-=1");
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new10",
@@ -314,7 +314,7 @@ $(function() {
  
      tl14.from("#new121 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
      tl14.from("#new121 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl14.from("#new121 img" ,0.5, {x:-600});
+     tl14.from("#new121 img" ,0.5, {x:-600},"-=1");
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new121",
@@ -335,7 +335,7 @@ $(function() {
  
      tl15.from("#new122 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
      tl15.from("#new122 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl15.from("#new122 img" ,0.5, {x:-600});
+     tl15.from("#new122 img" ,0.5, {x:-600},"-=1");
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new122",
@@ -357,7 +357,7 @@ $(function() {
  
      tl16.from("#new123 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
      tl16.from("#new123 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl16.from("#new123 img" ,0.5, {x:-600});
+     tl16.from("#new123 img" ,0.5, {x:-600},"-=1");
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new123",
@@ -403,7 +403,7 @@ $(function() {
      tl18.from("#new14 h6", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
      tl18.from("#new14 h2", 0.2,{y:+10, opacity:0, ease: Back});
      tl18.from("#new14 a", 0.2,{y:+10, opacity:0, ease: Back});
-     tl18.from("#new14 img" ,0.5, {x:-600});
+     tl18.from("#new14 img" ,0.5, {x:-600},"-=1");
 
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new14",
@@ -508,7 +508,7 @@ $(function() {
     tl22.from("#order a", 0.2,{y:+10, opacity:0, ease: Back});
     tl22.from("#order #myTab", 0.2,{y:+10, opacity:0, ease: Back});
     tl22.from("#order .tab-content", 0.2,{y:+10, opacity:0, ease: Back});
-    tl22.from("#order img" ,0.5, {x:-600});
+    tl22.from("#order img" ,0.5, {x:-600},"-=1");
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#order",
