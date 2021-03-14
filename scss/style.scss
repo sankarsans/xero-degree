@@ -2229,6 +2229,9 @@ html {
 		border: none;
 		background-color: #f95858;
 		margin-top: 20px;
+		&:hover{
+			color: #fff!important;
+		}
 	}
 	.modal-content {
 		padding: 10px 30px;
@@ -2714,8 +2717,70 @@ body {
 			color: #242424;
 			font-family: 'Poppins', sans-serif;
 			padding-bottom: 40px;
-			span {
-				color: #ff8a1e;
+			.inner-span {
+				
+			}
+		}
+		#new2{
+			h3 {
+				span{
+					&:nth-child(1){
+						span{
+							&:nth-child(13){
+								color: #ff8a1e;
+							}
+						}
+					}
+					&:nth-child(2){
+						span{
+							&:nth-child(1), &:nth-child(7), &:nth-child(9), &:nth-child(11), &:nth-child(13){
+								color: #ff8a1e;
+							}
+						}
+					}
+				}
+			}
+		}
+		#new3{
+			h3 {
+				span{
+					
+					&:nth-child(2){
+						span{
+							&:nth-child(9), &:nth-child(11){
+								color: #ff8a1e;
+							}
+						}
+					}
+				}
+			}
+		}
+		#new4{
+			h3 {
+				span{
+					
+					&:nth-child(1){
+						span{
+							&:nth-child(9){
+								color: #ff8a1e;
+							}
+						}
+					}
+				}
+			}
+		}
+		#new5{
+			h3 {
+				span{
+					
+					&:nth-child(1){
+						span{
+							&:nth-child(7), &:nth-child(9), &:nth-child(11){
+								color: #ff8a1e;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -2805,8 +2870,8 @@ body {
 // 	visibility: hidden;
 //   }
   
-//   .line {
-// 	position: relative;
-// 	overflow: hidden;
-// 	display: flex;
-//   }
+.line {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+}

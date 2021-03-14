@@ -12501,6 +12501,9 @@ html {
   background-color: #f95858;
   margin-top: 20px;
 }
+.franchise-modal .btn:hover {
+  color: #fff !important;
+}
 .franchise-modal .modal-content {
   padding: 10px 30px;
 }
@@ -12941,7 +12944,19 @@ body::-webkit-scrollbar {
   font-family: "Poppins", sans-serif;
   padding-bottom: 40px;
 }
-.home-banner .swiper-home-container h3 span {
+.home-banner .swiper-home-container #new2 h3 span:nth-child(1) span:nth-child(13) {
+  color: #ff8a1e;
+}
+.home-banner .swiper-home-container #new2 h3 span:nth-child(2) span:nth-child(1), .home-banner .swiper-home-container #new2 h3 span:nth-child(2) span:nth-child(7), .home-banner .swiper-home-container #new2 h3 span:nth-child(2) span:nth-child(9), .home-banner .swiper-home-container #new2 h3 span:nth-child(2) span:nth-child(11), .home-banner .swiper-home-container #new2 h3 span:nth-child(2) span:nth-child(13) {
+  color: #ff8a1e;
+}
+.home-banner .swiper-home-container #new3 h3 span:nth-child(2) span:nth-child(9), .home-banner .swiper-home-container #new3 h3 span:nth-child(2) span:nth-child(11) {
+  color: #ff8a1e;
+}
+.home-banner .swiper-home-container #new4 h3 span:nth-child(1) span:nth-child(9) {
+  color: #ff8a1e;
+}
+.home-banner .swiper-home-container #new5 h3 span:nth-child(1) span:nth-child(7), .home-banner .swiper-home-container #new5 h3 span:nth-child(1) span:nth-child(9), .home-banner .swiper-home-container #new5 h3 span:nth-child(1) span:nth-child(11) {
   color: #ff8a1e;
 }
 .home-banner .swiper-pagination-bullets .swiper-pagination-bullet::after {
@@ -13019,6 +13034,12 @@ body::-webkit-scrollbar {
 
 .btn-common:active {
   background-color: #f95858;
+}
+
+.line {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=style.css.map */
