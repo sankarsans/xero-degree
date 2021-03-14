@@ -11605,6 +11605,9 @@ ul.transition li {
   border: none !important;
   padding: 0;
 }
+.list-menu ul li a.active p {
+  color: #f95858 !important;
+}
 
 .menu-page h2 {
   font-family: "Oswald", sans-serif;
@@ -11625,7 +11628,7 @@ ul.transition li {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #242424;
+  color: #242424 !important;
 }
 .menu-page ul li a.active p {
   font-weight: 600;
@@ -11660,8 +11663,18 @@ ul.transition li {
   width: 5px;
   border-radius: 5px;
 }
+.menu-items .item-wrapper {
+  min-height: 135px;
+}
+.menu-items .col-md-2 {
+  -ms-flex: 0 0 19.666667%;
+  flex: 0 0 19.666667%;
+  max-width: 19.666667%;
+}
 .menu-items p {
   font-weight: 600;
+  color: #242424 !important;
+  margin-bottom: 50px;
 }
 .menu-items::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -11672,9 +11685,6 @@ ul.transition li {
 }
 .menu-items::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-.menu-items p {
-  margin-bottom: 50px;
 }
 
 @media (min-width: 576px) {
