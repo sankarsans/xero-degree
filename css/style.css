@@ -11666,6 +11666,12 @@ ul.transition li {
 .menu-items .item-wrapper {
   min-height: 135px;
 }
+.menu-items.coolers .item-wrapper {
+  min-height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 .menu-items .col-md-2 {
   -ms-flex: 0 0 19.666667%;
   flex: 0 0 19.666667%;

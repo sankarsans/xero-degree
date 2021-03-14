@@ -1252,7 +1252,18 @@ ul.transition li {
 		border-radius: 5px;
 	}
 	.item-wrapper{
+		// display: flex;
+		// 	justify-content: center;
+		// 	align-items: flex-end;
 		min-height: 135px;
+	}
+	&.coolers{
+		.item-wrapper{
+			min-height: 165px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;		
+		}
 	}
 	.col-md-2 {
 		-ms-flex: 0 0 19.666667%;
