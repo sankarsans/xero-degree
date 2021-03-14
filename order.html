@@ -867,43 +867,6 @@ html {
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
     <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js'></script>
-
-<script>
-  $(document).ready(function () {
-
-    var quantitiy = 0;
-    $('.quantity-right-plus').click(function (e) {
-      alert("h")
-      // Stop acting like a button
-      e.preventDefault();
-      // Get the field name
-      var quantity = parseInt($('#quantity').val());
-
-      // If is not undefined
-
-      $('#quantity').val(quantity + 1);
-
-
-      // Increment
-
-    });
-
-    $('.quantity-left-minus').click(function (e) {
-      // Stop acting like a button
-      e.preventDefault();
-      // Get the field name
-      var quantity = parseInt($('#quantity').val());
-
-      // If is not undefined
-
-      // Increment
-      if (quantity > 0) {
-        $('#quantity').val(quantity - 1);
-      }
-    });
-
-  });
-</script>
    
 </body>
 

@@ -204,7 +204,7 @@ $(function() {
 
     tl6.staggerFrom( $("#section02 .list-menu ul li"), 0.1, { y:+40, opacity:0, ease : Sine.easeIn }, time );
     tl6.from("#section02 h2", 0.2,{y:+30, opacity:0, ease: Sine.easeIn});
-    tl6.staggerFrom( $("#section02 .menu-items .text-center"), 0 ,{y:+10, opacity:0, ease: Elastic}, time);
+    tl6.staggerFrom( $("#section02 .menu-items"), 0 ,{y:+10, opacity:0, ease: Elastic}, time);
     // tl6.from("#section02 img" ,1, {x:-600});
 
 
@@ -228,13 +228,13 @@ $(function() {
     tl7.from("#new6 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     // tl7.staggerFrom( $("#new6 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
     // tl7.staggerFrom( $("#new6 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
-    tl7.staggerFrom( $("#new6 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+    tl7.staggerFrom( $("#new6 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
     tl7.staggerFrom( $("#new6 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
 
     // tl7.from("#new6 h1", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     // tl7.from("#new6 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     tl7.from("#new6 .card-details", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl7.from("#new6 img" ,0.5, {x:-600},"-=1");
+    tl7.from("#new6 img" ,0.5, {x:-600},"-=2");
 
 
     var scene = new ScrollMagic.Scene({
@@ -254,12 +254,12 @@ $(function() {
     var tl8 = new TimelineMax();
    
     tl8.from("#new7 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
-    tl8.staggerFrom( $("#new7 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+    tl8.staggerFrom( $("#new7 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
     tl8.staggerFrom( $("#new7 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
 
     // tl8.from("#new7 h1", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     // tl8.from("#new7 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl8.from("#new7 img" ,0.5, {x:-600},"-=1");
+    tl8.from("#new7 img" ,0.5, {x:-600},"-=2");
 
 
     var scene = new ScrollMagic.Scene({
@@ -281,10 +281,10 @@ $(function() {
 
     // tl9.from("#new8 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl9.staggerFrom( $("#new8 h3 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.4");
-    tl9.staggerFrom( $("#new8 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+    tl9.staggerFrom( $("#new8 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
 
     // tl9.from("#new8 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl9.staggerFrom( $("#new8 img"), 0.2, {x:-600}, "-=1");
+    tl9.staggerFrom( $("#new8 img"), 0.2, {x:-600}, "-=3");
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new8",
@@ -351,12 +351,12 @@ $(function() {
 
     tl12.from("#new10 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl12.staggerFrom( $("#new10 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
-    tl12.staggerFrom( $("#new10 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+    tl12.staggerFrom( $("#new10 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
 
     // tl12.from("#new10 h1", 0.2,{y:+10, opacity:0, ease: Back});
     // tl12.from("#new10 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     tl12.from("#new10 a", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
-    tl12.from("#new10 img" ,0.5, {x:-600},"-=1");
+    tl12.from("#new10 img" ,0.5, {x:-600},"-=2");
 
     var scene = new ScrollMagic.Scene({
         triggerElement:"#new10",
@@ -381,7 +381,7 @@ $(function() {
     tl13.staggerFrom( $("#new11 h6 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
 
     // tl13.from("#new11 h6", 0.2,{y:+10, opacity:0, ease: Back});
-    tl13.staggerFrom( $("#new11 .process-wrapper"), 0.2, {x:-100, opacity:0, ease: Elastic }, time);
+    tl13.staggerFrom( $("#new11 .process-wrapper"), 0.2, {x:-100, opacity:0, ease: Elastic }, "+=0.5");
     tl13.staggerFrom( $("#new11 .connection-arrow"), 0.2, {y:+100, opacity:0, ease: Elastic }, time);
 
 
@@ -406,10 +406,10 @@ $(function() {
  
     //  tl14.from("#new121 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
      tl14.staggerFrom( $("#new121 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.4");
-     tl14.staggerFrom( $("#new121 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+     tl14.staggerFrom( $("#new121 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
 
     //  tl14.from("#new121 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl14.from("#new121 img" ,0.5, {x:-600},"-=1");
+     tl14.from("#new121 img" ,0.5, {x:-600},"-=2");
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new121",
@@ -429,11 +429,11 @@ $(function() {
      var time = 0.2;
  
      tl15.staggerFrom( $("#new122 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.4");
-     tl15.staggerFrom( $("#new122 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+     tl15.staggerFrom( $("#new122 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
 
     //  tl15.from("#new122 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     //  tl15.from("#new122 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl15.from("#new122 img" ,0.5, {x:-600},"-=1");
+     tl15.from("#new122 img" ,0.5, {x:-600},"-=2");
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new122",
@@ -455,10 +455,10 @@ $(function() {
  
     //  tl16.from("#new123 h1", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
      tl16.staggerFrom( $("#new123 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.4");
-     tl16.staggerFrom( $("#new123 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+     tl16.staggerFrom( $("#new123 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
 
     //  tl16.from("#new123 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl16.from("#new123 img" ,0.5, {x:-600},"-=1");
+     tl16.from("#new123 img" ,0.5, {x:-600},"-=2");
  
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new123",

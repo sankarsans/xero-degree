@@ -1178,6 +1178,10 @@ ul.transition li {
 		overflow-y: scroll;
 		li {
 			padding: 7px 0;
+			a{
+				border: none!important;
+				padding: 0;
+			}
 		}
 	}
 }

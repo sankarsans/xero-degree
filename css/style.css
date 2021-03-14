@@ -11601,6 +11601,10 @@ ul.transition li {
 .list-menu ul li {
   padding: 7px 0;
 }
+.list-menu ul li a {
+  border: none !important;
+  padding: 0;
+}
 
 .menu-page h2 {
   font-family: "Oswald", sans-serif;
