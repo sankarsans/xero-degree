@@ -1265,6 +1265,14 @@ ul.transition li {
 			align-items: flex-end;		
 		}
 	}
+	&.fresks{
+		.item-wrapper{
+			min-height: 185px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;		
+		}
+	}
 	.col-md-2 {
 		-ms-flex: 0 0 19.666667%;
 		flex: 0 0 19.666667%;
