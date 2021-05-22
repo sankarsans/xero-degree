@@ -164,3 +164,11 @@ $(function() {
     });
   $('[href=#]').click(function(){return false});
 });
+
+
+$(document).ready(function(){ 
+  $('#video-id,.demo-play-btn').click(function(){ 
+    $('#video-id').get(0).paused ? $('#video-id').get(0).play() : $('#video-id').get(0).pause(); 
+    $(".demo-play-btn").toggle();
+  }); 
+});

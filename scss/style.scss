@@ -1835,7 +1835,22 @@ html {
 	font-size: 30px;
 	color: #fff;
 }
-
+#viewport{
+	width: 100%;
+}
+#myWizard{
+	padding: 20px 20px 20px 40px;
+}
+#home-screen{
+	#myWizard{
+		padding: 20px 0px 20px 0px;
+	}
+}
+.swiper-slide {
+    overflow: hidden;
+    max-width: 101%;
+    width: 110vw!important;
+}
 .fixed-content {
 	// position: fixed;
 	// width: 100%;
@@ -1853,6 +1868,8 @@ html {
 		position: fixed;
 		bottom: 0;
 		z-index: 9;
+		left: 21px;
+		right: unset;
 	}
 	.left-nav {
 		position: fixed;
@@ -2337,7 +2354,7 @@ html {
 //   }
 // }
 #myWizard {
-	padding: 20px 20px 20px 40px;
+	// padding: 20px 20px 20px 40px;
 }
 
 .full-screen {
@@ -2700,17 +2717,17 @@ body {
 		width: 100%;
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
-		content: "Who We are";
+		content: "Founder";
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after {
-		content: "What we’re about";
+		content: "About Company";
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after {
-		content: "Our Team";
-	}
-	.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
 		content: "Our Values";
 	}
+	// .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
+	// 	content: "Our Values";
+	// }
 	.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
 		/* content: "Home"; */
 		display: block;
@@ -2737,7 +2754,21 @@ body {
 		content: "FAQ’s";
 	}
 }
-
+.leaf-1{
+	position: absolute;
+	left: 260px;
+	z-index: 99;
+	top: 65px;
+}
+.set-height{
+	height: 85vh;
+	overflow-y: scroll;
+}
+.leaf-2{
+	position: absolute;
+	right: 40px;
+	top: 70px;
+}
 .home-banner {
 	.swiper-home-container {
 		padding-top: 90px;
@@ -2827,19 +2858,23 @@ body {
 		justify-content: flex-start;
 	}
 	.swiper-pagination {
-		width: 300px!important;
+		width: auto!important;
+		background: transparent;
 		height: auto;
 		padding-left: 30px;
 		justify-content: center;
 		flex-direction: row;
 		box-shadow: none;
-		left: 16%;
+		left: 4%;
 		bottom: 4%;
 		/* height: 100%; */
 		top: unset;
 	}
 	.swiper-pagination-bullet.swiper-pagination-bullet-active {
-		background: #f95858;
+		background: #fff;
+		opacity: 1;
+		width: 19px;
+		border-radius: 5.5px;
 	}
 	.swiper-pagination-bullet::after {
 		// height: 23px;
@@ -2858,7 +2893,8 @@ body {
 		position: relative;
 		height: 11px;
 		width: 11px;
-		background: #e0e0e0;
+		background: #ffffff;
+		opacity: 0.6;
 		border-radius: 50%;
 		margin: 0 5px!important;
 	}
@@ -2867,7 +2903,19 @@ body {
 		display: block;
 	}
 }
-
+.demo-play-btn{
+	position:absolute;
+	top:35%;
+	background:#fff;
+	left:45%;
+	cursor:pointer;
+	width: 60px;
+    height: 60px;
+	background: url(/images/play-button.svg) 0 0 no-repeat;
+  }
+  .demo-play-btn img{
+	width:50px;
+  }
 
 // button hover animation
 .btn-common {

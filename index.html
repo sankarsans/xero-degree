@@ -164,12 +164,12 @@
         </nav>
 
         <!-- social media content -->
-        <!-- <div class="social-icon">
+        <div class="social-icon">
             <ul>
                 <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
                 <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
             </ul>
-        </div> -->
+        </div>
        
         <!-- <nav class="left-nav">
             <ul class="anchor-nav anchor-nav" role="navigation">
@@ -192,7 +192,7 @@
             <section class="section swiper-slide" data-hash="slide1" id="section01">
                 <!-- home page content -->
                 <main id="viewport" class="home-banner">
-                    <div class="common-height home-section home-menu pl-5 pt-5">
+                    <div class="common-height home-section home-menu pl-5 pt-5" id="home-screen">
                         <div class="container-fluid">
                           <div class="swiper-pagination swiper-pagination-home"></div>
                             <div id="myWizard" class="w-100 d-flex">
@@ -211,7 +211,7 @@
                                                         <div class="cover"></div>
                                                       </div>
                                                     </div>
-                                                    <div class="col-md-6 col-sm-6 col-12">
+                                                    <div class="col-md-7 col-sm-6 col-12">
                                                         <h1 class="ball">Cheesegasms now<br> start at just Rs 199!</h1>
                                                         <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
                                                     </div>
@@ -225,7 +225,7 @@
                                               <div class="common-height">
                                                 <div class="whowe-section w-100" id="step2">
                                                   <div class="row align-items-center">
-                                                    <div class="col-md-5 col-sm-6 col-12">
+                                                    <!-- <div class="col-md-5 col-sm-6 col-12">
                                                       <div class="image-wrapper hover-animation">
                                                         <img class="d-block img-fluid"  src="images/banner-2.png" alt="First slide">
                                                         <div class="cover"></div>
@@ -234,6 +234,15 @@
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h3 class="ball">Xero Degrees believes in two things: <span class="inner-span">hygienic<br> safety</span> standards and<span class="inner-span"> lots of good Cheese!</span><br> Order today from our wide range of comfort<br> food options!</h3>
                                                         <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
+                                                    </div> -->
+                                                    <!-- <video src="images/xero-degree.mov" class="img-fluid"></video> -->
+                                                    <div class="demo-video">
+                                                      <video id="video-id" class="img-fluid" poster="">
+                                                         <source src="images/xero-degree.mov" type="video/mp4">        
+                                                       </video>
+                                                       <div class="demo-play-btn">
+                                                           <!-- <img src="images/play-button.svg" class="play-btn" title="Play Video"> -->
+                                                       </div>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -308,12 +317,12 @@
                         </div>
                     </div>
                 </main>
-                <div class="social-icon">
+                <!-- <div class="social-icon">
                   <ul>
                       <li><a href="" target="_blank"><img src="images/facebook.svg" alt="facebook-icon" class="" /></a></li>
                       <li><a href="" target="_blank"><img src="images/instagram.svg" alt="facebook-icon" class="" /></a></li>
                   </ul>
-              </div>  
+              </div>   -->
             </section>
             <section class="section swiper-slide" data-hash="slide2" id="section02">
               <!-- menu page content -->
@@ -1557,7 +1566,8 @@
               <main id="viewport">
                   <div class="common-height home-section about-nav">
                       <div class="container-fluid">
-
+                        <img src="images/leaf-1.png" class="leaf-1">
+                        <img src="images/leaf-2.png" class="leaf-2">
                         <div id="myWizard" class="w-100 d-flex">
                           <div class="col-md-2 swiper-about-container">
                             <div class="swiper-pagination swiper-pagination-about"></div>
@@ -1573,33 +1583,22 @@
                                           <div class="common-height">
                                             <div class="whowe-section w-100" id="step1">
                                               <div class="row align-items-center">
+                                               
                                                 <div class="col-md-5 col-sm-6 col-12">
                                                   <div class="image-wrapper overflow-hidden hover-animation">
-                                                    <img class="img-fluid"
-                                                    src="images/about-banner.png"
+                                                    <img class="img-fluid pt-5"
+                                                    src="images/bitmap.png"
                                                     alt="First slide">
                                                     <div class="cover"></div>
                                                   </div>
                                                 </div>
-                                                <div class="col-md-6 col-sm-6 col-12">
-                                                  <h3>Who we are and Why xero degree</h3>
-                                                  <h1 class="mt-0">A date that marks
-                                                    our history</h1>
-                                                  <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-                                                  <div class="d-flex justify-content-between flex-lg-row flex-md-row w-75 about-details text-center">
-                                                    <div class="card-details">
-                                                      <p class="mb-0">Since</p>
-                                                      <span>1920</span>
-                                                    </div>
-                                                    <div class="card-details">
-                                                      <p class="mb-0">RESTAURANTS</p>
-                                                      <span>50</span>
-                                                    </div>
-                                                    <div class="card-details">
-                                                      <p class="mb-0">Locations</p>
-                                                      <span>100</span>
-                                                    </div>
-                                                  </div>
+                                                <div class="col-md-7 col-sm-6 col-12">
+                                                  <h1>About Founder</h1>
+                                                  <!-- <h1 class="mt-0">A date that marks
+                                                    our history</h1> -->
+                                                  <p class="description">After a post-grad in marketing, and a couple months in a 9-5 gig, our founder Kashish Aneja, realised his affinity to the food industry. And like a true Foodpreneur, he went after this epiphany with all he had. And that crazy zeal, friends, has evolved from a cozy cafe in central Connaught Place into the thriving food chain that we all love today, Xero Degrees.</p>
+                                                  <p class="description">Starting and most importantly sustaining a restaurant in a cut-throat yet continuously evolving marketplace like Delhi comes with its own learnings, and currently with the smooth operational style of Xero Degree, we can say Kashish is well-equipped with the Logistical as well as Executive skill sets required to keep Xero Degrees always brimming with happy customers.</p>
+                                                  <p class="description">Being a hands-on founder from the very start of Xero Degrees has made sure that even today, Kashish has a hand in all the pies of building a new location. From innovating on a new menu to the decals for the newest outlet, Kashish is an active part of the decision-making process from the get-go, where his practical skills and customer-empathising personality makes for solid contributions and helps his team build awesome experiences for their customers</p>
                                                 </div>
                                               </div>
                                             </div>
@@ -1614,16 +1613,20 @@
                                                 <div class="col-md-5 col-sm-6 col-12">
                                                   <div class="overflow-hidden hover-animation">
                                                   <img class="img-fluid"
-                                                    src="images/about-whatwe.png" 
+                                                    src="images/about-company.png" 
                                                     alt="First slide">
                                                   </div>
                                                 </div>
-                                                <div class="col-md-6 col-sm-6 col-12">
-                                                  <h3>WHAT WE’RE ABOUT</h3>
-                                                  <h1 class="mt-0">Our journey<br>
-                                                    towards good.</h1>
-                                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-                                
+                                                <div class="col-md-7 col-sm-6 col-12">
+                                                  <div class="set-height">
+                                                    <h1 class="mt-0">About Company</h1>
+                                                    <p>There is no denying it, our food scientists at Xero Degrees have been spoiled by their freedom to try out new whacky yet lovable dishes to serve, and this is not anything new for the brand-makers of Xero Degrees. The Delhi boy-duo of Kashish Aneja and Shivam Kakkar started the Restaurant chain in 2018 with one thing in mind: let there be cheese! Plenty of cheese!</p>
+                                                    <p>What they’ve built today is an eatery that started offering true-blue American cuisine to its young audience in the hippest part of Delhi, and very soon became one of the few places that consistently serves high quality food with affordable prices, at its classic Connaught Place location. The demand by the patrons for Xero Degrees has been such that the branching and franchising process to other states and across the ocean to other countries is a no-brainer and has happened swiftly since 2018. </p>
+                                                    <p>Our most popular dishes that have become our calling card to all patrons include the Red Velvet Shake, Popcorn Nut Caramel Shake, Big Bang Theory Slider, Cheesy Fries and Pizza in a Jar. Despite our culinary creativity, what makes for repeat customers is our commitment to quality, both in terms of ingredients we use as well as our aesthetics, be it plating the dish perfectly or creating an ambience that excites and pleases our audience. Of course, the fact that almost all our menu prescribes for oodles and oodles of melted cheese is just a happy-accident. Wink Wink!</p>
+                                                    <p>This year is special to us, as we’re going full-throttle in our vision for a Pan-India expansion, with a goal of 30 outlets spread across India’s foodies haunts. And that’s not all, our customer base will soon be international, with new branches opening up in the beautiful locales of France and Hong Kong.</p>
+                                                    <p>The bigger the Xero Degrees family grows, the more we see both our new Restaurant Family members and our loyal customer base make the brand their own. We’ve always focused on not just serving what is trending the charts but what our audience relates to and expects from their culinary experience, and the success of our ventures tell us that our Dill-i approach is loved by everyone and we’re doing -at least- something right.</p>
+                                                  </div>
+                                                  
                                                 </div>
                                               </div>
                                             </div>
@@ -1662,7 +1665,7 @@
                                           </div>
                                         </main>
                                       </div>
-                                      <div class="section swiper-slide" id="new9">
+                                      <!-- <div class="section swiper-slide" id="new9">
                                         <main id="viewport">
                                           <div class="common-height">
                                             <div class="" id="step4">
@@ -1715,7 +1718,7 @@
                                             </div>
                                           </div>
                                         </main>
-                                      </div>
+                                      </div> -->
                                   </main>
                                   <div class="swiper-scrollbar swiper-scrollbar-about"></div>
                               </div>
@@ -2448,6 +2451,19 @@
             // freeMode: true,
             hashNavigation: true,
             // slidesOffsetBefore: -100,
+            breakpoints: {
+              // when window width is >= 320px
+              0: {
+                freeMode: true,
+                cssMode: true,
+                freeMode: true
+              },
+              400: {
+                freeMode: true,
+                cssMode: true,
+                freeMode: true
+              },
+            },
             pagination: {
                 el: '.new-nav',
                 clickable: true,
@@ -2540,6 +2556,9 @@
             hashNavigation: true,
             spaceBetween: 0,
             nested: true,
+            autoplay: {
+              delay: 5000,
+            },
             scrollbar: {
               el: '.swiper-scrollbar-home',
               hide: false,
