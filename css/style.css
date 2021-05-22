@@ -11258,12 +11258,12 @@ ul.transition li {
 }
 .about-nav .card-wrapper h3 {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: normal;
-  color: #242424;
+  color: #5d0f0f;
   padding-bottom: 15px;
 }
 .about-nav .card-wrapper p {
@@ -12425,29 +12425,40 @@ html {
 }
 .franchise-process .process-wrapper {
   margin: 30px 0 0;
-  max-width: 40%;
   transition: 0.5s;
+  border-radius: 8px;
+  box-shadow: 0 12px 14px 0 #f5f5f5;
+  border: solid 1px #ffd3d3;
+  background-color: #ffffff;
+  padding: 30px;
 }
 .franchise-process .process-wrapper:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
 .franchise-process .process-wrapper .process-box {
-  width: 100px;
-  margin: 0 auto;
+  width: 50px;
+  margin-bottom: 15px;
   box-shadow: 0 12px 14px 0 #fffaf6;
   border-radius: 50%;
 }
-.franchise-process .process-wrapper h4 {
-  font-size: 16px;
-  font-weight: 600;
+.franchise-process .process-wrapper h5 {
+  font-size: 14px;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 1.71;
   letter-spacing: normal;
-  text-align: center;
-  color: #242424;
-  padding-top: 20px;
+  color: #5d0f0f;
+}
+.franchise-process .process-wrapper h4 {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #4a4a4a;
 }
 
 .franchise-modal h3 {
@@ -12817,6 +12828,13 @@ body::-webkit-scrollbar {
   width: 59%;
   height: 2px;
   z-index: 9;
+  font-size: 14px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #242424;
 }
 .swiper-container-app .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   background: #f95858;
@@ -12836,7 +12854,7 @@ body::-webkit-scrollbar {
   height: 100px;
   transform: rotate(-90deg);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
   margin: 0 10px 0 0;
   color: #242424;
@@ -12945,24 +12963,78 @@ body::-webkit-scrollbar {
 .swiper-about-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child,
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
   /* content: "Home"; */
-  display: block;
+  display: none;
+}
+
+.swiper-career-container .swiper-pagination-bullets .swiper-pagination-bullet::after {
+  transform: none;
+  left: 0;
+  justify-content: flex-start;
+}
+.swiper-career-container .swiper-pagination {
+  width: 100% !important;
+  height: auto;
+  padding-left: 30px;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: none;
+}
+.swiper-career-container .swiper-pagination-bullet::after {
+  height: auto !important;
+  width: 100% !important;
+  background: transparent !important;
+}
+.swiper-career-container img {
+  max-width: 95%;
+}
+.swiper-career-container .swiper-pagination-bullet::before {
+  display: none;
+}
+.swiper-career-container .swiper-pagination-bullet {
+  height: 41px;
+  width: 100%;
+}
+.swiper-career-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
+  content: "Career";
+}
+.swiper-career-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after {
+  content: "About Company";
+}
+.swiper-career-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after {
+  content: "Our Values";
+}
+.swiper-career-container .swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  /* content: "Home"; */
+  display: none;
 }
 
 .swiper-career-cpntainer .swiper-pagination-bullet {
   display: none;
 }
 
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  top: 180px;
+  bottom: unset !important;
+}
+
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1)::after {
-  content: "What is Franchise";
+  content: "About franchise";
 }
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2)::after {
-  content: "Process";
+  content: "Franchise Application";
 }
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3)::after {
-  content: "Types of Franchise";
+  content: "Process";
 }
 .swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4)::after {
+  content: "Testimonials";
+}
+.swiper-franchise-container .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5)::after {
   content: "FAQ’s";
+}
+
+.new-nav {
+  top: unset !important;
 }
 
 .leaf-1 {
@@ -13116,6 +13188,42 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   display: inline-flex;
+}
+
+.page-form label {
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #242424;
+}
+.page-form .dropdown-menu.show {
+  display: block;
+  width: 100%;
+  left: -16px !important;
+  margin-top: 7px;
+}
+.page-form input, .page-form .dropdown {
+  border-radius: 4px;
+  border: solid 1px #e1e1e1;
+  width: 100%;
+  height: 48px;
+  padding: 15px;
+}
+.page-form input a, .page-form .dropdown a {
+  width: 100%;
+  display: inline-block;
+}
+.page-form input a .caret, .page-form .dropdown a .caret {
+  background: url(images/down-arrow-new.svg) 0 0 no-repeat;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

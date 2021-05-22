@@ -128,6 +128,12 @@ $('.dropdown-menuContacttwo a').click(function(){
 $('.dropdown-menuContactthree a').click(function(){
   $('#selectedfour').text($(this).text());
 });
+$('.dropdown-menuContactFive a').click(function(){
+  $('#selectedFive').text($(this).text());
+});
+$('.dropdown-menuContactFour a').click(function(){
+  $('#selectedFour').text($(this).text());
+});
 
 
 $(document).ready(function () {
