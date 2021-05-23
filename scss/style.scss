@@ -290,35 +290,7 @@ ul.transition li {
 			}
 		}
 	}
-	.input-group {
-		border: solid 0.5px #d1d1d1;
-		background-color: #ffffff;
-		text-align: center;
-		width: 130px;
-		border-radius: 4px;
-		button {
-			border: none;
-			height: 48px;
-			width: 48px;
-			border-radius: 4px;
-			background: #fff;
-			&:focus {
-				outline: none;
-				box-shadow: none;
-			}
-			span {
-				color: #4a4a4a;
-				font-size: 24px;
-			}
-		}
-		input {
-			border: none;
-			height: 48px;
-			width: 48px;
-			padding: 0;
-			text-align: center;
-		}
-	}
+	
 	h2 {
 		font-size: 40px;
 		font-weight: bold;
@@ -360,7 +332,39 @@ ul.transition li {
 		padding-bottom: 10px;
 	}
 }
-
+.input-group {
+	border: solid 0.5px #d1d1d1;
+	background-color: #ffffff;
+	text-align: center;
+	width: 160px;
+	border-radius: 4px;
+	input {
+		font-size: 24px;
+		font-weight: bold;
+	}
+	button {
+		border: none;
+		height: 48px;
+		width: 48px;
+		border-radius: 4px;
+		background: #fff;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+		span {
+			color: #4a4a4a;
+			font-size: 24px;
+		}
+	}
+	input {
+		border: none;
+		height: 48px;
+		width: 48px;
+		padding: 0;
+		text-align: center;
+	}
+}
 .address-list {
 	&:first-child {
 		h3 {
@@ -2948,6 +2952,23 @@ body {
 	position: absolute;
 	right: 40px;
 	top: 70px;
+}
+.fz-40{
+	font-size: 40px;
+}
+.modal-circle{
+	width: 407px;
+	height: 407px;
+	position: absolute;
+    border-radius: 50%;
+	opacity: 0.1;
+	background-color: #ff871a;
+}
+@media (min-width: 576px){
+	#myModalTwo .modal-dialog {
+		max-width: 990px;
+		height: 585px;
+	}
 }
 .home-banner {
 	.swiper-home-container {

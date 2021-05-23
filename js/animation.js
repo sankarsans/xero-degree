@@ -111,7 +111,7 @@ $(function() {
     tl2.staggerFrom( $("#new2 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.4");
     // tl2.from("#new2 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl2.from("#new2 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl2.from("#new2 img" ,0.5, {x:-600},"-=1");
+    // tl2.from("#new2 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
@@ -133,7 +133,7 @@ $(function() {
     tl3.staggerFrom( $("#new3 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.4");
     // tl3.from("#new3 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl3.from("#new3 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl3.from("#new3 img" ,0.5, {x:-600},"-=1");
+    // tl3.from("#new3 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
@@ -157,7 +157,7 @@ $(function() {
 
     // tl4.from("#new4 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl4.from("#new4 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl4.from("#new4 img" ,0.5, {x:-600},"-=1");
+    // tl4.from("#new4 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({

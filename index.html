@@ -241,7 +241,7 @@
                                               <div class="common-height">
                                                 <div class="whowe-section w-100" id="step3">
                                                   <div class="row align-items-center">
-                                                    <div class="col-md-5 col-sm-6 col-12">
+                                                    <!-- <div class="col-md-5 col-sm-6 col-12">
                                                       <div class="image-wrapper hover-animation">
                                                         <img class="d-block img-fluid" src="images/banner-3.png" alt="First slide">
                                                         <div class="cover"></div>
@@ -250,7 +250,8 @@
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h3>We’ve just got back from our expedition! And<br> we’ve brought you new<span class="inner-span"> lip-smacking</span> Dishes<br> as a gift! Order now!</h3>
                                                         <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
-                                                    </div>
+                                                    </div> -->
+                                                    <img src="images/banner-02.png" class="img-fluid" alt="">
                                                   </div>
                                                 </div>
                                               </div>
@@ -261,7 +262,7 @@
                                               <div class="common-height">
                                                 <div class="whowe-section w-100" id="step4">
                                                   <div class="row align-items-center">
-                                                    <div class="col-md-5 col-sm-6 col-12">
+                                                    <!-- <div class="col-md-5 col-sm-6 col-12">
                                                       <div class="image-wrapper hover-animation">
                                                         <img class="d-block img-fluid" src="images/banner-4.png" style="max-width: 90%;" alt="First slide">
                                                         <div class="cover"></div>
@@ -270,7 +271,8 @@
                                                     <div class="col-md-6 col-sm-6 col-12">
                                                         <h3>Check out our new<span class="inner-span"> flavors:</span> Tandoori, Makhni<br> and Cajun Peri Peri on your favorite Fries, Pizza<br> and Burgers!</h3>
                                                         <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
-                                                    </div>
+                                                    </div> -->
+                                                    <img src="images/banner-03.png" class="img-fluid" alt="">
                                                   </div>
                                                 </div>
                                               </div>
@@ -411,7 +413,7 @@
                           <div class="row w-100 pt-5 menu-items">
                               <div class="col-md-2">
                                   <div class="text-center">
-                                    <a href="order.html" class="hover-animation">
+                                    <a data-toggle="modal" data-target="#myModalTwo" class="hover-animation">
                                       <div class="item-wrapper">
                                         <img class="img-fluid" src="images/menu/shakes/Blueberry.png" alt="First slide">
                                       </div>
@@ -1355,7 +1357,6 @@
                           </div>
                         </div>
 
-
                         <div class="tab-pane container" id="home9">
                           <h2 class="menu-heading my-text">Pasta</h2>
                           <div class="row w-100 pt-5 menu-items">
@@ -1539,8 +1540,6 @@
                               </div>
                           </div>
                         </div>
-
-
 
                       </div>
                     </div>
@@ -2699,6 +2698,56 @@
     
     
         </div>
+    </div>
+
+
+     <!-- The Modal -->
+     <div class="modal franchise-modal" id="myModalTwo">
+      <div class="modal-dialog">
+        <div class="modal-content h-100">
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal"><img src="images/close-icon.svg"
+                alt="close-icon"></button>
+           
+              <div class="row h-100 align-items-center">
+                <div class="col-lg-6 col-12 text-center">
+                  <div class="modal-circle"></div>
+                  <img src="images/modal-product.png" alt="">
+                </div>
+                <div class="col-lg-6 col-12">
+                  <h3 class="fz-40 pb-4">Classic Fries</h3>
+                  <p>This experiment relates hard to those who like their food to be just like their life: classique. Frizzy fries topped up with salt and all the gossip you’ve been waiting to dish out to your besties.</p>
+                  <p class="pt-4">Select Product Quantity</p>
+
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-left-minus btn-number" data-type="minus"
+                        data-field="">
+                        <span>-</span>
+                      </button>
+                    </span>
+                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1"
+                      max="100">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-right-plus btn-number" data-type="plus"
+                        data-field="">
+                        <span>+</span>
+                      </button>
+                    </span>
+                  </div>
+                  <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-common">Order Now<span></span></a>
+
+
+                </div>
+              </div>
+
+          </div>
+          
+
+        </div>
+      </div>
     </div>
 
 
