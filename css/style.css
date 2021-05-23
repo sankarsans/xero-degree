@@ -12007,6 +12007,28 @@ textarea {
   position: absolute;
   right: 0;
 }
+.owl-carousel-banner .owl-nav .owl-prev {
+  background: url(/images/left-arrow-new.svg) 0 0 no-repeat !important;
+  width: 40px;
+  height: 40px;
+}
+.owl-carousel-banner .owl-nav .owl-prev:focus {
+  outline: none;
+}
+.owl-carousel-banner .owl-nav .owl-prev span {
+  display: none;
+}
+.owl-carousel-banner .owl-nav .owl-next {
+  background: url(/images/right-arrow-new.svg) 0 0 no-repeat !important;
+  width: 40px;
+  height: 40px;
+}
+.owl-carousel-banner .owl-nav .owl-next:focus {
+  outline: none;
+}
+.owl-carousel-banner .owl-nav .owl-next span {
+  display: none;
+}
 .owl-carousel-banner .item {
   border-radius: 3px;
   box-shadow: 0 12px 14px 0 #f5f5f5;
@@ -13385,7 +13407,7 @@ body::-webkit-scrollbar {
 }
 
 .set-height {
-  height: 85vh;
+  height: 75vh;
   overflow-y: scroll;
 }
 

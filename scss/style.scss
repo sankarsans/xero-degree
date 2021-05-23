@@ -1350,6 +1350,28 @@ textarea {
 		top: -100px;
 		position: absolute;
 		right: 0;	
+		.owl-prev{
+			background: url(/images/left-arrow-new.svg) 0  0 no-repeat!important;
+			width: 40px;
+			height: 40px;		
+			&:focus{
+				outline: none;
+			}
+			span{
+				display: none;
+			}
+		}
+		.owl-next{
+			background: url(/images/right-arrow-new.svg) 0  0 no-repeat!important;
+			width: 40px;
+			height: 40px;
+			&:focus{
+				outline: none;
+			}
+			span{
+				display: none;
+			}		
+		}
 	}
 	.item{
 		border-radius: 3px;
@@ -2919,7 +2941,7 @@ body {
 	top: 65px;
 }
 .set-height{
-	height: 85vh;
+	height: 75vh;
 	overflow-y: scroll;
 }
 .leaf-2{
