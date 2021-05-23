@@ -111,6 +111,13 @@ function copyToClipboard(element) {
 }
 
 
+$(document).ready(function(){ 
+  $('#video-id,.demo-play-btn').click(function(){ 
+    $('#video-id').get(0).paused ? $('#video-id').get(0).play() : $('#video-id').get(0).pause(); 
+    $(".demo-play-btn").toggle();
+  }); 
+});
+
 $('.dropdown-menuHeader a').click(function(){
   $('#selected').text($(this).text());
 });
@@ -145,7 +152,7 @@ $('.dropdown-menuContactEight a').click(function(){
   $('#selectedEight').text($(this).text());
 });
 
-('.dropdown-menuContactNine a').click(function(){
+$('.dropdown-menuContactNine a').click(function(){
   $('#selectedNine').text($(this).text());
 });
 
@@ -186,9 +193,3 @@ $(function() {
 });
 
 
-$(document).ready(function(){ 
-  $('#video-id,.demo-play-btn').click(function(){ 
-    $('#video-id').get(0).paused ? $('#video-id').get(0).play() : $('#video-id').get(0).pause(); 
-    $(".demo-play-btn").toggle();
-  }); 
-});
