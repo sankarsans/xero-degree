@@ -135,6 +135,20 @@ $('.dropdown-menuContactFour a').click(function(){
   $('#selectedFour').text($(this).text());
 });
 
+$('.dropdown-menuContactSix a').click(function(){
+  $('#selectedSix').text($(this).text());
+});
+$('.dropdown-menuContactSevan a').click(function(){
+  $('#selectedSevan').text($(this).text());
+});
+$('.dropdown-menuContactEight a').click(function(){
+  $('#selectedEight').text($(this).text());
+});
+
+('.dropdown-menuContactNine a').click(function(){
+  $('#selectedNine').text($(this).text());
+});
+
 
 $(document).ready(function () {
   var quantitiy = 0;

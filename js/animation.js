@@ -39,7 +39,7 @@ $(function() {
     tl1.staggerFrom( $(".new-nav ul li", 'swiper-pagination ul li'), time, {delay: 0, x:-30, opacity:0, ease : Sine.easeIn }, time );
     tl1.staggerFrom( $("#new1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut },"+=0.3");
     tl1.from("#new1 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl1.from("#new1 img" ,0.5, {x:-600},"-=1");
+    // tl1.from("#new1 img" ,0.5, {x:-600},"-=1");
 
     // tl1.from(childSplit.lines, 1.7 ,{  yPercent: 100, ease: 'power4.out', stagger: 0.1 })
         // .to(childSplit.chars, 1.7, { x: 39,ease: 'power4.out',stagger: 0   }, '+=1')
@@ -508,7 +508,7 @@ $(function() {
      tl18.staggerFrom( $("#new14 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
 
     //  tl18.from("#new14 p", 0.2,{y:+10, opacity:0, ease: Back});
-     tl18.from("#new14 a", 0.2,{y:+10, opacity:0, ease: Back});
+    //  tl18.from("#new14 a", 0.2,{y:+10, opacity:0, ease: Back});
      tl18.from("#new14 img" ,0.5, {x:-600},"-=1");
 
      var scene = new ScrollMagic.Scene({

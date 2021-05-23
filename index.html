@@ -91,22 +91,6 @@
 
     <!-- loader content -->
     <div class="loader" id="loader">
-
-        <!-- <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
-                stroke="var(--secondary)" stroke-width="2"></path>
-            <path
-                d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
-                stroke="var(--secondary)" stroke-width="2"></path>
-            <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
-                d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
-            </path>
-            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" stroke="var(--secondary)"></path>
-            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg> -->
         <div class="loader-wrapper">
           <img src="images/logo.png" alt="">
         </div>    
@@ -196,7 +180,7 @@
                         <div class="container-fluid">
                           <div class="swiper-pagination swiper-pagination-home"></div>
                             <div id="myWizard" class="w-100 d-flex">
-                              <div class="col-md-12">
+                              <div class="col-md-12 p-0">
                                   <div class="swiper-container swiper-home-container">
                                       <main class="sections swiper-wrapper">
                                         
@@ -205,7 +189,7 @@
                                               <div class="common-height">
                                                 <div class="whowe-section w-100" id="step1">
                                                   <div class="row align-items-center">
-                                                    <div class="col-md-5 col-sm-6 col-12">
+                                                    <!-- <div class="col-md-5 col-sm-6 col-12">
                                                       <div class="image-wrapper hover-animation">
                                                         <img class="d-block img-fluid" src="images/main-banner.png" alt="First slide">
                                                         <div class="cover"></div>
@@ -214,7 +198,8 @@
                                                     <div class="col-md-7 col-sm-6 col-12">
                                                         <h1 class="ball">Cheesegasms now<br> start at just Rs 199!</h1>
                                                         <a href="order.html" class="btn btn-primary btn-common">Know More<span></span></a>
-                                                    </div>
+                                                    </div> -->
+                                                    <img src="images/banner-01.png" class="img-fluid" alt="">
                                                   </div>
                                                 </div>
                                               </div>
@@ -1841,81 +1826,93 @@
                                             </div>
                                           </main>
                                         </div>
-                                        <div class="section swiper-slide franchise-process" id="new11">
+                                        <div class="section swiper-slide franchise-process franchise-form" id="new11">
                                           <main id="viewport">
                                             <div class="common-height">
-                                              <div class="whowe-section" id="step2">
-                                                <div class="row align-items-center pb-2 pt-5">
-                                                  <div class="col-md-12">
-                                                    <h3>Process</h3>
-                                                  </div>
-                                                </div>
-                                                <div class="row">
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
+                                              <div class="col-10 page-form pt-5">
+                                                <h1 class="fz-25">Franchise Application</h1>
+                                                <form action="" class="pt-4">
+                                                  <div class="row p-0">
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">Full Name</label>
+                                                      <input type="text" placeholder="Enter full name">
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">Phone Number</label>
+                                                      <input type="text" placeholder="Enter phone number">
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">Email Address</label>
+                                                      <input type="text" placeholder="Enter email address">
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">Country</label>
+                                                      <div class="dropdown">
+                                                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                          <span id="selectedSix">Select Country</span><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menuContactSix">
+                                                          <li><a href="#">Option 1</a></li>
+                                                          <li><a href="#">Option 2</a></li>
+                                                          <li><a href="#">Option 3</a></li>
+                                                          <li><a href="#">Option 4</a></li>
+                                                        </ul>
                                                       </div>
-                                                      <h5>Appication Form</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">State</label>
+                                                      <div class="dropdown">
+                                                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                          <span id="selectedSevan">Select State</span><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menuContactSevan">
+                                                          <li><a href="#">Option 1</a></li>
+                                                          <li><a href="#">Option 2</a></li>
+                                                          <li><a href="#">Option 3</a></li>
+                                                          <li><a href="#">Option 4</a></li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">City</label>
+                                                      <div class="dropdown">
+                                                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                          <span id="selectedEight">Select City</span><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menuContactEight">
+                                                          <li><a href="#">Option 1</a></li>
+                                                          <li><a href="#">Option 2</a></li>
+                                                          <li><a href="#">Option 3</a></li>
+                                                          <li><a href="#">Option 4</a></li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">Budget</label>
+                                                      <div class="dropdown">
+                                                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                          <span id="selectedNine">Select your financial budget</span><span class="caret"></span></a>
+                                                        <ul class="dropdown-menu dropdown-menuContactNine">
+                                                          <li><a href="#">Option 1</a></li>
+                                                          <li><a href="#">Option 2</a></li>
+                                                          <li><a href="#">Option 3</a></li>
+                                                          <li><a href="#">Option 4</a></li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5">
+                                                      <label for="">Profession</label>
+                                                      <input type="text" placeholder="Enter Profession">
+                                                    </div>
+                                                    <div class="col-lg-4 col-12 mb-5 ">
+                                                      <label for="">Franchise Experience</label>
+                                                      <input type="radio" placeholder="Enter phone number">Yes
+                                                      <input type="radio" placeholder="Enter phone number">No
+                                                    </div>
+                                                    
+                                                    <div class="col-12 text-right">
+                                                      <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-common">Submit<span></span></a>
                                                     </div>
                                                   </div>
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                                      </div>
-                                                      <h5>Approval Process</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                                      </div>
-                                                      <h5>Location Scouting</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                                      </div>
-                                                      <h5>Construction/Designing</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                                      </div>
-                                                      <h5>Store Opening</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                                      </div>
-                                                      <h5>On Going Support</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-md-3 col-sm-4 col-12">
-                                                    <div class="process-wrapper">
-                                                      <div class="process-box">
-                                                        <img src="images/group-1.svg" class="img-fluid" alt="">
-                                                      </div>
-                                                      <h5>On Job Training</h5>
-                                                      <h4>Everything served at Zero Degrees is made to order, handcrafted using real,</h4>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
+                                                </form>
+                                            </div>
                                             </div>
                                           </main>
                                         </div>
@@ -1997,72 +1994,188 @@
                                             </div>
                                           </main>
                                         </div>
-                                        <div class="section swiper-slide" id="new12">
+                                        <div class="section swiper-slide owl-carousel-banner" id="new12">
                                           <main id="viewport">
                                             <div class="common-height">
-                                              
+
                                               <!-- <div class="col-md-2 swiper-franchise-container-inner">
                                                 <div class="swiper-pagination swiper-pagination-franchise-inner"></div>
                                               </div> -->
-                                              <div class="col-md-12 pl-0">
-                                                  <div class="swiper-container swiper-franchise-container-inner">
-                                                      <main class="sections swiper-wrapper">
-                                                        <div class="section swiper-slide w-100" id="new121">
-                                                          <div class="team-section pt-5 mt-3" id="step3">
-                                                            <div class="row align-items-center">
-                                                              <div class="col-md-5 col-sm-6 col-12">
-                                                                <div class="overflow-hidden hover-animation">
-                                                                <img class="img-fluid" src="images/franchise-types.png" alt="First slide">
-                                                              </div>
-                                                              </div>
-                                                              <div class="col-md-6 col-sm-6 col-12">
-                                                                <div class="width-90">
-                                                                  <h1>Area Required</h1>
-                                                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                                                                </div>
-                                                              </div>
+                                              <!-- <div class="col-md-12 pl-0">
+                                                <div class="swiper-container swiper-franchise-container-inner">
+                                                  <main class="sections swiper-wrapper">
+                                                    <div class="section swiper-slide w-100" id="new121">
+                                                      <div class="team-section pt-5 mt-3" id="step3">
+                                                        <div class="row align-items-center">
+                                                          <div class="col-md-5 col-sm-6 col-12">
+                                                            <div class="overflow-hidden hover-animation">
+                                                              <img class="img-fluid" src="images/franchise-types.png"
+                                                                alt="First slide">
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-md-6 col-sm-6 col-12">
+                                                            <div class="width-90">
+                                                              <h1>Area Required</h1>
+                                                              <p>It is a long established fact that a reader will be
+                                                                distracted by the readable content of a page when
+                                                                looking at its layout. The point of using Lorem Ipsum is
+                                                                that it has a more-or-less normal distribution of
+                                                                letters, as opposed to using ‘Content here, content
+                                                                here’, making it look like readable English. Many
+                                                                desktop publishing packages and web page editors now use
+                                                                Lorem Ipsum as their default model text, and a search
+                                                                for ‘lorem ipsum’ will uncover many web sites still in
+                                                                their infancy. Various versions have evolved over the
+                                                                years, sometimes by accident, sometimes on purpose
+                                                                (injected humour and the like).</p>
+                                                              <p>It is a long established fact that a reader will be
+                                                                distracted by the readable content of a page when
+                                                                looking at its layout. The point of using Lorem Ipsum is
+                                                                that it has a more-or-less normal distribution of
+                                                                letters.</p>
                                                             </div>
                                                           </div>
                                                         </div>
-                                                        <div class="section swiper-slide w-100" id="new122">
-                                                          <div class="team-section pt-5 mt-3" id="step3">
-                                                            <div class="row align-items-center">
-                                                              <div class="col-md-5 col-sm-6 col-12">
-                                                                <div class="overflow-hidden hover-animation">
-                                                                <img class="img-fluid" src="images/investment.png" alt="First slide">
-                                                              </div>
-                                                              </div>
-                                                              <div class="col-md-6 col-sm-6 col-12">
-                                                                <div class="width-90">
-                                                                  <h1>Royalty</h1>
-                                                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                                                                </div>
-                                                              </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="section swiper-slide w-100" id="new122">
+                                                      <div class="team-section pt-5 mt-3" id="step3">
+                                                        <div class="row align-items-center">
+                                                          <div class="col-md-5 col-sm-6 col-12">
+                                                            <div class="overflow-hidden hover-animation">
+                                                              <img class="img-fluid" src="images/investment.png"
+                                                                alt="First slide">
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-md-6 col-sm-6 col-12">
+                                                            <div class="width-90">
+                                                              <h1>Royalty</h1>
+                                                              <p>It is a long established fact that a reader will be
+                                                                distracted by the readable content of a page when
+                                                                looking at its layout. The point of using Lorem Ipsum is
+                                                                that it has a more-or-less normal distribution of
+                                                                letters, as opposed to using ‘Content here, content
+                                                                here’, making it look like readable English. Many
+                                                                desktop publishing packages and web page editors now use
+                                                                Lorem Ipsum as their default model text, and a search
+                                                                for ‘lorem ipsum’ will uncover many web sites still in
+                                                                their infancy. Various versions have evolved over the
+                                                                years, sometimes by accident, sometimes on purpose
+                                                                (injected humour and the like).</p>
+                                                              <p>It is a long established fact that a reader will be
+                                                                distracted by the readable content of a page when
+                                                                looking at its layout. The point of using Lorem Ipsum is
+                                                                that it has a more-or-less normal distribution of
+                                                                letters.</p>
                                                             </div>
                                                           </div>
                                                         </div>
-                                                        <div class="section swiper-slide w-100" id="new123">
-                                                          <div class="team-section pt-5 mt-3" id="step3">
-                                                            <div class="row align-items-center">
-                                                              <div class="col-md-5 col-sm-6 col-12">
-                                                                <div class="overflow-hidden hover-animation">
-                                                                <img class="img-fluid" src="images/investment1.png" alt="First slide">
-                                                              </div>
-                                                              </div>
-                                                              <div class="col-md-6 col-sm-6 col-12">
-                                                                <div class="width-90">
-                                                                  <h1>Investment</h1>
-                                                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-                                                                </div>
-                                                              </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="section swiper-slide w-100" id="new123">
+                                                      <div class="team-section pt-5 mt-3" id="step3">
+                                                        <div class="row align-items-center">
+                                                          <div class="col-md-5 col-sm-6 col-12">
+                                                            <div class="overflow-hidden hover-animation">
+                                                              <img class="img-fluid" src="images/investment1.png"
+                                                                alt="First slide">
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-md-6 col-sm-6 col-12">
+                                                            <div class="width-90">
+                                                              <h1>Investment</h1>
+                                                              <p>It is a long established fact that a reader will be
+                                                                distracted by the readable content of a page when
+                                                                looking at its layout. The point of using Lorem Ipsum is
+                                                                that it has a more-or-less normal distribution of
+                                                                letters, as opposed to using ‘Content here, content
+                                                                here’, making it look like readable English. Many
+                                                                desktop publishing packages and web page editors now use
+                                                                Lorem Ipsum as their default model text, and a search
+                                                                for ‘lorem ipsum’ will uncover many web sites still in
+                                                                their infancy. Various versions have evolved over the
+                                                                years, sometimes by accident, sometimes on purpose
+                                                                (injected humour and the like).</p>
+                                                              <p>It is a long established fact that a reader will be
+                                                                distracted by the readable content of a page when
+                                                                looking at its layout. The point of using Lorem Ipsum is
+                                                                that it has a more-or-less normal distribution of
+                                                                letters.</p>
                                                             </div>
                                                           </div>
                                                         </div>
-                                                      </main>
-                          
+                                                      </div>
+                                                    </div>
+                                                  </main>
+                                              </div> -->
+                                              <div class="col-12">
+                                                <h1 class="pb-3">Franchise owners feedback</h1>
+                                                
+                                                <div id="home-benefits" data-aos="fade-up" class="owl-carousel owl-theme">
+
+                                                  <div class="item">
+                                                    <div class="benefits-wrpper">
+                                                      <img src="images/profile.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <h5 class="heading-20 pb-1 pt-3">Shaurya Vats</h5>
+                                                    <h4>CP M blocks </h4>
+                                                    <p class="heading-14 pt-2 p-border">Plot No 5, M-37, Outer Circle area, Block M, Connaught Place, New Delhi, Delhi 110001</p>
+                                                    <p class="heading-14 mb-0">Xero degrees is a much needed oppurtunity that I wanted in my life. I am glad to be a part of such a loving and a supportive family!</p>
+                                                  </div>
+                                    
+                                                  <div class="item">
+                                                    <div class="benefits-wrpper">
+                                                      <img src="images/profile.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <h5 class="heading-20 pb-1 pt-3">Shaurya Vats</h5>
+                                                    <h4>CP M blocks </h4>
+                                                    <p class="heading-14 pt-2 p-border">Plot No 5, M-37, Outer Circle area, Block M, Connaught Place, New Delhi, Delhi 110001</p>
+                                                    <p class="heading-14 mb-0">Xero degrees is a much needed oppurtunity that I wanted in my life. I am glad to be a part of such a loving and a supportive family!</p>
+                                                  </div>
+                                                  
+                                                  <div class="item">
+                                                    <div class="benefits-wrpper">
+                                                      <img src="images/profile.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <h5 class="heading-20 pb-1 pt-3">Shaurya Vats</h5>
+                                                    <h4>CP M blocks </h4>
+                                                    <p class="heading-14 pt-2 p-border">Plot No 5, M-37, Outer Circle area, Block M, Connaught Place, New Delhi, Delhi 110001</p>
+                                                    <p class="heading-14 mb-0">Xero degrees is a much needed oppurtunity that I wanted in my life. I am glad to be a part of such a loving and a supportive family!</p>
+                                                  </div> 
+                                                  
+                                                  <div class="item">
+                                                    <div class="benefits-wrpper">
+                                                      <img src="images/profile.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <h5 class="heading-20 pb-1 pt-3">Shaurya Vats</h5>
+                                                    <h4>CP M blocks </h4>
+                                                    <p class="heading-14 pt-2 p-border">Plot No 5, M-37, Outer Circle area, Block M, Connaught Place, New Delhi, Delhi 110001</p>
+                                                    <p class="heading-14 mb-0">Xero degrees is a much needed oppurtunity that I wanted in my life. I am glad to be a part of such a loving and a supportive family!</p>
+                                                  </div>
+                                    
+                                                  <div class="item">
+                                                    <div class="benefits-wrpper">
+                                                      <img src="images/profile.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <h5 class="heading-20 pb-1 pt-3">Shaurya Vats</h5>
+                                                    <h4>CP M blocks </h4>
+                                                    <p class="heading-14 pt-2 p-border">Plot No 5, M-37, Outer Circle area, Block M, Connaught Place, New Delhi, Delhi 110001</p>
+                                                    <p class="heading-14 mb-0">Xero degrees is a much needed oppurtunity that I wanted in my life. I am glad to be a part of such a loving and a supportive family!</p>
+                                                  </div>
+                                    
+                                    
+                                    
+                                                  <div class="item">
+                                                    <div class="benefits-wrpper">
+                                                      <img src="images/profile.png" class="img-fluid" alt="">
+                                                    </div>
+                                                    <h5 class="heading-20 pb-1 pt-3">Shaurya Vats</h5>
+                                                    <h4>CP M blocks </h4>
+                                                    <p class="heading-14 pt-2 p-border">Plot No 5, M-37, Outer Circle area, Block M, Connaught Place, New Delhi, Delhi 110001</p>
+                                                    <p class="heading-14 mb-0">Xero degrees is a much needed oppurtunity that I wanted in my life. I am glad to be a part of such a loving and a supportive family!</p>
+                                                  </div>
+                                                          
+                                                </div>
                                               </div>
                                             </div>
                                           </main>
@@ -2072,7 +2185,7 @@
                                             <div class="common-height">
                                               <div class="" id="step4">
                                                 <div class="row align-items-start faq-section">
-                                                  <div class="col-md-4 colsm-5 col-12">
+                                                  <div class="col-md-4 colsm-5 col-12 pt-5">
                                                     <h6>Still have questions?</p>
                                                     <h2>Relax because we 
                                                       always will be here
@@ -2080,7 +2193,7 @@
                                                   </div>
                                                   <div class="col-md-8 col-sm-7 col-12">
                                                     <div class="container">
-                                                      <div id="accordion" class="accordion">
+                                                      <div id="accordion" class="accordion pt-5">
                                                         <div class="card mb-0">
                 
                                                           <div class="accordian-wrpper">
