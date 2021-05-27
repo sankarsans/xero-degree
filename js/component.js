@@ -13,8 +13,15 @@ function openNav() {
   document.querySelector(".bg-light").style.cssText = "left :360px;transition: 0.5s";
   document.querySelector("main").style.cssText = "transform :translateX(360px);transition: 0.5s";
   document.getElementById("mySidenav").style.cssText = "width: 360px; transition: 0.5s";
-  
-  
+}
+
+
+function openNavMenu() {
+  document.querySelector(".menu").style.cssText = "transition: 0.5s;display:block";
+}
+
+function closeNavMenu() {
+  document.querySelector(".menu").style.cssText = "transition: 0.5s;display:none";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */

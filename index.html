@@ -97,16 +97,62 @@
       </div>
     
 
+    <div class="menu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Locations</a></li>
+        <li><a href="">Franchise</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Offers</a></li> 
+        <li>
+          <a href=""><img src="images/facebook.svg" alt="facebook-icon" class="" /></a>
+           <a href=""><img src="images/instagram.svg" alt="facebook-icon" class="" /></a>
+        </li> 
+      </ul>
+    </div>
+
     <!-- navigation content -->
     <div class="fixed-content">
         <!-- top navbar content -->
         <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
           <div class="inner-nav">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" onclick="openNavMenu()">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+          
+            <div class="d-block d-md-none w-100">
+              <ul class="d-flex justify-content-end mb-0">
+                <li class="nav-item dropdown">
+                  <div class="dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                        class="dropdown-toggle" href="#">
+                        <span id="selected">Bangalore</span><img src="images/up-arrow-new.svg"
+                            class="dropdown-arrow"></a>
+                    <ul class="dropdown-menu dropdown-menuHeader">
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="images/profile.png" class="profile-pic">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Logout</a>
+                      <a class="dropdown-item" href="#">Settings</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -2758,7 +2804,7 @@
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
     <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js'></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
         var swiper = new Swiper('.swiper-container', {})
             $('#slide3').click(swiper,function(){
