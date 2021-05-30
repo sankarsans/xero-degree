@@ -576,7 +576,10 @@ ul.transition li {
 			border-radius: 4px;
 			border: solid 0.5px #d1d1d1;
 			background-color: #ffffff;
-			width: 33%;
+			width: 118px;
+			
+			margin-right: 10px;
+	
 		}
 	}
 	.example .btn-toggle {
@@ -705,7 +708,7 @@ ul.transition li {
 	height: 100vh;
 	// background-image: linear-gradient(207deg, #fef6f1 82%, #ffffff 15%);
 	&.home-section {
-		background: url(../images/home-bg.png) 0 0 no-repeat;
+		// background: url(../images/home-bg.png) 0 0 no-repeat;
 	}
 }
 
@@ -1221,7 +1224,8 @@ ul.transition li {
 }
 .list-menu {
 	overflow-y: scroll;
-	max-height: 70vh;
+	
+    max-height: calc(100vh - 100px);
 	box-shadow: 0 12px 14px 0 rgba(207, 132, 132, 0.1);
 	background-color: #ffffff;
 	border-radius: 4px;
@@ -1309,7 +1313,7 @@ ul.transition li {
 		bottom: 0px !important;
 	}
 	&.swiper-scrollbar-franchise{
-		bottom: 25px !important;
+		bottom: 37px !important;
 	}
 	.swiper-scrollbar-drag{
 		background-color: #f95858;
@@ -1392,7 +1396,21 @@ input,
 textarea {
 	width: 100%;
 }
-
+.two-images{
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	img{
+		&:first-child{
+			margin: 0!important;
+		}
+		&:last-child{
+			margin: 0!important;
+			margin-left: -42px!important;
+			width: 80px;
+		}
+	}
+}
 .modal {
 	// position: relative;
 	// height: 90vh;
@@ -1408,7 +1426,7 @@ textarea {
 .swiper-container-horizontal{
 	.new-nav{
 		&.swiper-pagination-bullets{
-			bottom: 10px!important;
+			bottom: 0px!important;
 
 			padding-bottom: 90px;
 
@@ -1418,7 +1436,11 @@ textarea {
 .fz-25{
 	font-size: 25px;
 }
-
+.accordion{
+	overflow: scroll;
+    height: 100vh;
+    padding-top: 50px;
+}
 .owl-carousel-banner{
 	h1{
 		font-size: 25px!important;
@@ -1428,7 +1450,7 @@ textarea {
 		position: absolute;
 		right: 0;	
 		.owl-prev{
-			background: url(/images/left-arrow-new.svg) 0  0 no-repeat!important;
+			background: url(../images/left-arrow-new.svg) 0  0 no-repeat!important;
 			width: 40px;
 			height: 40px;		
 			&:focus{
@@ -1439,7 +1461,7 @@ textarea {
 			}
 		}
 		.owl-next{
-			background: url(/images/right-arrow-new.svg) 0  0 no-repeat!important;
+			background: url(../images/right-arrow-new.svg) 0  0 no-repeat!important;
 			width: 40px;
 			height: 40px;
 			&:focus{
@@ -1450,9 +1472,10 @@ textarea {
 			}		
 		}
 	}
+	
 	.item{
 		border-radius: 3px;
-		box-shadow: 0 12px 14px 0 #f5f5f5;
+		// box-shadow: 0 12px 14px 0 #f5f5f5;
 		border: solid 1px #ffd3d3;
 		background-color: #ffffff;
 		padding: 20px;
@@ -1727,7 +1750,7 @@ textarea {
 
 // cursor
 body {
-	cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='000000' r='4'/%3E%3C/svg%3E") 3 3, auto;
+	// cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='000000' r='4'/%3E%3C/svg%3E") 3 3, auto;
 }
 
 // .stroke-only {
@@ -1834,7 +1857,7 @@ body {
 }
 
 .bg-light {
-	box-shadow: 0 6px 9px 0 #f4ece6;
+	// box-shadow: 0 6px 9px 0 #f4ece6;
 	background-color: #ffffff;
 	z-index: 9;
 }
@@ -2343,7 +2366,7 @@ html {
 		// max-width: 40%;
 		transition: 0.5s;
 		border-radius: 8px;
-		box-shadow: 0 12px 14px 0 #f5f5f5;
+		// box-shadow: 0 12px 14px 0 #f5f5f5;
 		border: solid 1px #ffd3d3;
 		background-color: #ffffff;
 
@@ -2746,7 +2769,7 @@ body {
 		flex-direction: column;
 		top: 71px;
 		width: 66px!important;
-		height: 90%;
+		height: 92%;
 		/* transform: rotate(180deg); */
 		justify-content: space-between;
 		// flex-direction: csolumn-reverse;
@@ -3011,11 +3034,14 @@ body {
 .new-nav {
 	top: unset!important;
 }
+.hide-list{
+	display: none;
+}
 .leaf-1{
 	position: absolute;
 	left: 260px;
 	z-index: 99;
-	top: 65px;
+	top: 105px;
 }
 .set-height{
 	height: 75vh;
@@ -3024,7 +3050,7 @@ body {
 .leaf-2{
 	position: absolute;
 	right: 40px;
-	top: 70px;
+	top: 100px;
 }
 .fz-40{
 	font-size: 40px;
@@ -3174,7 +3200,7 @@ body {
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
 		/* content: "Home"; */
-		display: block;
+		display: none;
 	}
 }
 .demo-play-btn{
@@ -3247,7 +3273,7 @@ body {
 	.dropdown-menu.show {
 		display: block;
 		width: 100%;
-		left: -16px!important;
+		left: -8px!important;
 		margin-top: 7px;
 	}
 	input, .dropdown{
@@ -3255,9 +3281,10 @@ body {
 		border: solid 1px #e1e1e1;
 		width: 100%;
 		height: 48px;
-		padding: 15px;
+		padding: 9px;
 		a{
 			width: 100%;
+			color: #797979;
 			display: inline-block;
 			.caret{
 				background: url(/images/down-arrow-new.svg) 0 0 no-repeat;

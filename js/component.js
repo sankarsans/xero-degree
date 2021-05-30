@@ -127,6 +127,7 @@ $(document).ready(function(){
 
 $('.dropdown-menuHeader a').click(function(){
   $('#selected').text($(this).text());
+
 });
 
 $('.dropdown-menuContact a').click(function(){
