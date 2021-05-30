@@ -13760,7 +13760,7 @@ body::-webkit-scrollbar {
   display: inline-block;
 }
 .page-form input a .caret, .page-form .dropdown a .caret, .franchise-form input a .caret, .franchise-form .dropdown a .caret {
-  background: url(/images/down-arrow-new.svg) 0 0 no-repeat;
+  background: url(../images/down-arrow-new.svg) 0 0 no-repeat;
   display: block;
   position: absolute;
   right: 10px;
