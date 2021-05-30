@@ -253,11 +253,18 @@ ul.transition li {
 	top: 0;
 	left: 0;
 	// width: 100%;
+	.social-contact{
+		list-style: none;
+		padding-left: 25px;
+		img{
+			width: 20px;
+		}
+	}
 	ul {
 		// position: absolute;
 		left: 0;
-		padding-top: 93px;
-		height: 95%;
+		padding-top: 79px;
+		height: 85%;
 		display: flex;
 		writing-mode: vertical-rl;
 		text-orientation: mixed;
@@ -267,6 +274,7 @@ ul.transition li {
 			display: flex;
 			a {
 				transform: rotate(180deg);
+				font-weight: bold!important;
 				&.active {
 					color: #f95858;
 				}
@@ -961,6 +969,7 @@ ul.transition li {
 		li {
 			margin-top: 10px;
 			margin-right: 10px;
+			padding-left: 6px;
 			a {
 				img {
 					width: 20px;
@@ -2914,7 +2923,7 @@ body {
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
 		/* content: "Home"; */
-		// display: none;
+		display: none;
 	}
 	.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(7) {
 		/* content: "Home"; */
@@ -3063,6 +3072,19 @@ body {
 	position: absolute;
 	right: 40px;
 	top: 100px;
+}
+.career-leaf{
+	.leaf-1{
+		position: absolute;
+		left: 60px;
+		z-index: 99;
+		top: 185px;
+	}
+	.leaf-2{
+		position: absolute;
+		right: 40px;
+		top: 180px;
+	}
 }
 .fz-40{
 	font-size: 40px;
@@ -3227,7 +3249,7 @@ body {
 	cursor:pointer;
 	width: 60px;
     height: 60px;
-	background: url(/images/play-button.svg) 0 0 no-repeat;
+	background: url(../images/play-button.svg) 0 0 no-repeat;
   }
   .demo-play-btn img{
 	width:50px;

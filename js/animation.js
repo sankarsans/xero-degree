@@ -180,7 +180,7 @@ $(function() {
 
     // tl5.from("#new5 h3", 0.2,{y:+30, opacity:0, ease: Sine.easeIn},"+=0.4");
     tl5.from("#new5 a", 0.2,{y:+10, opacity:0, ease: Elastic});
-    tl5.from("#new5 img" ,0.5, {x:-600},"-=1");
+    // tl5.from("#new5 img" ,0.5, {x:-600},"-=1");
 
 
     var scene = new ScrollMagic.Scene({
@@ -229,7 +229,8 @@ $(function() {
     // tl7.staggerFrom( $("#new6 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
     // tl7.staggerFrom( $("#new6 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
     tl7.staggerFrom( $("#new6 h1 .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut }, "+=0.4");
-    tl7.staggerFrom( $("#new6 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+    // tl7.staggerFrom( $("#new6 p .words"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
+    tl7.staggerFrom( $("#new6 p"), 0.9,{y:+30, delay: 0.2, opacity:0, ease: Power3.easeOut });
 
     // tl7.from("#new6 h1", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
     // tl7.from("#new6 p", 0.2,{y:+10, opacity:0, ease: Sine.easeIn});
@@ -509,7 +510,7 @@ $(function() {
 
     //  tl18.from("#new14 p", 0.2,{y:+10, opacity:0, ease: Back});
     //  tl18.from("#new14 a", 0.2,{y:+10, opacity:0, ease: Back});
-     tl18.from("#new14 img" ,0.5, {x:-600},"-=1");
+     tl18.from("#new14 .car-banner" ,0.5, {x:-600},"-=1");
 
      var scene = new ScrollMagic.Scene({
          triggerElement:"#new14",
