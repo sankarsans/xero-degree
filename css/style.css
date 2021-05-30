@@ -12953,6 +12953,18 @@ html {
   color: #5d0f0f;
   font-family: "Oswald", sans-serif;
 }
+.franchise-modal .fz-40 {
+  font-size: 40px !important;
+}
+.franchise-modal .light-p {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
 .franchise-modal h4 {
   font-size: 14px;
   font-weight: 500;
@@ -13556,6 +13568,11 @@ body::-webkit-scrollbar {
 
 @media (min-width: 576px) {
   #myModalTwo .modal-dialog {
+    max-width: 990px;
+    height: 585px;
+  }
+
+  #myModalThree .modal-dialog {
     max-width: 990px;
     height: 585px;
   }
