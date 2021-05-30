@@ -12113,6 +12113,7 @@ textarea {
 
 .swiper-container-horizontal .new-nav.swiper-pagination-bullets {
   bottom: 0px !important;
+  overflow: hidden;
   padding-bottom: 90px;
 }
 
