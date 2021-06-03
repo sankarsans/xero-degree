@@ -13757,12 +13757,76 @@ body::-webkit-scrollbar {
     flex-direction: column;
   }
 
+  #franchise h3 {
+    padding-top: 1100px;
+    font-size: 28px;
+  }
+
+  #franchise h1 {
+    padding-top: 700px;
+    font-size: 28px;
+  }
+
+  #faq-franchise #step4 {
+    padding-top: 400px !important;
+  }
+
+  #new12 h1 {
+    padding-top: 200px;
+  }
+  #new12 .owl-nav {
+    display: none;
+  }
+
+  .faq-section .container {
+    padding: 0;
+  }
+  .faq-section .card-header {
+    padding: 10px 12px 10px 14px;
+  }
+  .faq-section .card-title {
+    width: 95%;
+  }
+  .faq-section .pt-5 {
+    padding-top: 0 !important;
+  }
+  .faq-section .accordion {
+    padding-top: 20px;
+  }
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
   .leaf-1, .leaf-2 {
     display: none;
   }
 
+  .process-content {
+    padding-right: 0 !important;
+  }
+  .process-content .col-md-3 {
+    padding-right: 0 !important;
+  }
+
+  .list-changes.col-md-12 .address-list .address-list-view {
+    width: 100% !important;
+    margin-right: 0px !important;
+    margin-bottom: 20px;
+  }
+
+  .page-form {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
   .location-section .list-content {
     padding: 60px 0px 0 0px;
+  }
+  .location-section .address-list h3 {
+    padding-top: 0 !important;
+  }
+  .location-section .address-scroll {
+    padding-right: 0 !important;
   }
   .location-section .search-location {
     top: 0;
