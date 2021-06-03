@@ -10803,39 +10803,6 @@ svg.tea #steamR {
   font-weight: normal;
   src: local("SF UI Text Bold"), url("../fonts/SFUIText-Bold.woff") format("woff");
 }
-@media only screen and (max-width: 767px) {
-  .swiper-pagination {
-    display: none !important;
-  }
-
-  .social-icon {
-    display: none;
-  }
-
-  .navbar-toggler {
-    padding: 0;
-    border: none;
-    margin-right: 10px;
-  }
-
-  .inner-nav {
-    max-width: 100% !important;
-  }
-
-  .header_nav .dropdown {
-    border: 0 !important;
-  }
-  .header_nav .nav-item .dropdown {
-    padding: 10px 0;
-  }
-
-  .navbar-brand {
-    margin-right: 0;
-  }
-  .navbar-brand img {
-    width: 70px;
-  }
-}
 /* general-styles */
 body {
   background-color: #fff;
@@ -10939,6 +10906,11 @@ ul {
   z-index: 99;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
+}
+.menu .close-btn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 .menu ul {
   flex-direction: column;
@@ -13777,6 +13749,187 @@ body::-webkit-scrollbar {
   height: 18px;
   margin: 3px 8px 3px 0;
   border: solid 1px #929090;
+}
+
+@media only screen and (max-width: 767px) {
+  #myWizard {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .leaf-1, .leaf-2 {
+    display: none;
+  }
+
+  .location-section .list-content {
+    padding: 60px 0px 0 0px;
+  }
+  .location-section .search-location {
+    top: 0;
+  }
+
+  .about-nav .col-12 {
+    padding-right: 0;
+  }
+  .about-nav .whowe-section h1 {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .about-nav .whowe-section p {
+    font-size: 10px;
+  }
+  .about-nav .pt-middle {
+    margin-top: 0;
+  }
+  .about-nav .card-wrapper {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    height: auto;
+  }
+  .image-wrapper img {
+    padding-top: 500px !important;
+    position: unset;
+  }
+
+  #step4 {
+    padding-top: 500px !important;
+  }
+  #step4 .row {
+    padding-right: 0 !important;
+  }
+  #step4 .row .col-md-3 {
+    padding-left: 3rem !important;
+    margin-bottom: 50px !important;
+  }
+
+  .hover-animation img {
+    padding-top: 500px !important;
+  }
+
+  .swiper-about-container img, .swiper-franchise-container img {
+    max-width: 100%;
+  }
+
+  .common-height {
+    padding-left: 0 !important;
+    overflow-y: scroll;
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+    max-width: 100%;
+    width: 100vw !important;
+  }
+
+  .location-section {
+    padding-top: 280px !important;
+  }
+
+  .menu-toggle {
+    margin-left: 0;
+    margin-top: 0px !important;
+  }
+
+  .menu-page h2 {
+    padding-top: 0 !important;
+    display: none !important;
+    margin-top: 0 !important;
+  }
+  .menu-page .tab-pane {
+    padding: 0;
+  }
+
+  .home-section p {
+    font-size: 12px;
+  }
+
+  .menu-items {
+    margin: 0 !important;
+    padding-top: 0 !important;
+  }
+  .menu-items p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+  .menu-items .col-md-2 {
+    -ms-flex: 0 0 19.666667%;
+    flex: 0 0 33.666667%;
+    max-width: 32.666667%;
+  }
+  .menu-items .item-wrapper {
+    min-height: auto;
+  }
+
+  .list-menu {
+    padding: 0 !important;
+    padding-left: 0 !important;
+    max-height: unset;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .list-menu .nav-link {
+    width: 100%;
+    height: 39px;
+    border-radius: 19px;
+    background-color: #ffeeee;
+    margin-right: 15px;
+  }
+  .list-menu .nav-link.active {
+    background-color: #f95858;
+    border-bottom: 0px !important;
+  }
+  .list-menu .nav-link.active p {
+    color: #fff !important;
+  }
+  .list-menu .tag {
+    margin-top: 0;
+  }
+  .list-menu ul {
+    flex-direction: row !important;
+    overflow-y: unset !important;
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+  }
+  .list-menu ul li {
+    display: inline-block;
+  }
+
+  .swiper-pagination {
+    display: none !important;
+  }
+
+  .social-icon {
+    display: none;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .inner-nav {
+    max-width: 100% !important;
+  }
+
+  .header_nav .dropdown {
+    border: 0 !important;
+  }
+  .header_nav .nav-item .dropdown {
+    padding: 10px 0 !important;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

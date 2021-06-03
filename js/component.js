@@ -15,6 +15,12 @@ function openNav() {
   document.getElementById("mySidenav").style.cssText = "width: 360px; transition: 0.5s";
 }
 
+function goToPage(numberPage){
+  new Swiper('.swiper-container-app ').slideTo(numberPage,1000,false);
+  document.querySelector(".menu").style.cssText = "transition: 0.5s;display:none";
+}
+
+
 
 function openNavMenu() {
   document.querySelector(".menu").style.cssText = "transition: 0.5s;display:block";

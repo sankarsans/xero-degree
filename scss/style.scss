@@ -1,7 +1,7 @@
 @import "framework.scss";
 @import "loader.scss";
 @import "fonts.scss";
-@import "responsive.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* general-styles */
@@ -119,6 +119,11 @@ ul {
     z-index: 99;
 	background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+	.close-btn{
+		position: absolute;
+		left: 20px;
+		top: 20px;	
+	}
 	ul{
 		flex-direction: column;
 		padding-top: 60px;
@@ -3345,3 +3350,6 @@ body {
 		border: solid 1px #929090;
 	}
 }
+
+
+@import "responsive.scss";
