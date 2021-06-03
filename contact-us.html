@@ -30,55 +30,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    <!-- <style>
-        body,
-html {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  perspective: 1000;
-}
-
-.section {
-  height: 100%;
-  width: calc( 100% / 5 );
-  float: left;
-  position: relative;
-}
-.section:nth-child(1) {
-  background: #F64747;
-}
-.section:nth-child(2) {
-  background: #22A7F0;
-}
-.section:nth-child(3) {
-  background: #F9690E;
-}
-.section:nth-child(4) {
-  background: #9B59B6;
-}
-.section:nth-child(5) {
-  background: #03C9A9;
-}
-.sections {
-  width: 500%;
-  height: 100%;
-}
-.section__title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color: #fff;
-}
-    </style> -->
 </head>
 
 <body class="inner-pages">
@@ -88,26 +39,27 @@ html {
 
     <!-- loader content -->
     <div class="loader" id="loader">
-
-        <!-- <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
-                stroke="var(--secondary)" stroke-width="2"></path>
-            <path
-                d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
-                stroke="var(--secondary)" stroke-width="2"></path>
-            <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
-                d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
-            </path>
-            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" stroke="var(--secondary)"></path>
-            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg> -->
         <div class="loader-wrapper">
           <img src="images/logo.png" alt="">
         </div>
+    </div>
 
+    <div class="menu">
+      <a onclick="closeNavMenu()"><img src="images/close.svg" class="close-btn" alt=""></a>
+      <ul>
+        <li><a href="index.html#slide1">Home</a></li>
+        <li><a href="index.html#slide2">Menu</a></li>
+        <li><a href="index.html#slide3">About Us</a></li>
+        <li><a href="index.html#slide4">Locations</a></li>
+        <li><a href="index.html#slide5">Franchise</a></li>
+        <li><a href="index.html#slide6">Careers</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a onclick="goToPage(4)">Offers</a></li> 
+        <li>
+          <a href=""><img src="images/facebook.svg" alt="facebook-icon" class="" /></a>
+           <a href=""><img src="images/instagram.svg" alt="facebook-icon" class="" /></a>
+        </li> 
+      </ul>
     </div>
 
     <!-- navigation content -->
@@ -115,11 +67,40 @@ html {
         <!-- top navbar content -->
         <nav class="navbar header_nav navbar-expand-lg navbar-light bg-light">
           <div class="inner-nav">
+            <button class="navbar-toggler" type="button" onclick="openNavMenu()">
+              <span class="navbar-toggler-icon"></span>
+          </button>
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="d-block d-md-none w-100">
+              <ul class="d-flex justify-content-end mb-0">
+                <li class="nav-item dropdown">
+                  <div class="dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                        class="dropdown-toggle" href="#">
+                        <span id="selected">Bangalore</span><img src="images/up-arrow-new.svg"
+                            class="dropdown-arrow"></a>
+                    <ul class="dropdown-menu dropdown-menuHeader">
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="images/profile.png" class="profile-pic">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Logout</a>
+                      <a class="dropdown-item" href="#">Settings</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -137,7 +118,7 @@ html {
                             </ul>
                         </div>
                     </li>
-
+                  </ul>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                   <ul class="mb-0 align-items-center">
@@ -174,7 +155,7 @@ html {
           <a href="#section-3" id="anchor3">Section 3</a>
         </nav> -->
         <!-- left nav content -->
-        <nav class="left-nav new-nav">
+        <nav class="left-nav new-nav d-none d-md-block">
             <ul class="anchor-nav" role="navigation">
                 <li><a href="index.html#slide6" id="anchor6">Careers</a></li>
                 <li><a href="index.html#slide5" id="anchor5">Franchise</a></li>
@@ -291,8 +272,6 @@ html {
     <script src="js/vendor.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/component.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426'></script>
     <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js'></script>
    

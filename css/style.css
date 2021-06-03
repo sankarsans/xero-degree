@@ -13752,6 +13752,14 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 767px) {
+  .header_nav ul li a {
+    margin: 0;
+  }
+
+  .dropdown-menu li {
+    padding: 2px 17px;
+  }
+
   #myWizard {
     padding: 0;
     flex-direction: column;
@@ -13807,6 +13815,32 @@ body::-webkit-scrollbar {
     flex: 0 0 100%;
     padding-top: 0 !important;
   }
+  .page-form .col-lg-4 {
+    padding-right: 0;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+    margin: 30px auto;
+  }
+  .modal-dialog .close {
+    right: -6px;
+    top: -4px;
+  }
+  .modal-dialog .modal-content {
+    padding: 10px 10px;
+  }
+  .modal-dialog h3 {
+    padding-top: 30px;
+    font-size: 30px !important;
+  }
+  .modal-dialog img {
+    max-width: 100%;
+  }
+
+  .franchise-mobile {
+    padding-right: 0;
+  }
 
   .career-one {
     padding: 0;
@@ -13858,16 +13892,26 @@ body::-webkit-scrollbar {
   }
 
   .location-section .list-content {
-    padding: 60px 0px 0 0px;
+    padding: 60px 10px 0 0px;
   }
   .location-section .address-list h3 {
     padding-top: 0 !important;
   }
   .location-section .address-scroll {
-    padding-right: 0 !important;
+    padding-right: 15px !important;
+    height: auto !important;
+    padding-bottom: 20px !important;
   }
   .location-section .search-location {
     top: 0;
+  }
+
+  .contact-page {
+    padding-top: 40px !important;
+  }
+
+  #list-map {
+    margin-bottom: 30px;
   }
 
   .about-nav .col-12 {
@@ -13908,10 +13952,40 @@ body::-webkit-scrollbar {
 
   .common-height {
     padding-left: 0 !important;
-    overflow-y: scroll;
     overflow-x: hidden;
     align-items: flex-start;
     padding-top: 20px;
+    height: auto;
+    overflow-y: hidden;
+  }
+  .common-height.mobile-container {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .contactwrapper {
+    padding: 0;
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .contact-page h2 {
+    font-size: 25px;
+  }
+  .contact-page .row {
+    flex-direction: column;
+    padding-left: 10px !important;
+    border: none;
+  }
+  .contact-page .row::before, .contact-page .row::after {
+    display: none;
+  }
+  .contact-page .inner-width {
+    padding: 30px 10px;
+  }
+  .contact-page .left-contact-bg {
+    background: none;
   }
 
   .swiper-slide {
@@ -13925,6 +13999,10 @@ body::-webkit-scrollbar {
   }
   .swiper-home-container #step4 {
     padding-top: 0 !important;
+  }
+
+  .inner-page .full-screen {
+    width: 100%;
   }
 
   .menu-toggle {
@@ -13946,6 +14024,18 @@ body::-webkit-scrollbar {
 
   .home-section p {
     font-size: 12px;
+  }
+
+  .home-section .common-height {
+    margin-top: -20px;
+  }
+
+  .home-mobile-container .container-fluid {
+    padding: 0;
+  }
+
+  .address-list .address-list-view {
+    margin-bottom: 20px;
   }
 
   .menu-items {
@@ -14000,6 +14090,16 @@ body::-webkit-scrollbar {
   }
   .list-menu ul li {
     display: inline-block;
+  }
+  .list-menu ul li a p {
+    padding-left: 0px !important;
+  }
+  .list-menu ul li a .menu-wrapper {
+    width: 28px;
+    margin: 0 10px;
+  }
+  .list-menu ul li a .menu-wrapper img {
+    margin-top: -7px;
   }
 
   .swiper-pagination {
