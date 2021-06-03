@@ -13758,22 +13758,13 @@ body::-webkit-scrollbar {
   }
 
   #franchise h3 {
-    padding-top: 1100px;
     font-size: 28px;
   }
 
   #franchise h1 {
-    padding-top: 700px;
     font-size: 28px;
   }
 
-  #faq-franchise #step4 {
-    padding-top: 400px !important;
-  }
-
-  #new12 h1 {
-    padding-top: 200px;
-  }
   #new12 .owl-nav {
     display: none;
   }
@@ -13786,9 +13777,6 @@ body::-webkit-scrollbar {
   }
   .faq-section .card-title {
     width: 95%;
-  }
-  .faq-section .pt-5 {
-    padding-top: 0 !important;
   }
   .faq-section .accordion {
     padding-top: 20px;
@@ -13817,6 +13805,56 @@ body::-webkit-scrollbar {
   .page-form {
     max-width: 100%;
     flex: 0 0 100%;
+    padding-top: 0 !important;
+  }
+
+  .career-one {
+    padding: 0;
+  }
+  .career-one h1 {
+    padding-top: 0 !important;
+  }
+  .career-one .width-90 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .career-opening h1 {
+    padding-top: 400px !important;
+  }
+
+  .perks-section-career h2 {
+    padding-top: 50px;
+    font-size: 28px;
+  }
+  .perks-section-career h3 {
+    padding-top: 10px !important;
+    font-size: 20px !important;
+  }
+  .perks-section-career .career-perks {
+    padding: 10px 15px;
+  }
+
+  .swiper-career-container img {
+    max-width: 100%;
+  }
+
+  .career-section .row {
+    padding: 0;
+  }
+  .career-section .right-section {
+    overflow-y: scroll;
+    padding-bottom: 100px;
+  }
+  .career-section .right-section h2 {
+    font-size: 28px;
+  }
+  .career-section .right-section h4 {
+    padding-bottom: 20px;
+  }
+  .career-section .right-section img {
+    padding-top: 0 !important;
+    margin-bottom: 30px;
   }
 
   .location-section .list-content {
@@ -13853,23 +13891,15 @@ body::-webkit-scrollbar {
     height: auto;
   }
   .image-wrapper img {
-    padding-top: 500px !important;
     position: unset;
   }
 
-  #step4 {
-    padding-top: 500px !important;
-  }
   #step4 .row {
     padding-right: 0 !important;
   }
   #step4 .row .col-md-3 {
     padding-left: 3rem !important;
     margin-bottom: 50px !important;
-  }
-
-  .hover-animation img {
-    padding-top: 500px !important;
   }
 
   .swiper-about-container img, .swiper-franchise-container img {
@@ -13879,6 +13909,9 @@ body::-webkit-scrollbar {
   .common-height {
     padding-left: 0 !important;
     overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: flex-start;
+    padding-top: 20px;
   }
 
   .swiper-slide {
@@ -13887,8 +13920,11 @@ body::-webkit-scrollbar {
     width: 100vw !important;
   }
 
-  .location-section {
-    padding-top: 280px !important;
+  .swiper-home-container {
+    padding-top: 0 !important;
+  }
+  .swiper-home-container #step4 {
+    padding-top: 0 !important;
   }
 
   .menu-toggle {
@@ -13903,6 +13939,9 @@ body::-webkit-scrollbar {
   }
   .menu-page .tab-pane {
     padding: 0;
+  }
+  .menu-page .hover-animation img {
+    padding-top: 0 !important;
   }
 
   .home-section p {

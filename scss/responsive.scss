@@ -11,20 +11,12 @@
             flex-direction: column;
         }
         #franchise h3{
-            padding-top: 1100px;font-size: 28px;
+            font-size: 28px;
         }
         #franchise h1{
-            padding-top: 700px;font-size: 28px;
-        }
-        #faq-franchise{
-            #step4{
-                padding-top: 400px !important;
-            }
+           font-size: 28px;
         }
         #new12{
-            h1{
-                padding-top: 200px;
-            }
             .owl-nav{
                 display: none;
             }
@@ -38,9 +30,6 @@
             }
             .card-title{
                 width: 95%;
-            }
-            .pt-5{
-                padding-top: 0!important;
             }
             .accordion{
                 padding-top: 20px;
@@ -70,6 +59,61 @@
         .page-form{
             max-width: 100%;
             flex: 0 0 100%;
+            padding-top: 0!important;
+        }
+        .career-one{
+            padding: 0;
+            h1{
+                padding-top: 0!important;
+            }
+            .width-90{
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        .career-opening{
+            h1{
+                padding-top: 400px!important;
+            }
+        }
+        .perks-section-career{
+            h2{
+                padding-top: 50px;
+                font-size: 28px;
+            }
+            h3{
+                padding-top: 10px!important;
+                font-size: 20px!important;
+            }
+            .career-perks{
+                padding: 10px 15px;
+            }
+        }
+        .swiper-career-container{
+            img{
+                max-width: 100%;
+            }
+        }
+        .career-section {
+            .row{
+                padding: 0;
+            }
+            
+            .right-section{
+                overflow-y: scroll;
+                padding-bottom: 100px;
+                h2{
+                    // padding-top: 1300px;
+                    font-size: 28px;
+                }
+                h4{
+                    padding-bottom: 20px;
+                }
+                img{
+                    padding-top: 0!important;
+                    margin-bottom: 30px;
+                }
+            }
         }
         .location-section{
             .list-content {
@@ -110,23 +154,18 @@
         .image-wrapper{
             height: auto;
             img{
-                padding-top: 500px!important;
+                // padding-top: 500px!important;
                 position: unset;
             }
         }
         #step4{
-            padding-top: 500px!important;
+            // padding-top: 500px!important;
             .row{
                 padding-right: 0!important;
                 .col-md-3{
                     padding-left: 3rem !important;
                     margin-bottom: 50px!important;
                 }
-            }
-        }
-        .hover-animation{
-            img{
-                padding-top: 500px!important;
             }
         }
       
@@ -136,15 +175,22 @@
     .common-height{
         padding-left: 0!important;
         overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: flex-start;
+        padding-top: 20px;
     }
     .swiper-slide {
         overflow: hidden;
         max-width: 100%;
         width: 100vw !important;
     }
-    .location-section{
-        padding-top: 280px!important;
+    .swiper-home-container{
+        padding-top: 0!important;
+        #step4{
+            padding-top: 0!important;
+        }
     }
+  
     .menu-toggle {
         margin-left: 0;
         margin-top: 0px !important;
@@ -157,6 +203,11 @@
         }
         .tab-pane{
             padding: 0;
+        }
+        .hover-animation{
+            img{
+                padding-top: 0!important;
+            }
         }
     }
     .home-section p {
