@@ -78,21 +78,45 @@
         }
 
         .modal-dialog{
-            max-width: 90%;
-            margin: 30px auto;
+            max-width: 100%;
+            margin: 0px auto;
+            position: absolute;
+            bottom: 0;
+            .modal-circle {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+            }
+            .btn{
+                width: 100%;
+            }
             .close {
-                right: -6px;
-                top: -4px;
+                right: 1px;
+                top: 1px;
+                img{
+                    max-width: 100%;
+                }
             }
             .modal-content {
                 padding: 10px 10px;
+                border-radius: 20px 20px 0 0;
             }
             h3{
-                padding-top: 30px;
-                font-size: 30px !important;
+                font-size: 18px !important;
             }
             img{
-                max-width: 100%;
+                max-width: 60%;
+            }
+            p{
+                font-size: 10px;
+                &.pt-4{
+                    font-size: 14px!important;
+                }
+                &.light-p{
+                    font-size: 10px!important;
+                }
             }
         }
         .franchise-mobile{

@@ -13828,22 +13828,46 @@ body::-webkit-scrollbar {
   }
 
   .modal-dialog {
-    max-width: 90%;
-    margin: 30px auto;
+    max-width: 100%;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 0;
+  }
+  .modal-dialog .modal-circle {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .modal-dialog .btn {
+    width: 100%;
   }
   .modal-dialog .close {
-    right: -6px;
-    top: -4px;
+    right: 1px;
+    top: 1px;
+  }
+  .modal-dialog .close img {
+    max-width: 100%;
   }
   .modal-dialog .modal-content {
     padding: 10px 10px;
+    border-radius: 20px 20px 0 0;
   }
   .modal-dialog h3 {
-    padding-top: 30px;
-    font-size: 30px !important;
+    font-size: 18px !important;
   }
   .modal-dialog img {
-    max-width: 100%;
+    max-width: 60%;
+  }
+  .modal-dialog p {
+    font-size: 10px;
+  }
+  .modal-dialog p.pt-4 {
+    font-size: 14px !important;
+  }
+  .modal-dialog p.light-p {
+    font-size: 10px !important;
   }
 
   .franchise-mobile {
