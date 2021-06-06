@@ -13751,6 +13751,14 @@ body::-webkit-scrollbar {
   border: solid 1px #929090;
 }
 
+.career-opening h1 {
+  font-size: 25px;
+}
+
+.perks-section-career h2 {
+  font-size: 25px;
+}
+
 @media only screen and (max-width: 767px) {
   .header_nav ul li a {
     margin: 0;
@@ -13853,10 +13861,6 @@ body::-webkit-scrollbar {
     margin-top: 30px;
   }
 
-  .career-opening h1 {
-    padding-top: 400px !important;
-  }
-
   .perks-section-career h2 {
     padding-top: 50px;
     font-size: 28px;
@@ -13954,7 +13958,7 @@ body::-webkit-scrollbar {
     padding-left: 0 !important;
     overflow-x: hidden;
     align-items: flex-start;
-    padding-top: 20px;
+    padding-top: 5vh;
     height: auto;
     overflow-y: hidden;
   }
