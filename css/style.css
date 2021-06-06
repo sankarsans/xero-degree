@@ -13817,6 +13817,17 @@ body::-webkit-scrollbar {
     margin: 15px 0 15px;
   }
 
+  .sidenav {
+    top: 60px;
+    background-size: 100%;
+  }
+  .sidenav h2 {
+    font-size: 30px;
+  }
+  .sidenav .bottom-content {
+    width: 100%;
+  }
+
   .swiper-pagination.swiper-pagination-home {
     display: block !important;
     left: 0;

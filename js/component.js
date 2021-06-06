@@ -30,6 +30,14 @@ function closeNavMenu() {
   document.querySelector(".menu").style.cssText = "transition: 0.5s;display:none";
 }
 
+function openOffer() {
+  document.querySelector('.sidenav').style.cssText = "transition: 0.5s;width:100%";
+  document.querySelector(".menu").style.cssText = "transition: 0.5s;display:none";
+}
+function closeOffer() {
+  document.querySelector('.sidenav').style.cssText = "transition: 0.5s;width:0%";
+}
+
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.cssText = "width:0 ; transition: 0.5s";
